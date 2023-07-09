@@ -1,0 +1,274 @@
+@keyframes background{
+    from{
+        background-color: #000000;
+        background-image: 
+        linear-gradient(-173deg, rgb(0, 0, 0) 0%, #000000 100%),
+        linear-gradient(72deg, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 100%),
+        radial-gradient(47% 102%, rgb(0, 0, 0) rgb(0, 0, 0) 120%);
+    }
+    to{
+        background-color: #797572;
+        background-image: 
+        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
+        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
+        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
+    }
+}
+
+@-webkit-keyframes background{
+    from{
+        background-color: #000000;
+        background-image: 
+        linear-gradient(-173deg, rgb(0, 0, 0) 0%, #000000 100%),
+        linear-gradient(72deg, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 100%),
+        radial-gradient(47% 102%, rgb(0, 0, 0) rgb(0, 0, 0) 120%);
+    }
+    to{
+        background-color: #797572;
+        background-image: 
+        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
+        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
+        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
+    }
+}
+
+@keyframes fade_in_rank{
+    from{
+        opacity: 0; color: rgba(255, 255, 255, 0); padding-top: 90px;
+    }
+    to{
+        opacity: 1; color: rgba(255, 255, 255, 1); padding-top: 70px;
+    }
+}
+
+@-webkit-keyframes fade_in_rank{
+    from{
+        opacity: 0; color: rgba(255, 255, 255, 0); padding-top: 90px;
+    }
+    to{
+        opacity: 1; color: rgba(255, 255, 255, 1); padding-top: 70px;
+    }
+}
+
+
+body,html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    background-image: 
+    linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
+    linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
+    radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
+    background-blend-mode: multiply;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: background 10s 0.5s forwards alternate infinite;
+    -webkit-animation: background 10s 0.5s forwards alternate infinite;
+}
+
+.toolbar{
+    font-weight: 400;
+    color: rgb(255,255,255);
+}
+
+.toolbar_container{
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.5);
+    position: fixed;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.toolbar_container_left{
+    -webkit-box-flex: 0;
+    flex: none;
+}
+
+.dynamix_logo{
+    max-width: 80px;
+    height: 100%;
+    margin-right: 13px;
+    float: left;
+}
+
+.dynamix_logo img{
+    display: block;
+    margin-top: 2px;
+}
+
+.toolbar_menu{
+    width: auto;
+    height: 100%;
+    font-size: 0;
+    float: left;
+    font-family: dynamix;
+}
+
+.toolbar_menu li{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    height: 100%;
+    line-height: 48px;
+    transition: all .15s ease-in;
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+}
+
+.toolbar_menu li a{
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.toolbar_menu li:hover{
+    text-shadow: 0 0 10px rgb(0, 251, 255);
+}
+
+.active::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(100, 227, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.toolbar_container_right{
+    -webkit-box-flex: 0;
+    flex: none;
+}
+
+.toolbar_search{
+    width: 100%;
+    min-width: 600px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.toolbar_search_container{
+    width: calc(100% - 92px);
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+    float: left;
+}
+
+.toolbar_search_container input{
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: inherit;
+    background: white;
+    vertical-align: top;
+    border: 2px solid rgb(45, 45, 45);
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 16px 0 0 16px;
+    font-family: dynamix;
+    color: rgb(45, 45, 45);
+}
+
+.toolbar_search button{
+    display: inline-block;
+    width: 92px;
+    height: 100%;
+    border-radius: 0 16px 16px 0;
+    font-size: 18px;
+    line-height: 32px;
+    cursor: pointer;
+    transition: all .15s ease-in;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    text-align: left;
+}
+
+.toolbar_search button:hover{
+    background-color: rgb(69, 85, 227);
+}
+
+.toolbar_search button span{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: dynamix;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+.rank{
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    animation: fade_in_rank 1s forwards;
+}
+
+.rank_number{
+    padding-top: 85px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: dynamix;
+    float: left;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
+}
+
+.song_bg{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song_bg div a{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.song_bg div a img{
+    width: 200px;
+    height: 200px;
+}
+
+.song_bg_g a img{
+    border-color: gray;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 102.5px;
+    -webkit-border-radius: 102.5px;
+    -moz-border-radius: 102.5px;
+    filter: drop-shadow(0 0 0px rgba(234,234,234,0));
+    -webkit-filter: drop-shadow(0 0 0px rgba(234,234,234,0));
+    transition: all .1s ease-out;
+    margin-bottom: 10px;
+}
+
+.song_bg_g a img:hover{
+    filter: drop-shadow(0 0 8px rgba(234, 234, 234, 0.5));
+    -webkit-filter: drop-shadow(0 0 8px rgba(234, 234, 234, 0.5));
+}
+
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0);
+}
