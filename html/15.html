@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../css/15.css">
 </head>
-<body>
+<body class="no_select">
     <div class="toolbar" style="position: relative;min-width: 100%;width: max-content;top: 0px;left: 0px;">
         <div class="toolbar_container">
             <div class="toolbar_container_left">
@@ -79,7 +79,7 @@
             <div class="toobar_container_right">
                 <div class="toolbar_search">
                     <div class="toolbar_search_container">
-                        <input placeholder="Search your song!" type="text" style="text-indent: 16px;">
+                        <input id="search-item" placeholder="Search your song!" type="text" style="text-indent: 16px;" onkeyup="search()">
                     </div>
                     <button>
                         <span style="text-indent: 8px;">Search</span>
@@ -88,281 +88,371 @@
             </div>
         </div>
     <div>
-    <div class="rank">
+    <div id="rank">
         <!-- 15.0 -->
         <div class="rank_container">
-            <div class="rank_number">
-                &diams; 15.0
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 15.0
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    Back Out,Fission,The Last Arcady
+                </div>
             </div>
-            <div class="song">
+            <div id="150">
                 <div class="song_bg">
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="back_out">
-                                Back Out
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="back_out">
+                                    Back Out
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="fission">
-                                Fission
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="fission">
+                                    Fission
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="the_last_arcady">
-                                The Last Arcady
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="the_last_arcady">
+                                    The Last Arcady
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 15.1 -->
         <div class="rank_container">
-            <div class="rank_number">
-                &diams; 15.1
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 15.1
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    Pandemik,You Psy,Metropolitan Chaser,Ultimate Lachesism,Dahila,Kokytos
+                </div>
             </div>
-            <div class="song">
-                <div class="song_bg">
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="pandemik">
-                                Pandemik
-                            </div>
-                        </a>
+            <div id="151">
+                <div class="song_bg" id="song_bg">
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="pandemik">
+                                    Pandemik
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="you_psy">
-                                You Psy
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="you_psy">
+                                    You Psy
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="metropolitan_chaser">
-                                Metropolitan Chaser
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="metropolitan_chaser">
+                                    Metropolitan Chaser
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="ultimate_lachesism">
-                                Ultimate Lachesism
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="ultimate_lachesism">
+                                    Ultimate Lachesism
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="dahila">
-                                Dahila
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="dahila">
+                                    Dahila
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="kokytos">
-                                Kokytos
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="kokytos">
+                                    Kokytos
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 15.2 -->
         <div class="rank_container">
-            <div class="rank_number">
-                &diams; 15.2
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 15.2
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    War in the Mirrorworld,INFiNiTE ENERZY -Overdoze-,Rocket Lanterns,CROSSING DELTA,Re_Construct,Volcano,Rocky Buinne
+                </div>
             </div>
             <div class="song">
                 <div class="song_bg">
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="war_in_the_mirrorworld">
-                                War in the Mirrorworld
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="war_in_the_mirrorworld">
+                                    War in the Mirrorworld
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="infinite_enerzy_-overdoze-">
-                                INFiNiTE ENERZY -Overdoze-
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="infinite_enerzy_-overdoze-">
+                                    INFiNiTE ENERZY -Overdoze-
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="rocket_lanterns">
-                                Rocket Lanterns
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="rocket_lanterns">
+                                    Rocket Lanterns
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="crossing_delta">
-                                CROSSING DELTA
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="crossing_delta">
+                                    CROSSING DELTA
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="re_construct">
-                                Re_Construct
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="re_construct">
+                                    Re_Construct
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="volcano">
-                                Volcano
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="volcano">
+                                    Volcano
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="rocky_buinne">
-                                Rocky Buinne
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="rocky_buinne">
+                                    Rocky Buinne
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 15.3 -->
         <div class="rank_container">
-            <div class="rank_number">
-                &diams; 15.3
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 15.3
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    The Endless for Traveler,Skrik (DNX Edit),White:Revolve,ELYXiVN ELYXiUM,Startail,Φ,CHAKA,BOUNCE THE TECH
+                </div>
             </div>
             <div class="song">
                 <div class="song_bg">
-                    <div class="song_bg_m">
-                        <a href="">
-                            <div id="the_endless_for_traveler">
-                                The Endless for Traveler
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="the_endless_for_traveler">
+                                    The Endless for Traveler
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="skrik_dnx_edit">
-                                Skrik (DNX Edit)
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="skrik_dnx_edit">
+                                    Skrik (DNX Edit)
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="white_revolve">
-                                White:Revolve
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="white_revolve">
+                                    White:Revolve
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="elyxivn_elyxium">
-                                ELYXiVN ELYXiUM
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="elyxivn_elyxium">
+                                    ELYXiVN ELYXiUM
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="startail">
-                                Startail
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="startail">
+                                    Startail
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="Φ">
-                                Φ
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="Φ">
+                                    Φ
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="chaka">
-                                CHAKA
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="chaka">
+                                    CHAKA
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="bounce_the_tech">
-                                BOUNCE THE TECH
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="bounce_the_tech">
+                                    BOUNCE THE TECH
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 15.4 -->
         <div class="rank_container">
-            <div class="rank_number">
-                &diams; 15.4
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 15.4
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    HEADROOM WITH PLEASANT RHYTHM,Virtual Nature,The Endless for Traveler,Cryonix,Black:Magnam,UCHOUTEN Highway,Re=correct,Fl0at on Air
+                </div>
             </div>
             <div class="song">
                 <div class="song_bg">
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="headroom_with_pleasant_rhythm">
-                                HEADROOM WITH PLEASANT RHYTHM
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="headroom_with_pleasant_rhythm">
+                                    HEADROOM WITH PLEASANT RHYTHM
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="virtual_nature">
-                                Virtual Nature
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="virtual_nature">
+                                    Virtual Nature
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="the_endless_for_traveler">
-                                The Endless for Traveler
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="the_endless_for_traveler">
+                                    The Endless for Traveler
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="cryonix">
-                                Cryonix
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="cryonix">
+                                    Cryonix
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="black_magnam">
-                                Black:Magnam
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="black_magnam">
+                                    Black:Magnam
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="uchouten_highway">
-                                UCHOUTEN Highway
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="uchouten_highway">
+                                    UCHOUTEN Highway
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="re_correct">
-                                Re=correct
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="re_correct">
+                                    Re=correct
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="song_bg_g">
-                        <a href="">
-                            <div id="fl0at_on_air">
-                                Fl0at on Air
-                            </div>
-                        </a>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="fl0at_on_air">
+                                    Fl0at on Air
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../js/search.js"></script>
 </body>
 </html>
