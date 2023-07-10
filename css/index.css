@@ -233,8 +233,7 @@ ol, ul{
 
 .rank_number{
     width: 125px;
-    margin-top: 80px;
-    margin-left: 10px;
+    padding-top: 78px;
     font-size: 30px;
     font-family: dynamix;
     float: left;
