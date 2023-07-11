@@ -35,6 +35,8 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="no_select">
     <div class="toolbar" style="
@@ -85,14 +87,16 @@
             <div class="toobar_container_right">
                 <div class="toolbar_search">
                     <div class="toolbar_search_container">
-                        <input placeholder="Search your song!" type="text" style="text-indent: 16px;">
+                        <input id="search-item" placeholder="Search your song!" type="text" style="text-indent: 16px;" onkeyup="search()">
+                        <i class="fa fa-search" style="font-size:28px; margin-top: 1px; margin-left: 4px;"></i>
                     </div>
-                    <button>
-                        <span style="text-indent: 8px;">Search</span>
+                    <button onclick="window.location.href='about.html'">
+                        <span>About</span>
                     </button>
                 </div>
             </div>
         </div>
     <div>
+    <script src="js/search.js"></script>
 </body>
 </html>

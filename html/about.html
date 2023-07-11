@@ -20,6 +20,11 @@
             font-family: orbitron_bold;
             src: url(../fonts/orbitron-bold.otf);
         }
+
+        @font-face {
+            font-family: orbitron_light;
+            src: url(../fonts/orbitron-light.otf);
+        }
     
         *{
             list-style: none;
@@ -35,6 +40,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -62,7 +68,7 @@
                             11.0~11.9
                         </a>
                     </li>
-                    <li class="active" title="rank_12">
+                    <li class title="rank_12">
                         <a href="12.html">
                             12.0~12.9
                         </a>
@@ -87,16 +93,25 @@
             <div class="toobar_container_right">
                 <div class="toolbar_search">
                     <div class="toolbar_search_container">
-                        <input id="search-item" placeholder="Search your song!" type="text" style="text-indent: 16px;" onkeyup="search()">
-                        <i class="fa fa-search" style="font-size:28px; margin-top: 1px; margin-left: 4px;"></i>
+                        <input id="search-item" placeholder="Not avaliable..." type="text" style="text-indent: 16px;" onkeyup="search()" disabled="disabled">
+                        <i class="fa fa-search" style="font-size:28px; margin-top: 1px; margin-left: 4px; color: rgba(255, 255, 255, 0.2);"></i>
                     </div>
-                    <button onclick="window.location.href='about.html'">
+                    <button onclick="window.location.href='about.html'" style="background-color: rgb(69, 85, 227);">
                         <span>About</span>
                     </button>
                 </div>
             </div>
         </div>
     <div>
-    <script src="js/search.js"></script>
+    <div class="about">
+        <h1>Foreword</h1>
+        <p>&bullet; This is <span style="font-weight: bold; color: red;">NOT</span> an official rank list site.</p>
+        <p>&bullet; The list is made by a group of faithful Dynamix players.</p>
+        <p>&bullet; To ensure that you see all the content of the page, it is recommended to use your <span style="font-weight: bold; color: rgb(0, 251, 255);">computer</span> instead of the other device.</p>
+        <p>&bullet; The site is still progressing.</p>
+        <h1>Join us!</h1>
+        <p>&bullet; The <span style="font-weight: bold; color: rgb(0, 251, 255);">QQ</span> group chat QRcode is below the screen. We would love to discuss the ranks with anyone who feels like joining in!</p>
+        <img src="../images/group_qr.png" style="width: 200px; height: 200px; image-rendering: pixelated; margin-top: 30px;">
+    </div>
 </body>
 </html>

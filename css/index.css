@@ -171,7 +171,8 @@ body{
 }
 
 .toolbar_search_container{
-    width: calc(100% - 120px);
+    width: calc(100% - 140px);
+    margin-right: 30px;
     height: 100%;
     box-sizing: border-box;
     font-size: 0;
