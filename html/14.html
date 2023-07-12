@@ -20,6 +20,11 @@
             font-family: orbitron_bold;
             src: url(../fonts/orbitron-bold.otf);
         }
+
+        @font-face {
+            font-family: orbitron_light;
+            src: url(../fonts/orbitron-light.otf);
+        }
     
         *{
             list-style: none;
@@ -36,17 +41,12 @@
     </style>
     <link rel="stylesheet" type="text/css" href="../css/toolbar.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/14.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="no_select">
-    <div class="toolbar" style="
-        position: relative;
-        min-width: 100%;
-        width: max-content;
-        top: 0px;
-        left: 0px;
-    ">
+    <div class="toolbar" style="position: relative;min-width: 100%;width: max-content;top: 0px;left: 0px;">
         <div class="toolbar_container">
             <div class="toolbar_container_left">
                 <div class="dynamix_logo">
@@ -98,6 +98,72 @@
             </div>
         </div>
     <div>
-    <script src="js/search.js"></script>
+    <div id="rank">
+        <!-- 14.0 -->
+        <div class="rank_container">
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 14.0
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    Tenebris
+                    VENUS INVADER
+                    DestroY StresS
+                    Little Boy
+                    Variance
+                </div>
+            </div>
+            <div class="song">
+                <div class="song_bg">
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="variance">
+                                    Variance
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="littleboy">
+                                    Little Boy
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="destroystress">
+                                    DestroY StresS
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="venusinvader">
+                                    VENUS INVADER
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="tenebris">
+                                    Tenebris
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/search.js"></script>
 </body>
 </html>

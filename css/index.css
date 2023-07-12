@@ -175,3 +175,79 @@ a{
     box-shadow: 0 0 8px rgba(255, 138, 255, 0.5);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
+
+table{
+    border-collapse: collapse;
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.uncertain_rank_container{
+    padding: 60px 0;
+}
+
+.uncertain_number{
+    height: 50px;
+    font-size: 30px;
+    font-family: dynamix;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
+}
+
+th{
+    border-spacing: 0px;
+    display: table-cell;
+    width: calc(100vw / 11);
+    text-align: -internal-center;
+    border-left: 2px solid rgba(255, 255, 255, 0.6);
+    border-right: 2px solid rgba(255, 255, 255, 0.6);
+    word-break: break-word;
+}
+
+.uncertain_song{
+    position: relative;
+}
+
+.uncertain_song::after{
+    content: '';
+    display: block;
+    width: calc(100% - 2px);
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 251, 255, 1);
+}
+
+.true{
+    background-color: rgba(0, 251, 255, 0.3);
+}
+
+.uncertain_song th div{
+    width: calc((100vw - 100px) / 11 - 4px);
+    height: calc((100vw - 100px) / 11 - 4px);
+    display: table-cell;
+    vertical-align: middle;
+    font-family: orbitron_light;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+}
+
+.giga{
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    transition: all .1s ease-out;
+}
+
+.giga:hover{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}

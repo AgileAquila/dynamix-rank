@@ -22,16 +22,33 @@ const search = () =>{
     const ranksong = storeitems.getElementsByClassName("rank_song_name")
 
 
-    for (var j = 0; j < ranksong.length; j++){
-        let match2 = rank[j].getElementsByClassName('rank_song_name')[0];
+    for (var i = 0; i < ranksong.length; i++){
+        let match2 = rank[i].getElementsByClassName('rank_song_name')[0];
 
         if (match2){
             let textvalue = match2.textContent || match2.innerHTML
 
             if(textvalue.toUpperCase().indexOf(searchbox) > -1){
-                rank[j].style.display = "";
+                rank[i].style.display = "";
             }else{
-                rank[j].style.display = "none";
+                rank[i].style.display = "none";
+            }
+        }
+    }
+
+    const uncertain_song = document.querySelectorAll(".uncertain_song")
+    const uncertain_song_name = storeitems.getElementsByClassName("uncertain_song_name")
+
+    for (var i = 0; i < uncertain_song_name.length; i++){
+        let match3 = uncertain_song[i].getElementsByClassName('uncertain_song_name')[0];
+
+        if (match3){
+            let textvalue = match3.textContent || match3.innerHTML
+
+            if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+                uncertain_song[i].style.display = "";
+            }else{
+                uncertain_song[i].style.display = "none";
             }
         }
     }

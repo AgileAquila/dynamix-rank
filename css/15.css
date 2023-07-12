@@ -359,3 +359,35 @@
     background: url(../images/song_bg/28L-28L2B5E29.png);
     background-size: contain;
 }
+
+/*uncertain*/
+
+#aliceshige{
+    background: url(../images/song_bg/Aliceshige.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#beforesunrise{
+    background: url(../images/song_bg/BeforeSunrise.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#evoltex_poppin_mix{
+    background: url(../images/song_bg/EvoltexPoppinMix.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#redhorsemassacre{
+    background: url(../images/song_bg/Redhorsemassacre.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#euouae{
+    background: url(../images/song_bg/Euouae.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}

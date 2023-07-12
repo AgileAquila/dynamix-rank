@@ -1,0 +1,26 @@
+/*14.0*/
+
+#tenebris{
+    background: url(../images/song_bg/Tenebris.png);
+    background-size: contain;
+}
+
+#venusinvader{
+    background: url(../images/song_bg/VenusInvader.png);
+    background-size: contain;
+}
+
+#destroystress{
+    background: url(../images/song_bg/DestroYStresS.png);
+    background-size: contain;
+}
+
+#littleboy{
+    background: url(../images/song_bg/LittleBoy.png);
+    background-size: contain;
+}
+
+#variance{
+    background: url(../images/song_bg/Variance.png);
+    background-size: contain;
+}
