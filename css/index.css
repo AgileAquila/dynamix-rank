@@ -147,7 +147,7 @@ a{
 
 .song_bg_g a div:hover{
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 8px rgba(234, 234, 234, 0.5);
+    box-shadow: 0 0 17px rgba(234, 234, 234, 0.5);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -172,7 +172,7 @@ a{
 
 .song_bg_m a div:hover{
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 8px rgba(255, 138, 255, 0.5);
+    box-shadow: 0 0 17px rgba(255, 138, 255, 0.5);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -250,4 +250,26 @@ th{
 .giga:hover{
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.top button{
+    color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: rgba(69, 85, 227, 0.2);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    transition: all .1s ease-in;
+    font-size: 38px;
+}
+
+.top button:hover{
+    background-color: rgba(69, 85, 227, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.95);
 }

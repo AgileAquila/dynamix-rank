@@ -124,7 +124,7 @@
     font-size: 18px;
     line-height: 32px;
     cursor: pointer;
-    transition: all .15s ease-in;
+    transition: all .1s ease-in;
     background-color: rgb(45, 45, 45);
     border: none;
     text-align: center;

@@ -20,6 +20,11 @@
             font-family: orbitron_bold;
             src: url(../fonts/orbitron-bold.otf);
         }
+
+        @font-face {
+            font-family: orbitron_light;
+            src: url(../fonts/orbitron-light.otf);
+        }
     
         *{
             list-style: none;
@@ -36,17 +41,12 @@
     </style>
     <link rel="stylesheet" type="text/css" href="../css/toolbar.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/13.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="no_select">
-    <div class="toolbar" style="
-        position: relative;
-        min-width: 100%;
-        width: max-content;
-        top: 0px;
-        left: 0px;
-    ">
+    <div class="toolbar" style="position: relative;min-width: 100%;width: max-content;top: 0px;left: 0px;">
         <div class="toolbar_container">
             <div class="toolbar_container_left">
                 <div class="dynamix_logo">
@@ -98,6 +98,104 @@
             </div>
         </div>
     <div>
-    <script src="js/search.js"></script>
+    <div id="rank">
+        <!-- 13.0 -->
+        <div class="rank_container">
+            <div class="ranksearch">
+                <div class="rank_number">
+                    &diams; 13.0
+                </div>
+                <div class="rank_song_name" style="display: none;">
+                    萤火虫の怨
+                    Life Style
+                    Theme of Rabi-Ribi
+                    Hope!!
+                    Sultan Madness
+                    Class memories
+                    Nightmare Girl
+                </div>
+            </div>
+            <div class="song">
+                <div class="song_bg">
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="firefly">
+                                    萤火虫の怨
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="life_style">
+                                    Life Style
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_g">
+                            <a href="">
+                                <div class="song_name" id="theme_of_rabi_rabi">
+                                    Theme of Rabi-Ribi
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="hope">
+                                    Hope!!
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="sultan_madness">
+                                    Sultan Madness
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="class_memories">
+                                    Class memories
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="song_bg_name">
+                        <div class="song_bg_m">
+                            <a href="">
+                                <div class="song_name" id="nightmare_girl">
+                                    Nightmare Girl
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <button id="top_button" style="cursor: pointer;">
+            <span>
+                <i class="fa fa-arrow-up" style="text-align: center;"></i>
+            </span>
+        </button>
+    </div>
 </body>
+<script src="js/search.js"></script>
+<script>
+    top_button.onclick = function(){
+    scrollTo(0,0);
+    }
+</script>
 </html>

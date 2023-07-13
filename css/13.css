@@ -1,0 +1,36 @@
+/*13.0*/
+
+#firefly{
+    background: url(../images/song_bg/Firefly.png);
+    background-size: contain;
+}
+
+#life_style{
+    background: url(../images/song_bg/LifeStyle.png);
+    background-size: contain;
+}
+
+#theme_of_rabi_rabi{
+    background: url(../images/song_bg/ThemeofRabiRibi.png);
+    background-size: contain;
+}
+
+#hope{
+    background: url(../images/song_bg/Hope.png);
+    background-size: contain;
+}
+
+#sultan_madness{
+    background: url(../images/song_bg/SultanMadness.png);
+    background-size: contain;
+}
+
+#class_memories{
+    background: url(../images/song_bg/ClassMemories.png);
+    background-size: contain;
+}
+
+#nightmare_girl{
+    background: url(../images/song_bg/NightmareGirl.png);
+    background-size: contain;
+}

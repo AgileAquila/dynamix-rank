@@ -98,6 +98,18 @@
             </div>
         </div>
     <div>
-    <script src="js/search.js"></script>
+    <div class="top">
+        <button id="top_button" style="cursor: pointer;">
+            <span>
+                <i class="fa fa-arrow-up" style="text-align: center;"></i>
+            </span>
+        </button>
+    </div>
 </body>
+<script src="js/search.js"></script>
+<script>
+    top_button.onclick = function(){
+    scrollTo(0,0);
+    }
+</script>
 </html>
