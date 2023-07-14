@@ -1,3 +1,3 @@
 # Dynamix-Rank (Progressing)
  A rank list for Dynamix.
- Visit website https://agileaquila.github.io/Dynamix-Rank/ to get started.
+ Visit website https://agileaquila.github.io/dynamix-rank/ to get started.
