@@ -71,3 +71,50 @@
     background: url(../images/song_bg/WHIRLWIND.png);
     background-size: contain;
 }
+
+/*14.2*/
+
+#arcana_idola{
+    background: url(../images/song_bg/ArcanaIdola.png);
+    background-size: contain;
+}
+
+#lodenifo{
+    background: url(../images/song_bg/Lodeinfo.png);
+    background-size: contain;
+}
+
+#waldjaegerin{
+    background: url(../images/song_bg/Waldjaegerin.png);
+    background-size: contain;
+}
+
+#danse_de_romani{
+    background: url(../images/song_bg/DanseDeRomani.png);
+    background-size: contain;
+}
+
+#sakura_fubuki{
+    background: url(../images/song_bg/SakuraFubuki.png);
+    background-size: contain;
+}
+
+#yinmeihua{
+    background: url(../images/song_bg/yinmeihua.png);
+    background-size: contain;
+}
+
+#chaka{
+    background: url(../images/song_bg/CHAKA.png);
+    background-size: contain;
+}
+
+#tianzhao{
+    background: url(../images/song_bg/tianzhao.png);
+    background-size: contain;
+}
+
+#acrise{
+    background: url(../images/song_bg/Acrise.png);
+    background-size: contain;
+}

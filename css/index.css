@@ -255,12 +255,12 @@ th{
 .top button{
     color: rgba(255, 255, 255, 0.6);
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
     width: 70px;
     height: 70px;
     border-radius: 200px;
-    background-color: rgba(69, 85, 227, 0.2);
+    background-color: rgba(69, 85, 227, 0.1);
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.06);
@@ -269,7 +269,7 @@ th{
 }
 
 .top button:hover{
-    background-color: rgba(69, 85, 227, 0.5);
+    background-color: rgba(69, 85, 227, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.95);
 }
