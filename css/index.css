@@ -176,6 +176,31 @@ a{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
+.song_bg_h a div{
+    width: 160px;
+    height: 160px;
+    color: rgba(255, 255, 255, 0);
+    font-family: orbitron;
+    font-size: 19px;
+    border-color: rgb(186, 0, 0);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all .1s ease-out;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+}
+
+.song_bg_h a div:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 17px rgba(255, 13, 13, 0.75);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
 table{
     border-collapse: collapse;
 }
@@ -242,7 +267,7 @@ th{
 
 .giga{
     border-color: gray;
-    border-width: 3px;
+    border-width: 4px;
     border-style: solid;
     transition: all .1s ease-out;
 }

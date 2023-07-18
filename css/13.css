@@ -34,3 +34,50 @@
     background: url(../images/song_bg/NightmareGirl.png);
     background-size: contain;
 }
+
+/*13.1*/
+
+#fading_sky{
+    background: url(../images/song_bg/FadingSky.png);
+    background-size: contain;
+}
+
+#happiness_bread{
+    background: url(../images/song_bg/HappinessBread.png);
+    background-size: contain;
+}
+
+#whirlwind{
+    background: url(../images/song_bg/WHIRLWIND.png);
+    background-size: contain;
+}
+
+#thatawesome{
+    background: url(../images/song_bg/ThatAwesome.png);
+    background-size: contain;
+}
+
+#ice_chandelier{
+    background: url(../images/song_bg/IceChandelier.png);
+    background-size: contain;
+}
+
+#eschatology{
+    background: url(../images/song_bg/Eschatology.png);
+    background-size: contain;
+}
+
+#massacre{
+    background: url(../images/song_bg/MassacrE3rc4224M.png);
+    background-size: contain;
+}
+
+#system_interior{
+    background: url(../images/song_bg/SystemInterior.png);
+    background-size: contain;
+}
+
+#kokytos{
+    background: url(../images/song_bg/Kokytos.png);
+    background-size: contain;
+}
