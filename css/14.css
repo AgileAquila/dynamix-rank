@@ -165,3 +165,55 @@
     background: url(../images/song_bg/Viatores.png);
     background-size: contain;
 }
+
+/*14.4*/
+
+#alter_ago{
+    background: url(../images/song_bg/AlterEgo.png);
+    background-size: contain;
+}
+
+#lily{
+    background: url(../images/song_bg/Lily.png);
+    background-size: contain;
+}
+
+#reconstruction{
+    background: url(../images/song_bg/REconstruction.png);
+    background-size: contain;
+}
+
+#occhoco_rest_less{
+    background: url(../images/song_bg/OCCHOCO-REST-LESS.png);
+    background-size: contain;
+}
+
+#headroom_with_pleasant_rhythm{
+    background: url(../images/song_bg/HeadroomWithPleasantRhythm.png);
+    background-size: contain;
+}
+
+#galaxia{
+    background: url(../images/song_bg/Galaxia.png);
+    background-size: contain;
+}
+
+#crux{
+    background: url(../images/song_bg/CruX.png);
+    background-size: contain;
+}
+
+#joachim_d{
+    background: url(../images/song_bg/JOACHIMD.png);
+    background-size: contain;
+}
+
+#legacy{
+    background: url(../images/song_bg/Legacy.png);
+    background-size: contain;
+}
+
+#unsung_hero{
+    background: url(../images/song_bg/UnsungHero.png);
+    background-size: contain;
+}
