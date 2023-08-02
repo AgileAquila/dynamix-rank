@@ -7,40 +7,6 @@
     user-select: none;
 }
 
-@keyframes background{
-    from{
-        background-color: #000000;
-        background-image: 
-        linear-gradient(-173deg, rgb(0, 0, 0) 0%, #000000 100%),
-        linear-gradient(72deg, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 100%),
-        radial-gradient(47% 102%, rgb(0, 0, 0) rgb(0, 0, 0) 120%);
-    }
-    to{
-        background-color: #2241a5;
-        background-image: 
-        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
-        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
-        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
-    }
-}
-
-@-webkit-keyframes background{
-    from{
-        background-color: #000000;
-        background-image: 
-        linear-gradient(-173deg, rgb(0, 0, 0) 0%, #000000 100%),
-        linear-gradient(72deg, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 100%),
-        radial-gradient(47% 102%, rgb(0, 0, 0) rgb(0, 0, 0) 120%);
-    }
-    to{
-        background-color: #2241a5;
-        background-image: 
-        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
-        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
-        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
-    }
-}
-
 @keyframes fade_in_rank{
     from{
         opacity: 0; color: rgba(255, 255, 255, 0); padding-top: 90px;
@@ -65,17 +31,7 @@ body,html{
 }
 
 body{
-    background-color: #2241a5;
-    background-image: 
-    linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
-    linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
-    radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
-    background-blend-mode: multiply;
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    animation: background 10s 0.5s forwards alternate infinite;
-    -webkit-animation: background 10s 0.5s forwards alternate infinite;
+    background-color: #000000;
 }
 
 #rank{
