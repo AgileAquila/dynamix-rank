@@ -287,7 +287,7 @@ th{
 }
 
 .object{
-    position: absolute;
+    position: relative;
     left: 0;
     width: 100%;
     background-color: rgba(12, 10, 22, 0.9);
@@ -324,7 +324,7 @@ th{
     padding: 20px 0;
 }
 
-.img{
+.news .img{
     float: left;
     display: flex;
     overflow: hidden;
@@ -342,11 +342,11 @@ th{
     }
 }
 
-.img img{
+.news .img img{
     transition: all 0.3s ease-in-out;
 }
 
-.img img:hover{
+.news .img img:hover{
     scale: 1.03;
 }
 
@@ -446,4 +446,68 @@ th{
 
 #facebook:hover{
     background-color: rgb(73, 122, 255);
+}
+
+.learn_more{
+    width: 280px;
+    height: 60px;
+    font-size: 28px;
+    font-family: dynamix;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: #144a818b;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 6px rgba(0, 251, 255, 0.4);
+    margin-left: calc(50% - 140px);
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.learn_more:hover{
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 6px rgba(0, 251, 255, 0.8);
+    background-color: #144b81;
+    box-shadow: 0 0 15px rgba(0, 251, 255, 0.8);
+    cursor: pointer;
+}
+
+.links li{
+    margin: 20px 40px;
+    width: 20vw;
+    height: 26vw;
+    display: flex;
+    float: left;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.links .img{
+    float: left;
+    display: flex;
+    overflow: hidden;
+    width: 20vw;
+    height: 10.4vw;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 25px;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.links .img img{
+    transition: all 0.3s ease-in-out;
+}
+
+.links .img img:hover{
+    scale: 1.04;
 }
