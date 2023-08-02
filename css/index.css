@@ -268,15 +268,15 @@ th{
 .title h1{
     padding: 20px 0;
     text-align: center;
-    font-size: 80px;
+    font-size: 4vw;
     font-family: orbitron;
     text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
 }
 
 .title p{
-    padding: 20px;
+    padding: 20px 40px;
     margin: 15px auto;
-    width: 1000px;
+    width: calc(100% - 40vw);
     text-align: center;
     font-size: 22px;
     font-family: caecilia;
@@ -364,7 +364,7 @@ th{
 .news_text{
     display: inline-block;
     padding-left: 40px;
-    width: 38vw;
+    width: calc(100% - 40vw - 44px);
     height: 20.9vw;
 }
 
