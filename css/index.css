@@ -270,7 +270,7 @@ th{
     text-align: center;
     font-size: 80px;
     font-family: orbitron;
-    text-shadow: 0 0 10px rgba(0, 251, 255, 0.3);
+    text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
 }
 
 .title p{
@@ -282,7 +282,7 @@ th{
     font-family: caecilia;
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.08);
-    border: rgba(255, 255, 255, 0.1) solid 2px;
+    border: rgba(0, 251, 255, 0.6) solid 1px;
     border-radius: 100px;
 }
 
