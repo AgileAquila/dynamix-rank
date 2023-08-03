@@ -354,7 +354,7 @@ th{
     content: '';
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: calc(100vw - 240px);
     height: 2px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 251, 255, 1);
