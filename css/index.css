@@ -855,10 +855,10 @@ th{
 
 .object_footer{
     border-top: rgb(255, 0, 98) solid 10px;
-    margin-bottom: 20px;
+    padding: 20px 0;
     text-align: center;
     font-family: orbitron;
-    font-size: 26px;
+    font-size: 32px;
     text-shadow: 0 0 6px rgba(0, 251, 255, 0.8);
 }
 
