@@ -244,6 +244,7 @@ th{
     background-color: rgba(69, 85, 227, 0.1);
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.06);
     transition: all .1s ease-in;
     font-size: 38px;
