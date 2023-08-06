@@ -192,12 +192,11 @@ th{
     position: relative;
 }
 
-.uncertain_song::after{
+.uncertain_song::before{
     content: '';
-    display: inline-block;
+    display: flex;
     width: calc(100% - 2px);
     position: absolute;
-    left: 0;
     bottom: 0;
     height: 2px;
     text-align: left;
