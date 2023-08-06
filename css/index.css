@@ -32,7 +32,6 @@ body,html{
 
 body{
     background-color: #000000;
-    max-width: 100%;
 }
 
 #rank{
@@ -204,6 +203,10 @@ tbody{
 
 @media screen and (max-width: 1435px){
     .uncertain_rank_container{
+        overflow-x: auto;
+    }
+
+    table{
         width: 1315px;
     }
 
