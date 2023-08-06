@@ -178,14 +178,54 @@ tbody{
     text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
 }
 
-th{
-    border-spacing: 0px;
-    display: table-cell;
-    width: calc(100vw / 11);
-    text-align: -internal-center;
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    border-right: 2px solid rgba(255, 255, 255, 0.5);
-    word-break: break-word;
+@media screen and (min-width: 1435px){
+    th{
+        border-spacing: 0px;
+        display: table-cell;
+        width: calc(100vw / 11);
+        text-align: -internal-center;
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        word-break: break-word;
+    }
+    
+    .uncertain_song th div{
+        width: calc((100vw - 100px) / 11 - 4px);
+        height: calc((100vw - 100px) / 11 - 4px);
+        display: table-cell;
+        vertical-align: middle;
+        font-family: orbitron_light;
+        font-size: 19px;
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 1435px){
+    .uncertain_rank_container{
+        width: 1315px;
+    }
+
+    th{
+        border-spacing: 0px;
+        display: table-cell;
+        width: calc(1435px / 11);
+        text-align: -internal-center;
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        word-break: break-word;
+    }
+    
+    .uncertain_song th div{
+        width: calc((1435px - 100px) / 11 - 4px);
+        height: calc((1435px - 100px) / 11 - 4px);
+        display: table-cell;
+        vertical-align: middle;
+        font-family: orbitron_light;
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+    }
 }
 
 .uncertain_song{
@@ -206,17 +246,6 @@ th{
 
 .true{
     background-color: rgba(0, 251, 255, 0.3);
-}
-
-.uncertain_song th div{
-    width: calc((100vw - 100px) / 11 - 4px);
-    height: calc((100vw - 100px) / 11 - 4px);
-    display: table-cell;
-    vertical-align: middle;
-    font-family: orbitron_light;
-    font-size: 19px;
-    color: rgba(255, 255, 255, 0);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
 }
 
 .giga{
