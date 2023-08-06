@@ -254,8 +254,22 @@ table{
     position: relative;
 }
 
-.true{
-    background: linear-gradient(to top, rgba(0, 251, 255, 0.25), rgba(0, 251, 255, 0.1));
+.uncertain_song .true{
+    background: linear-gradient(to top, rgba(0, 251, 255, 0.2), rgba(0, 251, 255, 0.08));
+}
+
+.uncertain_song:hover .true{
+    background: linear-gradient(to top, rgba(0, 251, 255, 0.34), rgba(0, 251, 255, 0.15));
+}
+
+.uncertain_song:hover .giga{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.uncertain_song:hover .mega{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .giga{
@@ -265,21 +279,11 @@ table{
     transition: all .1s ease-out;
 }
 
-.giga:hover{
-    color: rgba(255, 255, 255, 1);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-}
-
 .mega{
     border-color: rgb(172, 1, 172);;
     border-width: 5px;
     border-style: solid;
     transition: all .1s ease-out;
-}
-
-.mega:hover{
-    color: rgba(255, 255, 255, 1);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .top button{
