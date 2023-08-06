@@ -164,6 +164,7 @@ table{
 tbody{
     display: table-row-group;
     vertical-align: middle;
+    margin-bottom: 20px;
 }
 
 .uncertain_rank_container{
@@ -176,6 +177,10 @@ tbody{
     font-family: dynamix;
     color: white;
     text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
+}
+
+table{
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1435px){

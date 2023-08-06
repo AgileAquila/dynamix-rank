@@ -161,11 +161,6 @@
     background-size: contain;
 }
 
-#viatores{
-    background: url(../images/song_bg/Viatores.png);
-    background-size: contain;
-}
-
 /*14.4*/
 
 #alter_ago{
@@ -448,4 +443,42 @@
 #defended{
     background: url(../images/song_bg/Defended.png);
     background-size: contain;
+}
+
+/*uncertain*/
+
+#goemon{
+    background: url(../images/song_bg/GOEMON.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#viatores{
+    background: url(../images/song_bg/Viatores.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#reignite{
+    background: url(../images/song_bg/ReIgnite.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#mechanismos{
+    background: url(../images/song_bg/Mechanism.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#dement_after_legend{
+    background: url(../images/song_bg/Dement.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+#dead_soul{
+    background: url(../images/song_bg/DeadSoul.png);
+    background-size: calc(100% + 10px);
+    background-position: center;
 }
