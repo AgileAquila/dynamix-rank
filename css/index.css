@@ -255,17 +255,29 @@ table{
 }
 
 .true{
-    background-color: rgba(0, 251, 255, 0.3);
+    background: linear-gradient(to top, rgba(0, 251, 255, 0.25), rgba(0, 251, 255, 0.1));
 }
 
 .giga{
     border-color: gray;
-    border-width: 4px;
+    border-width: 5px;
     border-style: solid;
     transition: all .1s ease-out;
 }
 
 .giga:hover{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.mega{
+    border-color: rgb(172, 1, 172);;
+    border-width: 5px;
+    border-style: solid;
+    transition: all .1s ease-out;
+}
+
+.mega:hover{
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
