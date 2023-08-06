@@ -169,8 +169,8 @@ tbody{
 
 .uncertain_rank_container{
     margin: 60px 0;
-    border-left: white 2px solid;
-    border-right: white 2px solid;
+    border-left: rgb(255, 255, 255) 4px solid;
+    border-right: rgb(255, 255, 255) 4px solid;
 }
 
 .uncertain_number{
@@ -257,7 +257,12 @@ table{
 }
 
 .uncertain_song .true{
-    background: linear-gradient(to top, rgba(0, 251, 255, 0.2), rgba(0, 251, 255, 0.08));
+    background: linear-gradient(to top, rgba(0, 251, 255, 0.4), rgba(0, 251, 255, 0.1));
+    filter: brightness(0.5);
+}
+
+.uncertain_song:hover .true{
+    filter: brightness(1);
 }
 
 .uncertain_song:hover .giga{
