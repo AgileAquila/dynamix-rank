@@ -199,6 +199,18 @@ tbody{
         color: rgba(255, 255, 255, 0);
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
     }
+
+    .uncertain_song::before{
+        content: '';
+        display: flex;
+        width: calc(100% - 2px);
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 251, 255, 1);
+    }
 }
 
 @media screen and (max-width: 1435px){
@@ -217,6 +229,7 @@ tbody{
         text-align: -internal-center;
         border-left: 2px solid rgba(255, 255, 255, 0.5);
         border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
         word-break: break-word;
     }
     
@@ -234,18 +247,6 @@ tbody{
 
 .uncertain_song{
     position: relative;
-}
-
-.uncertain_song::before{
-    content: '';
-    display: flex;
-    width: calc(100% - 2px);
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    text-align: left;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 251, 255, 1);
 }
 
 .true{
