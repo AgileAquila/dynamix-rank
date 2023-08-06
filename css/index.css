@@ -168,7 +168,9 @@ tbody{
 }
 
 .uncertain_rank_container{
-    padding: 60px 0;
+    margin: 60px 0;
+    border-left: white 2px solid;
+    border-right: white 2px solid;
 }
 
 .uncertain_number{
@@ -183,7 +185,7 @@ table{
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1435px){
+@media screen and (min-width: 1800px){
     th{
         border-spacing: 0px;
         display: table-cell;
@@ -218,19 +220,19 @@ table{
     }
 }
 
-@media screen and (max-width: 1435px){
+@media screen and (max-width: 1800px){
     .uncertain_rank_container{
         overflow-x: auto;
     }
 
     table{
-        width: 1315px;
+        width: 1680px;
     }
 
     th{
         border-spacing: 0px;
         display: table-cell;
-        width: calc(1435px / 11);
+        width: calc(1800px / 11);
         text-align: -internal-center;
         border-left: 2px solid rgba(255, 255, 255, 0.5);
         border-right: 2px solid rgba(255, 255, 255, 0.5);
@@ -239,8 +241,8 @@ table{
     }
     
     .uncertain_song th div{
-        width: calc((1435px - 100px) / 11 - 4px);
-        height: calc((1435px - 100px) / 11 - 4px);
+        width: calc((1800px - 100px) / 11 - 4px);
+        height: calc((1800px - 100px) / 11 - 4px);
         display: table-cell;
         vertical-align: middle;
         font-family: orbitron_light;
@@ -256,10 +258,6 @@ table{
 
 .uncertain_song .true{
     background: linear-gradient(to top, rgba(0, 251, 255, 0.2), rgba(0, 251, 255, 0.08));
-}
-
-.uncertain_song:hover .true{
-    background: linear-gradient(to top, rgba(0, 251, 255, 0.34), rgba(0, 251, 255, 0.15));
 }
 
 .uncertain_song:hover .giga{
