@@ -207,11 +207,12 @@ table{
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
     }
 
-    .uncertain_song::before{
+    .uncertain_song::after{
         content: '';
         display: flex;
         width: calc(100% - 2px);
         position: absolute;
+        left: 0;
         bottom: 0;
         height: 2px;
         text-align: left;
