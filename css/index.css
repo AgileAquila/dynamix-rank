@@ -194,10 +194,9 @@ th{
 
 .uncertain_song::after{
     content: '';
-    display: block;
+    display: inline-block;
     width: calc(100% - 2px);
     position: absolute;
-    display: block;
     left: 0;
     bottom: 0;
     height: 2px;
@@ -599,7 +598,7 @@ th{
         vertical-align: bottom;
     }
     
-    .center_contents_c {
+    .center_contents_c{
         position: absolute;
         bottom: 0;
         padding: 15px 20px;
