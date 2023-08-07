@@ -52,19 +52,18 @@ body{
     text-shadow: 0 0 10px rgba(0, 251, 255, 0.7);
 }
 
-.song_bg::after{
+.rank_container::after{
     content: '';
     position: relative;
-    display: inline-block;
+    display: block;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: 40px;
-    width: 100%;
+    width: calc(100% - 175px);
     height: 2px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 251, 255, 1);
-    text-align: right;
 }
 
 .song_bg{
@@ -169,8 +168,6 @@ tbody{
 
 .uncertain_rank_container{
     margin: 60px 0;
-    border-left: rgb(255, 255, 255) 4px solid;
-    border-right: rgb(255, 255, 255) 4px solid;
 }
 
 .uncertain_number{
@@ -910,125 +907,6 @@ table{
         font-size: 17px;
         width: calc((100vw - 240px - 20px) / 2);
     }
-}
-
-.object_footer{
-    padding: 20px 0;
-    background-color: #19252f;
-    .contact{
-        margin-top: 30px;
-        text-align: center;
-        font-family: dynamix;
-        font-weight: bolder;
-        font-size: 48px;
-        color: wheat;
-    }
-}
-
-.contact:after{
-    display: block;
-    margin: 0 120px;
-    content: '';
-    width: auto;
-    height: 3px;
-    background-color: rgb(129, 165, 195);
-    margin-top: 35px;
-}
-
-.object_footer ul{
-    margin-top: 10px;
-    margin-left: 120px;
-}
-
-.text{
-    font-family: caecilia;
-    font-weight: bold;
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 5px;
-    padding-left: 5px;
-}
-
-.object_footer ul li{
-    margin-top: 25px;
-}
-
-.object_footer ul .top{
-    display: inline-block;
-    width: calc((100vw - 240px) / 2);
-    .input{
-        width: calc((100vw - 240px) / 2 - 45px);
-        background: white;
-        vertical-align: top;
-        border: 2px solid rgb(45, 45, 45);
-        box-sizing: border-box;
-        border-radius: 26px;
-        font-family: caecilia;
-        font-size: 22px;
-        font-weight: bolder;
-        color: rgb(45, 45, 45);
-        text-indent: 16px;
-        padding: 5px 0;
-    }
-}
-
-.object_footer ul .bottom{
-    display: inline-block;
-    width: 100%;
-    .input{
-        width: calc(100% - 117px);
-        background: white;
-        vertical-align: top;
-        border: 2px solid rgb(45, 45, 45);
-        box-sizing: border-box;
-        border-radius: 26px;
-        font-family: caecilia;
-        font-size: 22px;
-        font-weight: bolder;
-        color: rgb(45, 45, 45);
-        text-indent: 16px;
-        padding: 5px 0;
-    }
-    #message{
-        resize: none;
-        height: 252px;
-    }
-}
-
-#top_2{
-    margin-left: 22.5px;
-}
-
-#necessary:after{
-    content: '*';
-    color: rgb(255, 0, 98);
-}
-
-.send{
-    margin-top: 50px;
-    width: 280px;
-    height: 60px;
-    font-size: 28px;
-    font-family: dynamix;
-    border-radius: 100px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(78, 110, 136, 0.7);
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    margin-left: calc(50% - 140px);
-    margin-bottom: 20px;
-    transition: all 0.2s ease-in-out;
-}
-
-.send:hover{
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
-    text-shadow: 0 0 6px rgba(0, 251, 255, 0.8);
-    background-color: rgba(78, 110, 136, 1);
-    box-shadow: 0 0 15px rgba(0, 251, 255, 0.8);
-    cursor: pointer;
 }
 
 .object_news{

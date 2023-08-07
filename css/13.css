@@ -1,234 +1,333 @@
 /*13.0*/
 
 #firefly{
-    background: url(../images/song_bg/Firefly.png);
+    background: url(../images/song_bg/Firefly.webp);
     background-size: contain;
 }
 
 #life_style{
-    background: url(../images/song_bg/LifeStyle.png);
+    background: url(../images/song_bg/LifeStyle.webp);
     background-size: contain;
 }
 
 #theme_of_rabi_rabi{
-    background: url(../images/song_bg/ThemeofRabiRibi.png);
+    background: url(../images/song_bg/ThemeofRabiRibi.webp);
     background-size: contain;
 }
 
 #hope{
-    background: url(../images/song_bg/Hope.png);
+    background: url(../images/song_bg/Hope.webp);
     background-size: contain;
 }
 
 #sultan_madness{
-    background: url(../images/song_bg/SultanMadness.png);
+    background: url(../images/song_bg/SultanMadness.webp);
     background-size: contain;
 }
 
 #class_memories{
-    background: url(../images/song_bg/ClassMemories.png);
+    background: url(../images/song_bg/ClassMemories.webp);
     background-size: contain;
 }
 
 #nightmare_girl{
-    background: url(../images/song_bg/NightmareGirl.png);
+    background: url(../images/song_bg/NightmareGirl.webp);
     background-size: contain;
 }
 
 /*13.1*/
 
 #fading_sky{
-    background: url(../images/song_bg/FadingSky.png);
+    background: url(../images/song_bg/FadingSky.webp);
     background-size: contain;
 }
 
 #happiness_bread{
-    background: url(../images/song_bg/HappinessBread.png);
+    background: url(../images/song_bg/HappinessBread.webp);
     background-size: contain;
 }
 
 #whirlwind{
-    background: url(../images/song_bg/WHIRLWIND.png);
+    background: url(../images/song_bg/WHIRLWIND.webp);
     background-size: contain;
 }
 
 #thatawesome{
-    background: url(../images/song_bg/ThatAwesome.png);
+    background: url(../images/song_bg/ThatAwesome.webp);
     background-size: contain;
 }
 
 #ice_chandelier{
-    background: url(../images/song_bg/IceChandelier.png);
+    background: url(../images/song_bg/IceChandelier.webp);
     background-size: contain;
 }
 
 #eschatology{
-    background: url(../images/song_bg/Eschatology.png);
+    background: url(../images/song_bg/Eschatology.webp);
     background-size: contain;
 }
 
 #massacre{
-    background: url(../images/song_bg/MassacrE3rc4224M.png);
+    background: url(../images/song_bg/MassacrE3rc4224M.webp);
     background-size: contain;
 }
 
 #system_interior{
-    background: url(../images/song_bg/SystemInterior.png);
+    background: url(../images/song_bg/SystemInterior.webp);
     background-size: contain;
 }
 
 #kokytos{
-    background: url(../images/song_bg/Kokytos.png);
+    background: url(../images/song_bg/Kokytos.webp);
     background-size: contain;
 }
 
 /*13.2*/
 
 #impromptu{
-    background: url(../images/song_bg/Impromptu.png);
+    background: url(../images/song_bg/Impromptu.webp);
     background-size: contain;
 }
 
 #aegis{
-    background: url(../images/song_bg/Aegis.png);
+    background: url(../images/song_bg/Aegis.webp);
     background-size: contain;
 }
 
 #ionosphere{
-    background: url(../images/song_bg/Ionosphere.png);
+    background: url(../images/song_bg/Ionosphere.webp);
     background-size: contain;
 }
 
 #chromosphere{
-    background: url(../images/song_bg/Chromosphere.png);
+    background: url(../images/song_bg/Chromosphere.webp);
     background-size: contain;
 }
 
 #cloudprince{
-    background: url(../images/song_bg/Cloudprince.png);
+    background: url(../images/song_bg/Cloudprince.webp);
     background-size: contain;
 }
 
 #red_liquid{
-    background: url(../images/song_bg/RedLiquid.png);
+    background: url(../images/song_bg/RedLiquid.webp);
     background-size: contain;
 }
 
 #tumi{
-    background: url(../images/song_bg/tumi.png);
+    background: url(../images/song_bg/tumi.webp);
     background-size: contain;
 }
 
 #love_like_were_dying{
-    background: url(../images/song_bg/Lovelikeweredying.png);
+    background: url(../images/song_bg/Lovelikeweredying.webp);
     background-size: contain;
 }
 
 #occhoco_rest_less{
-    background: url(../images/song_bg/OCCHOCO-REST-LESS.png);
+    background: url(../images/song_bg/OCCHOCO-REST-LESS.webp);
     background-size: contain;
 }
 
 /*13.3*/
 
 #gleam_stone{
-    background: url(../images/song_bg/WaveTest08.png);
+    background: url(../images/song_bg/WaveTest08.webp);
     background-size: contain;
 }
 
 #party_vinyl{
-    background: url(../images/song_bg/PartyVinyl.png);
+    background: url(../images/song_bg/PartyVinyl.webp);
     background-size: contain;
 }
 
 #axis{
-    background: url(../images/song_bg/Axis.png);
+    background: url(../images/song_bg/Axis.webp);
     background-size: contain;
 }
 
 #space_runners{
-    background: url(../images/song_bg/SpaceRunners.png);
+    background: url(../images/song_bg/SpaceRunners.webp);
     background-size: contain;
 }
 
 #rocket_lanterns{
-    background: url(../images/song_bg/RocketLantern.png);
+    background: url(../images/song_bg/RocketLantern.webp);
     background-size: contain;
 }
 
 #enhanced_lights{
-    background: url(../images/song_bg/EnhancedLights.png);
+    background: url(../images/song_bg/EnhancedLights.webp);
     background-size: contain;
 }
 
 #hakushokunoyumede{
-    background: url(../images/song_bg/HakushokuNoYumeDe.png);
+    background: url(../images/song_bg/HakushokuNoYumeDe.webp);
     background-size: contain;
 }
 
 #seedy_try{
-    background: url(../images/song_bg/SeedyTry.png);
+    background: url(../images/song_bg/SeedyTry.webp);
     background-size: contain;
 }
 
 #in_a_vat{
-    background: url(../images/song_bg/Inavat.png);
+    background: url(../images/song_bg/Inavat.webp);
     background-size: contain;
 }
 
 /*13.4*/
 
-#knight_of_tripletz_for_dnx_edit{
-    background: url(../images/song_bg/KnightOfTripletz.png);
-    background-size: contain;
-}
-
 #blood_chivalry{
-    background: url(../images/song_bg/BloodChivalry.png);
+    background: url(../images/song_bg/BloodChivalry.webp);
     background-size: contain;
 }
 
 #ace_sniper_dnx_edit{
-    background: url(../images/song_bg/AceSniper.png);
+    background: url(../images/song_bg/AceSniper.webp);
     background-size: contain;
 }
 
 #vanilla_sky{
-    background: url(../images/song_bg/VanillaSky.png);
+    background: url(../images/song_bg/VanillaSky.webp);
     background-size: contain;
 }
 
 #hyperspace_jump{
-    background: url(../images/song_bg/HyperspaceJump.png);
+    background: url(../images/song_bg/HyperspaceJump.webp);
     background-size: contain;
 }
 
 #isera_dnx_edit{
-    background: url(../images/song_bg/ISERA.png);
+    background: url(../images/song_bg/ISERA.webp);
     background-size: contain;
 }
 
 #caelus{
-    background: url(../images/song_bg/Caelus.png);
+    background: url(../images/song_bg/Caelus.webp);
     background-size: contain;
 }
 
 #sunset_toybox{
-    background: url(../images/song_bg/SunsetToybox.png);
+    background: url(../images/song_bg/SunsetToybox.webp);
     background-size: contain;
 }
 
 #infinite_enerzy_-overdoze-{
-    background: url(../images/song_bg/INFiNiTEENERZY.png);
+    background: url(../images/song_bg/INFiNiTEENERZY.webp);
     background-size: contain;
 }
 
 #re_construct{
-    background: url(../images/song_bg/ReConstruct.png);
+    background: url(../images/song_bg/ReConstruct.webp);
     background-size: contain;
 }
 
 #xd{
-    background: url(../images/song_bg/XD.png);
+    background: url(../images/song_bg/XD.webp);
+    background-size: contain;
+}
+
+/*13.5*/
+
+#qingfang{
+    background: url(../images/song_bg/qingfang.webp);
+    background-size: contain;
+}
+
+#tianshi{
+    background: url(../images/song_bg/tianshi.webp);
+    background-size: contain;
+}
+
+#sky_adventure{
+    background: url(../images/song_bg/SkyAdventure.webp);
+    background-size: contain;
+}
+
+#fl0at_on_air{
+    background: url(../images/song_bg/Fl0atOnAir.webp);
+    background-size: contain;
+}
+
+#libra{
+    background: url(../images/song_bg/Libra.webp);
+    background-size: contain;
+}
+
+#elyxivn_elyxium{
+    background: url(../images/song_bg/ELYXiVNELYXiUM.webp);
+    background-size: contain;
+}
+
+#wangxiang{
+    background: url(../images/song_bg/wangxiang.webp);
+    background-size: contain;
+}
+
+#knignt_of_tripletz{
+    background: url(../images/song_bg/KnightOfTripletz.webp);
+    background-size: contain;
+}
+
+#gallium_arsenide{
+    background: url(../images/song_bg/Gallium_arsenide.webp);
+    background-size: contain;
+}
+
+#mouse_runs_for_cheese_short_edit{
+    background: url(../images/song_bg/MouseRunsForCheese.webp);
+    background-size: contain;
+}
+
+#anokumene{
+    background: url(../images/song_bg/Anokumene.webp);
+    background-size: contain;
+}
+
+/*13.6*/
+
+#sin_of_souls{
+    background: url(../images/song_bg/SinOfSouls.webp);
+    background-size: contain;
+}
+
+#hopeful_warrior{
+    background: url(../images/song_bg/HopefulWarrior.webp);
+    background-size: contain;
+}
+
+#daydream{
+    background: url(../images/song_bg/DaydreamDynamix.webp);
+    background-size: contain;
+}
+
+#petal{
+    background: url(../images/song_bg/PetalDynamix.webp);
+    background-size: contain;
+}
+
+#polaris_australis{
+    background: url(../images/song_bg/PolarisAustralis.webp);
+    background-size: contain;
+}
+
+#defended{
+    background: url(../images/song_bg/Defended.webp);
+    background-size: contain;
+}
+
+#flarebirds_of_scarlet_prism{
+    background: url(../images/song_bg/FlarebirdsOfScarletPrism.webp);
+    background-size: contain;
+}
+
+#ebit_goa4{
+    background: url(../images/song_bg/8BitGoa4.webp);
+    background-size: contain;
+}
+
+#hyper_nova{
+    background: url(../images/song_bg/HYPER-NOVA.webp);
     background-size: contain;
 }
