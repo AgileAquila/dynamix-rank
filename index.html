@@ -453,9 +453,42 @@
                 </div>
             </div>
         </div>
-        <div class="object_footer">
-            There's Nothing Here...
+    </div>
+    <div class="object_footer">
+        <div class="contact">
+            CONTACT US
         </div>
+        <form action="email.php" role="form" method="post" enctype="multipart/form-data">
+            <ul>
+                <li class="top">
+                    <div class="text" id="necessary">
+                        E-mail Address
+                    </div>
+                    <input class="input" type="text" name="address" placeholder="Enter your E-mail address">
+                </li>
+                <li class="top" id="top_2">
+                    <div class="text">
+                        Player Name
+                    </div>
+                    <input class="input" type="text" name="player_name" placeholder="Enter your player name (unnecessary)">
+                </li>
+                <li class="bottom">
+                    <div class="text" id="necessary">
+                        Title
+                    </div>
+                    <input class="input" type="text" name="title" placeholder="Enter the E-mail title">
+                </li>
+                <li class="bottom">
+                    <div class="text" id="necessary">
+                        Message
+                    </div>
+                    <textarea class="input" id="message" name="message" placeholder="Leave a message" style="padding: 8px 20px; text-indent: 0;"></textarea>
+                </li>
+            </ul>
+            <button class="send">
+                <span>SEND</span>
+            </button>
+        </form>
     </div>
     <div class="top">
         <button id="top_button" style="cursor: pointer;">
