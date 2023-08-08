@@ -29,9 +29,9 @@ const search = () =>{
             let textvalue = match2.textContent || match2.innerHTML
 
             if(textvalue.toUpperCase().indexOf(searchbox) > -1){
-                rank[i].style.display = "";
+                rank[i].parentNode.style.display = "";
             }else{
-                rank[i].style.display = "none";
+                rank[i].parentNode.style.display = "none";
             }
         }
     }
