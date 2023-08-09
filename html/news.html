@@ -470,4 +470,28 @@
     scrollTo(0,0);
     }
 </script>
+<script type="module">
+    import lazyLoad from '../js/lazyload.js';
+
+    window.onload  = function(){
+        lazyLoad('img');
+
+        let stop = true;
+        
+        function throttle(){
+            if(stop){
+                setTimeout(() => {
+                    stop = false;
+                    console.log('lazy');
+                }, 100);
+                return;
+            }
+            stop = true;
+            lazyLoad('img');
+            return;
+        }
+
+        window.addEventListener('scroll',throttle);
+    }
+</script>
 </html>
