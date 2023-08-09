@@ -6,11 +6,9 @@ export default function lazyLoad(imgSelector){
 
     imgsNodes.forEach((v) => {
         if (
-            v.offsetTop < scrollTop + clientHeight
+            v.offsetTop < clientHeight + scrollTop &&  v.offsetTop + v.offsetHeight > scrollTop
         ){
-            setTimeout(() => {
-                v.src = v.getAttribute("data-srcString");
-            }, 800);
+            v.src = v.getAttribute("data-src");
         }
     });
 }
