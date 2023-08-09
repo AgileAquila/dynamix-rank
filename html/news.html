@@ -57,7 +57,7 @@
         <div class="toolbar_container">
             <div class="toolbar_container_left">
                 <div class="dynamix_logo">
-                    <img src="../images/dynamix_logo.webp" width="40px" height="40px">
+                    <img data-src="../images/dynamix_logo.webp" width="40px" height="40px">
                 </div>
                 <ul class="toolbar_menu">
                     <li class title="rank_home">
@@ -464,34 +464,11 @@
         </button>
     </div>
 </body>
+<script src="../js/lazyload.js"></script>
 <script src="../js/search.js"></script>
 <script>
     top_button.onclick = function(){
     scrollTo(0,0);
-    }
-</script>
-<script type="module">
-    import lazyLoad from '../js/lazyload.js';
-
-    window.onload  = function(){
-        lazyLoad('img');
-
-        let stop = true;
-        
-        function throttle(){
-            if(stop){
-                setTimeout(() => {
-                    stop = false;
-                    console.log('lazy');
-                }, 100);
-                return;
-            }
-            stop = true;
-            lazyLoad('img');
-            return;
-        }
-
-        window.addEventListener('scroll',throttle);
     }
 </script>
 </html>

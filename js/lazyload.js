@@ -1,14 +1,18 @@
-export default function lazyLoad(imgSelector){
+const images = document.querySelectorAll('img');
 
-    const clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, scrollTop = document.documentElement.scrollTop;
-  
-    let imgsNodes = document.querySelectorAll(imgSelector);
-
-    imgsNodes.forEach((v) => {
-        if (
-            v.offsetTop < clientHeight + scrollTop &&  v.offsetTop + v.offsetHeight > scrollTop
-        ){
-            v.src = v.getAttribute("data-src");
-        }
+const callback = entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            const image = entry.target;
+            const data_src = image.getAttribute('data-src');
+            image.setAttribute('src',data_src);
+            observer.unobserve(image);
+        };
     });
-}
+};
+
+const observer = new IntersectionObserver(callback);
+
+images.forEach(image => {
+    observer.observe(image);
+});
