@@ -8,8 +8,8 @@
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
     position: fixed;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     width: 100%;
     box-sizing: border-box;
     padding: 0 24px;
