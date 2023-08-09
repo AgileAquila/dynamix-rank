@@ -6,7 +6,7 @@ export default function lazyLoad(imgSelector){
 
     imgsNodes.forEach((v) => {
         if (
-            v.offsetTop > clientHeight + scrollTop && v.offsetTop + v.offsetHeight < scrollTop
+            v.offsetTop < scrollTop + clientHeight
         ){
             setTimeout(() => {
                 v.src = v.getAttribute("data-srcString");
