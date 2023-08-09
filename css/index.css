@@ -346,6 +346,10 @@ table{
     border-radius: 100px;
 }
 
+.objects{
+    height: auto;
+}
+
 .object{
     display: inline-block;
     position: relative;
@@ -964,4 +968,15 @@ table{
     font-family: dynamix;
     border-left: rgba(0, 251, 255, 1) 8px solid;
     margin-bottom: 8px;
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    border-top: rgba(255, 255, 255, 0.25) 1px solid;
+    padding: 20px 0;
+    color: white;
+    font-family: caecilia;
+    font-size: 18px;
+    font-weight: bolder;
 }
