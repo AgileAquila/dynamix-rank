@@ -161,6 +161,11 @@
     background-size: contain;
 }
 
+#viatores{
+    background: url(../images/song_bg/Viatores.webp);
+    background-size: contain;
+}
+
 /*14.4*/
 
 #alter_ago{
