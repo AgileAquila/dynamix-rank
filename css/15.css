@@ -391,3 +391,9 @@
     background-size: calc(100% + 10px);
     background-position: center;
 }
+
+.uncertain_song #mega_pop{
+    background: url(../images/song_bg/megapop.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
