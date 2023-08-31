@@ -287,13 +287,13 @@
 
 /*13.6*/
 
-#sin_of_souls{
-    background: url(../images/song_bg/SinOfSouls.webp);
+#energy{
+    background: url(../images/song_bg/WaveTest08.webp);
     background-size: contain;
 }
 
-#hopeful_warrior{
-    background: url(../images/song_bg/HopefulWarrior.webp);
+#goldelius{
+    background: url(../images/song_bg/Goldelius.webp);
     background-size: contain;
 }
 
@@ -330,4 +330,190 @@
 #hyper_nova{
     background: url(../images/song_bg/HYPER-NOVA.webp);
     background-size: contain;
+}
+
+/*13.7*/
+
+#le_ciel_heureux{
+    background: url(../images/song_bg/LeCeilHeureux.webp);
+    background-size: contain;
+}
+
+#heart_eyes{
+    background: url(../images/song_bg/HeartEyes.webp);
+    background-size: contain;
+}
+
+#dead_master{
+    background: url(../images/song_bg/DeadMaster.webp);
+    background-size: contain;
+}
+
+#ragnarok{
+    background: url(../images/song_bg/Ragnarok.webp);
+    background-size: contain;
+}
+
+#freewheeling{
+    background: url(../images/song_bg/Freewheeling.webp);
+    background-size: contain;
+}
+
+#final_dash{
+    background: url(../images/song_bg/FinalDash.webp);
+    background-size: contain;
+}
+
+#hopeful_warrior{
+    background: url(../images/song_bg/HopefulWarrior.webp);
+    background-size: contain;
+}
+
+#sin_of_souls{
+    background: url(../images/song_bg/SinOfSouls.webp);
+    background-size: contain;
+}
+
+#grey_horse_underworld{
+    background: url(../images/song_bg/GreyHorseUnderworld.webp);
+    background-size: contain;
+}
+
+/*13.8*/
+
+#ennor{
+    background: url(../images/song_bg/Ennor.webp);
+    background-size: contain;
+}
+
+#xetta{
+    background: url(../images/song_bg/Xetta.webp);
+    background-size: contain;
+}
+
+#grenade{
+    background: url(../images/song_bg/Grenade.webp);
+    background-size: contain;
+}
+
+#sandwich{
+    background: url(../images/song_bg/Sandwich.webp);
+    background-size: contain;
+}
+
+#crank_up{
+    background: url(../images/song_bg/CrankUp.webp);
+    background-size: contain;
+}
+
+#blueberry_cheesecake{
+    background: url(../images/song_bg/Blueberrycheesecake.webp);
+    background-size: contain;
+}
+
+#ashes{
+    background: url(../images/song_bg/Ashes.webp);
+    background-size: contain;
+}
+
+/*13.9*/
+
+#cryonix{
+    background: url(../images/song_bg/Cryonix.webp);
+    background-size: contain;
+}
+
+#creigis{
+    background: url(../images/song_bg/Creigis.webp);
+    background-size: contain;
+}
+
+#sushi_tornado{
+    background: url(../images/song_bg/SushiTornado.webp);
+    background-size: contain;
+}
+
+#you_were_with_a_boy{
+    background: url(../images/song_bg/YouWereWithABoy.webp);
+    background-size: contain;
+}
+
+#mid_night_metropolitan_highway{
+    background: url(../images/song_bg/MidNightMetropolitanHighway.webp);
+    background-size: contain;
+}
+
+#totally_bounded{
+    background: url(../images/song_bg/TotallyBounded.webp);
+    background-size: contain;
+}
+
+#mitochondria{
+    background: url(../images/song_bg/Mitochondria.webp);
+    background-size: contain;
+}
+
+/*13.9+*/
+
+#decoherence{
+    background: url(../images/song_bg/Decoherence.webp);
+    background-size: contain;
+}
+
+#evoltex_poppi_n_mix{
+    background: url(../images/song_bg/EvoltexPoppinMix.webp);
+    background-size: contain;
+}
+
+#shinobi_original_short_mix{
+    background: url(../images/song_bg/Shinobi.webp);
+    background-size: contain;
+}
+
+#pixevlazz{
+    background: url(../images/song_bg/PIXEVLAZZ.webp);
+    background-size: contain;
+}
+
+#vengeance{
+    background: url(../images/song_bg/Vengeance.webp);
+    background-size: contain;
+}
+
+/*uncertain*/
+
+.uncertain_song #black_horse_famine{
+    background: url(../images/song_bg/BlackHorseFamine.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #metheus{
+    background: url(../images/song_bg/Metheus.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #raving_in_halloween{
+    background: url(../images/song_bg/RavinginHalloween.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #soul_army{
+    background: url(../images/song_bg/Soul_Army.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #stardust{
+    background: url(../images/song_bg/Stardust.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #wonderful_days{
+    background: url(../images/song_bg/Wonderfuldays.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
 }
