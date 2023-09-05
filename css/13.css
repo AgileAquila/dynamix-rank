@@ -1,5 +1,3 @@
-/*13.0*/
-
 #firefly{
     background: url(../images/song_bg/Firefly.webp);
     background-size: contain;
@@ -34,8 +32,6 @@
     background: url(../images/song_bg/NightmareGirl.webp);
     background-size: contain;
 }
-
-/*13.1*/
 
 #fading_sky{
     background: url(../images/song_bg/FadingSky.webp);
@@ -82,8 +78,6 @@
     background-size: contain;
 }
 
-/*13.2*/
-
 #impromptu{
     background: url(../images/song_bg/Impromptu.webp);
     background-size: contain;
@@ -129,8 +123,6 @@
     background-size: contain;
 }
 
-/*13.3*/
-
 #gleam_stone{
     background: url(../images/song_bg/WaveTest08.webp);
     background-size: contain;
@@ -175,8 +167,6 @@
     background: url(../images/song_bg/Inavat.webp);
     background-size: contain;
 }
-
-/*13.4*/
 
 #blood_chivalry{
     background: url(../images/song_bg/BloodChivalry.webp);
@@ -227,8 +217,6 @@
     background: url(../images/song_bg/XD.webp);
     background-size: contain;
 }
-
-/*13.5*/
 
 #qingfang{
     background: url(../images/song_bg/qingfang.webp);
@@ -285,8 +273,6 @@
     background-size: contain;
 }
 
-/*13.6*/
-
 #energy{
     background: url(../images/song_bg/WaveTest08.webp);
     background-size: contain;
@@ -331,8 +317,6 @@
     background: url(../images/song_bg/HYPER-NOVA.webp);
     background-size: contain;
 }
-
-/*13.7*/
 
 #le_ciel_heureux{
     background: url(../images/song_bg/LeCeilHeureux.webp);
@@ -379,8 +363,6 @@
     background-size: contain;
 }
 
-/*13.8*/
-
 #ennor{
     background: url(../images/song_bg/Ennor.webp);
     background-size: contain;
@@ -415,8 +397,6 @@
     background: url(../images/song_bg/Ashes.webp);
     background-size: contain;
 }
-
-/*13.9*/
 
 #cryonix{
     background: url(../images/song_bg/Cryonix.webp);
@@ -453,8 +433,6 @@
     background-size: contain;
 }
 
-/*13.9+*/
-
 #decoherence{
     background: url(../images/song_bg/Decoherence.webp);
     background-size: contain;
@@ -477,6 +455,11 @@
 
 #vengeance{
     background: url(../images/song_bg/Vengeance.webp);
+    background-size: contain;
+}
+
+#sutta_monday{
+    background: url(../images/song_bg/SUTTAMONDAY.webp);
     background-size: contain;
 }
 

@@ -1,5 +1,3 @@
-/*15.0*/
-
 #the_last_arcady{
     background: url(../images/song_bg/TheLastArcady.webp);
     background-size: contain;
@@ -14,8 +12,6 @@
     background: url(../images/song_bg/BackOut.webp);
     background-size: contain;
 }
-
-/*15.1*/
 
 #pandemik{
     background: url(../images/song_bg/Pandemik.webp);
@@ -46,8 +42,6 @@
     background: url(../images/song_bg/Kokytos.webp);
     background-size: contain;
 }
-
-/*15.2*/
 
 #war_in_the_mirrorworld{
     background: url(../images/song_bg/WarintheMirrorworld.webp);
@@ -83,8 +77,6 @@
     background: url(../images/song_bg/RockyBuinne.webp);
     background-size: contain;
 }
-
-/*15.3*/
 
 #the_endless_for_traveler{
     background: url(../images/song_bg/TheEndlessforTraveller.webp);
@@ -126,8 +118,6 @@
     background-size: contain;
 }
 
-/*15.4*/
-
 #fl0at_on_air{
     background: url(../images/song_bg/Fl0atOnAir.webp);
     background-size: contain;
@@ -167,8 +157,6 @@
     background: url(../images/song_bg/HeadroomWithPleasantRhythm.webp);
     background-size: contain;
 }
-
-/*15.5*/
 
 #spooky_macaron{
     background: url(../images/song_bg/SpookyMacaron.webp);
@@ -210,8 +198,6 @@
     background-size: contain;
 }
 
-/*15.6*/
-
 #xetta{
     background: url(../images/song_bg/Xetta.webp);
     background-size: contain;
@@ -242,8 +228,6 @@
     background-size: contain;
 }
 
-/*15.7*/
-
 #tech-nique{
     background: url(../images/song_bg/TechNique.webp);
     background-size: contain;
@@ -268,8 +252,6 @@
     background: url(../images/song_bg/CrossSoul.webp);
     background-size: contain;
 }
-
-/*15.8*/
 
 #hong{
     background: url(../images/song_bg/hong.webp);
@@ -296,8 +278,6 @@
     background-size: contain;
 }
 
-/*15.9*/
-
 #antithesis{
     background: url(../images/song_bg/Antithesis.webp);
     background-size: contain;
@@ -322,8 +302,6 @@
     background: url(../images/song_bg/MassacrE3rc4224M.webp);
     background-size: contain;
 }
-
-/*16.0*/
 
 #massacre{
     background: url(../images/song_bg/MassacrE3rc4224M.webp);
@@ -357,6 +335,11 @@
 
 #naiyazi{
     background: url(../images/song_bg/28L-28L2B5E29.webp);
+    background-size: contain;
+}
+
+#rondo_of_the_3nd{
+    background: url(../images/song_bg/RondoOfThe3ND.webp);
     background-size: contain;
 }
 
