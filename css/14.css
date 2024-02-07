@@ -25,15 +25,15 @@
     background-size: contain;
 }
 
+#chimeidaitian{
+    background: url(../images/song_bg/魑魅戴天.webp);
+    background-size: contain;
+}
+
 /*14.1*/
 
 #innocension{
     background: url(../images/song_bg/INNOceNsION.webp);
-    background-size: contain;
-}
-
-#mind_blast_dynamix_edit{
-    background: url(../images/song_bg/MindBlast.webp);
     background-size: contain;
 }
 
@@ -77,15 +77,30 @@
     background-size: contain;
 }
 
-/*14.2*/
-
-#arcana_idola{
-    background: url(../images/song_bg/ArcanaIdola.webp);
+#welcome_ssspooky{
+    background: url(../images/song_bg/WelcomeSSSpooky.webp);
     background-size: contain;
 }
 
-#lodenifo{
-    background: url(../images/song_bg/Lodeinfo.webp);
+#bit_tech_computer{
+    background: url(../images/song_bg/BITTECHCOMPUTER.webp);
+    background-size: contain;
+}
+
+/*14.2*/
+
+#mind_blast_dynamix_edit{
+    background: url(../images/song_bg/MindBlast.webp);
+    background-size: contain;
+}
+
+#Amphisbaena{
+    background: url(../images/song_bg/Amphisbaena.webp);
+    background-size: contain;
+}
+
+#wuthering_weapon{
+    background: url(../images/song_bg/WutheringWeapon.webp);
     background-size: contain;
 }
 
@@ -126,6 +141,16 @@
 
 /*14.3*/
 
+#arcana_idola{
+    background: url(../images/song_bg/ArcanaIdola.webp);
+    background-size: contain;
+}
+
+#lodenifo{
+    background: url(../images/song_bg/Lodeinfo.webp);
+    background-size: contain;
+}
+
 #helios{
     background: url(../images/song_bg/Helios.webp);
     background-size: contain;
@@ -133,16 +158,6 @@
 
 #decomposition{
     background: url(../images/song_bg/Decomposition.webp);
-    background-size: contain;
-}
-
-#tianzhao{
-    background: url(../images/song_bg/tianzhao.webp);
-    background-size: contain;
-}
-
-#faithtival{
-    background: url(../images/song_bg/Faithtival.webp);
     background-size: contain;
 }
 
@@ -171,7 +186,17 @@
     background-size: contain;
 }
 
+#legacy{
+    background: url(../images/song_bg/Legacy.webp);
+    background-size: contain;
+}
+
 /*14.4*/
+
+#faithtival{
+    background: url(../images/song_bg/Faithtival.webp);
+    background-size: contain;
+}
 
 #alter_ago{
     background: url(../images/song_bg/AlterEgo.webp);
@@ -213,13 +238,13 @@
     background-size: contain;
 }
 
-#legacy{
-    background: url(../images/song_bg/Legacy.webp);
+#restricted_access{
+    background: url(../images/song_bg/RestrictedAccess.webp);
     background-size: contain;
 }
 
-#unsung_hero{
-    background: url(../images/song_bg/UnsungHero.webp);
+#turning_point{
+    background: url(../images/song_bg/TurningPOINT.webp);
     background-size: contain;
 }
 
@@ -285,12 +310,17 @@
     background-size: contain;
 }
 
-/*14.6*/
-
-#eldredth{
-    background: url(../images/song_bg/Eldredth.webp);
+#haptime{
+    background: url(../images/song_bg/Haptime.webp);
     background-size: contain;
 }
+
+#alone{
+    background: url(../images/song_bg/Alone.webp);
+    background-size: contain;
+}
+
+/*14.6*/
 
 #super_macaron{
     background: url(../images/song_bg/SuperMacaron.webp);
@@ -337,7 +367,22 @@
     background-size: contain;
 }
 
+#marsh_winds{
+    background: url(../images/song_bg/MarshWinds.webp);
+    background-size: contain;
+}
+
+#assassin{
+    background: url(../images/song_bg/Assassin.webp);
+    background-size: contain;
+}
+
 /*14.7*/
+
+#eldredth{
+    background: url(../images/song_bg/Eldredth.webp);
+    background-size: contain;
+}
 
 #rain{
     background: url(../images/song_bg/Rain.webp);
@@ -371,6 +416,16 @@
 
 #to_soar{
     background: url(../images/song_bg/ToSoar.webp);
+    background-size: contain;
+}
+
+#Hiyaiya{
+    background: url(../images/song_bg/Hiyaiya.webp);
+    background-size: contain;
+}
+
+#linghaocheliang{
+    background: url(../images/song_bg/零號車輛.webp);
     background-size: contain;
 }
 
@@ -408,6 +463,11 @@
 
 #pupa{
     background: url(../images/song_bg/Pupa.webp);
+    background-size: contain;
+}
+
+#taunami{
+    background: url(../images/song_bg/taunami.webp);
     background-size: contain;
 }
 
@@ -489,6 +549,18 @@
 
 .uncertain_song #dead_soul{
     background: url(../images/song_bg/DeadSoul.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #tianzhao{
+    background: url(../images/song_bg/tianzhao.webp);
+    background-size: calc(100% + 10px);
+    background-position: center;
+}
+
+.uncertain_song #unsung_hero{
+    background: url(../images/song_bg/UnsungHero.webp);
     background-size: calc(100% + 10px);
     background-position: center;
 }
