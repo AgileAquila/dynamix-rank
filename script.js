@@ -122,6 +122,53 @@ document.addEventListener("wheel", function preventScroll(wheelDown){
     wheelDown.preventDefault();
 }, {passive: false});
 
+document.addEventListener("touchstart", function preventScroll(){
+    const tabBar = document.getElementById("tab-bar");
+    gsap.to(
+        tabBar, {
+            x: -36,
+            opacity: 1,
+            delay: 0.9,
+            duration: 0.4,
+            ease: "power1.out",
+        },
+    );
+    function enter(){
+        startPage.remove();
+        appearance();
+        mainEnter();
+        document.removeEventListener('wheel', preventScroll, {passive: false});
+            
+        gsap.to(
+            diffRanked, {
+                opacity: 1,
+                duration: 0.5,
+                ease: "power1.out",
+            }
+        );
+
+        gsap.to(
+            footer, {
+                opacity: 1,
+                duration: 0.5,
+                ease: "power1.out",
+            }
+        );
+
+        gsap.to(
+            searchContainer, {
+                x: -36,
+                opacity: 1,
+                delay: 0.3,
+                duration: 0.4,
+                ease: "power1.out",
+            }
+        );
+    };
+    setTimeout(tabActivated = 1, 700);
+    setTimeout(enter, 700);
+}, {passive: false});
+
 // Song Animation
 
 const rLevels = document.querySelectorAll(".r-level");
