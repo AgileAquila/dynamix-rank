@@ -76,6 +76,7 @@ ul, li{
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     z-index: 1;
     text-align: center;
 }
@@ -108,6 +109,7 @@ ul, li{
     justify-content: right;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     overflow: hidden;
     border: solid 2px;
     border-image-source: linear-gradient(-22.5deg, rgba(255, 0, 0, 0.5) 40%, rgba(0, 255, 229, 0.5) 60%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
@@ -206,6 +208,7 @@ ul, li{
 }
 .r-level:hover{
     backdrop-filter: brightness(1.2);
+    -webkit-backdrop-filter: brightness(1.2);
 }
 
 .r-num-container{
@@ -378,6 +381,7 @@ ul, li{
     padding: 0 128px;
     position: relative;
     backdrop-filter: blur(8px) brightness(0.7);
+    -webkit-backdrop-filter: blur(8px) brightness(0.7);
     z-index: 9;
 }
 
@@ -389,6 +393,7 @@ ul, li{
     border-left: solid 8px rgba(255, 255, 255, 0.7);
     border-right: solid 8px rgba(255, 255, 255, 0.7);
     backdrop-filter: brightness(1.5);
+    -webkit-backdrop-filter: brightness(1.5);
 }
 
 .diff-num{
@@ -405,6 +410,7 @@ ul, li{
     margin: 0;
     display: block;
     backdrop-filter: brightness(0.5);
+    -webkit-backdrop-filter: brightness(0.5);
 }
 
 .d-song-bg{
@@ -565,6 +571,7 @@ footer{
     background-color: rgba(255, 255, 255, 0.7);
     transition: all 0.4s ease-out;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: solid 2px black;
     padding: 0 8px;
 }
