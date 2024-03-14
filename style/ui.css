@@ -530,6 +530,7 @@ ul, li{
 }
 
 footer{
+    width: 100vw;
     display: flex;
     align-items: end;
     background-color: black;
