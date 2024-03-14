@@ -33,7 +33,7 @@ body, html{
     background-image: url(../background.png);
     background-attachment: fixed;
     background-size: cover;
-    background-position: 100% 0;
+    background-position: 100vw 0;
 }
 
 ul, li{
