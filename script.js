@@ -240,7 +240,7 @@ function mainEnter(){
 
 // Buttons
 
-const difficulty = document.getElementById("difficulty");
+let difficulty = document.getElementById("difficulty");
 
 document.addEventListener("DOMContentLoaded", function(){
     let difficultyButtons = difficulty.getElementsByTagName("button");
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "";
 
                     appearance();
-                    searchJudgement();
+                    searchFunction();
                 }else{
                     difficultyButtons[i].setAttribute("style", "border: 3px solid rgba(131, 0, 0, 0.5); background-color: rgba(131, 0, 0, 0.35); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.5); color: rgba(210, 0, 0, 0.7); text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);");
                     difficultyButtons[i].className = "inactive";
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "none";
 
                     appearance();
-                    searchJudgement();
+                    searchFunction();
                 };
             }else{
                 if(buttonStatus == "inactive"){
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     rankedContainers[rankedContainers.length - i - 1].style.display = "";
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "";
                     appearance();
-                    searchJudgement();
+                    searchFunction();
                 }else{
                     difficultyButtons[i].setAttribute("style", "border: 3px solid rgba(0, 131, 118, 0.5); background-color: rgba(0, 131, 118, 0.35); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.5); color: rgba(0, 219, 197, 0.5); text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);");
                     difficultyButtons[i].className = "inactive";
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     rankedContainers[rankedContainers.length - i - 1].style.display = "none";
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "none";
                     appearance();
-                    searchJudgement();
+                    searchFunction();
                 };
             };
             let main = document.getElementById("main");
@@ -902,40 +902,45 @@ let searchAllUnanked = document.getElementsByClassName("d-song-container");
 function searchFunction(){
     let inputValue = inputBox.value;
     let difficultyButtons = difficulty.getElementsByTagName("button");
+    let searchAllRankedContainer = document.getElementsByClassName("ranked");
 
     // Ranked Search
-
-    for(let i = 0; i < searchAllRanked.length; i++){
-        if(difficultyButtons[difficultyButtons.length - i - 1].id == "inactive"){
-            break;
+    for(let k = 0; k < searchAllRankedContainer.length; k++){
+        if(difficultyButtons[difficultyButtons.length - k - 1].className == "inactive"){
+            continue;
         };
 
-        let searchRanked = searchAllRanked[i].getElementsByTagName("li");
-            
-        for(let j = 0; j < searchRanked.length; j++){
-            if(searchRanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
-                searchRanked[j].style.display = "";
+        for(let i = 0; i < searchAllRanked.length; i++){
+
+            let searchRanked = searchAllRanked[i].getElementsByTagName("li");
+                
+            for(let j = 0; j < searchRanked.length; j++){
+                if(searchRanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
+                    searchRanked[j].style.display = "";
+                }else{
+                    searchRanked[j].style.display = "none";
+                };
+            };
+    
+            let displayCounter = 0;
+            for(let j = 0; j < searchRanked.length; j++){
+                if(searchRanked[j].style.display == "none"){
+                    displayCounter++;
+                };
+            };
+            if(displayCounter == searchRanked.length){
+                searchAllRankedLevel[i].style.display = "none";
             }else{
-                searchRanked[j].style.display = "none";
+                searchAllRankedLevel[i].style.display = "";
             };
-        };
-
-        let displayCounter = 0;
-        for(let j = 0; j < searchRanked.length; j++){
-            if(searchRanked[j].style.display == "none"){
-                displayCounter++;
-            };
-        };
-        if(displayCounter == searchRanked.length){
-            searchAllRankedLevel[i].style.display = "none";
-        }else{
-            searchAllRankedLevel[i].style.display = "";
         };
     };
 
-    let searchAllRankedContainer = document.getElementsByClassName("ranked");
-
     for(let i = 0; i < searchAllRankedContainer.length; i++){
+        if(difficultyButtons[difficultyButtons.length - i - 1].className == "inactive"){
+            continue;
+        };
+
         let displayCounter = 0;
         let searchRLevels = searchAllRankedContainer[i].getElementsByClassName("r-level");
 
@@ -953,21 +958,31 @@ function searchFunction(){
 
     // Unanked Search
 
-    for(let i = 0; i < searchAllUnanked.length; i++){
-        let searchUnanked = searchAllUnanked[i].getElementsByTagName("li");
+    let searchAllUnankedContainer = document.getElementsByClassName("diff-ranked");
 
-        for(let j = 0; j < searchUnanked.length; j++){
-            if(searchUnanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
-                searchUnanked[j].style.display = "";
-            }else{
-                searchUnanked[j].style.display = "none";
+    for(let k = 0; k < searchAllRankedContainer.length; k++){
+        if(difficultyButtons[difficultyButtons.length - k - 1].className == "inactive"){
+            continue;
+        };
+
+        for(let i = 0; i < searchAllUnanked.length; i++){
+            let searchUnanked = searchAllUnanked[i].getElementsByTagName("li");
+    
+            for(let j = 0; j < searchUnanked.length; j++){
+                if(searchUnanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
+                    searchUnanked[j].style.display = "";
+                }else{
+                    searchUnanked[j].style.display = "none";
+                };
             };
         };
     };
 
-    let searchAllUnankedContainer = document.getElementsByClassName("diff-ranked");
-
     for(let i = 0; i < searchAllUnankedContainer.length; i++){
+        if(difficultyButtons[difficultyButtons.length - i - 1].className == "inactive"){
+            continue;
+        };
+
         let displayCounter = 0;
         let searchDLevels = searchAllUnankedContainer[i].getElementsByTagName("li");
 
@@ -1033,93 +1048,93 @@ function searchFunction(){
 
 inputBox.addEventListener("input", searchFunction);
 
-function searchJudgement(){
-    let difficultyButtons = difficulty.getElementsByTagName("button");
+// function searchJudgement(){
+//     let difficultyButtons = difficulty.getElementsByTagName("button");
 
-    let searchAllRankedContainer = document.getElementsByClassName("ranked");
+//     let searchAllRankedContainer = document.getElementsByClassName("ranked");
 
-    for(let i = 0; i < searchAllRankedContainer.length; i++){
-        let displayCounter = 0;
-        let searchRLevels = searchAllRankedContainer[i].getElementsByClassName("r-level");
+//     for(let i = 0; i < searchAllRankedContainer.length; i++){
+//         let displayCounter = 0;
+//         let searchRLevels = searchAllRankedContainer[i].getElementsByClassName("r-level");
 
-        for(let j = 0; j < searchRLevels.length; j++){
-            if(searchRLevels[j].style.display == "none"){
-                displayCounter++;
-            };
-        };
-        if(difficultyButtons[difficultyButtons.length - i - 1].id == "active"){
-            if(displayCounter == searchRLevels.length){
-                searchAllRankedContainer[i].style.display = "none";
-            }else{
-                searchAllRankedContainer[i].style.display = "";
-            };
-        };
-    };
+//         for(let j = 0; j < searchRLevels.length; j++){
+//             if(searchRLevels[j].style.display == "none"){
+//                 displayCounter++;
+//             };
+//         };
+//         if(difficultyButtons[difficultyButtons.length - i - 1].className == "active"){
+//             if(displayCounter == searchRLevels.length){
+//                 searchAllRankedContainer[i].style.display = "none";
+//             }else{
+//                 searchAllRankedContainer[i].style.display = "";
+//             };
+//         };
+//     };
 
-    let searchAllUnankedContainer = document.getElementsByClassName("diff-ranked");
+//     let searchAllUnankedContainer = document.getElementsByClassName("diff-ranked");
 
-    for(let i = 0; i < searchAllUnankedContainer.length; i++){
-        let displayCounter = 0;
-        let searchDLevels = searchAllUnankedContainer[i].getElementsByTagName("li");
+//     for(let i = 0; i < searchAllUnankedContainer.length; i++){
+//         let displayCounter = 0;
+//         let searchDLevels = searchAllUnankedContainer[i].getElementsByTagName("li");
 
-        for(let j = 0; j < searchDLevels.length; j++){
-            if(searchDLevels[j].style.display == "none"){
-                displayCounter++;
-            };
-        };
-        if(difficultyButtons[difficultyButtons.length - i - 1].id == "active"){
-            if(displayCounter == searchDLevels.length){
-                searchAllUnankedContainer[i].style.display = "none";
-            }else{
-                searchAllUnankedContainer[i].style.display = "";
-            };
-        };
-    };
+//         for(let j = 0; j < searchDLevels.length; j++){
+//             if(searchDLevels[j].style.display == "none"){
+//                 displayCounter++;
+//             };
+//         };
+//         if(difficultyButtons[difficultyButtons.length - i - 1].className == "active"){
+//             if(displayCounter == searchDLevels.length){
+//                 searchAllUnankedContainer[i].style.display = "none";
+//             }else{
+//                 searchAllUnankedContainer[i].style.display = "";
+//             };
+//         };
+//     };
 
-    let main = document.getElementById("main");
-    let mainBoundary = main.getBoundingClientRect();
+//     let main = document.getElementById("main");
+//     let mainBoundary = main.getBoundingClientRect();
 
-    if(mainBoundary.top >= 0 && mainBoundary.bottom <= window.innerHeight){
-        footer.style.position = "fixed";
-        footer.style.bottom = "0";
-    }else{
-        footer.style.position = "";
-        footer.style.bottom = "";
-    };
+//     if(mainBoundary.top >= 0 && mainBoundary.bottom <= window.innerHeight){
+//         footer.style.position = "fixed";
+//         footer.style.bottom = "0";
+//     }else{
+//         footer.style.position = "";
+//         footer.style.bottom = "";
+//     };
     
-    diffNumContainer15.style.position = "relative";  
-    gsap.to(
-        diffNumContainer15, {
-            y: 0,
-            duration: 0,
-        },
-    );
-    diffNumContainer14.style.position = "relative";  
-    gsap.to(
-        diffNumContainer14, {
-            y: 0,
-            duration: 0,
-        },
-    );
-    diffNumContainer13.style.position = "relative";  
-    gsap.to(
-        diffNumContainer13, {
-            y: 0,
-            duration: 0,
-        },
-    );
-    diffNumContainer12.style.position = "relative";  
-    gsap.to(
-        diffNumContainer12, {
-            y: 0,
-            duration: 0,
-        },
-    );
-    diffNumContainer11.style.position = "relative";  
-    gsap.to(
-        diffNumContainer11, {
-            y: 0,
-            duration: 0,
-        },
-    );
-};
+//     diffNumContainer15.style.position = "relative";  
+//     gsap.to(
+//         diffNumContainer15, {
+//             y: 0,
+//             duration: 0,
+//         },
+//     );
+//     diffNumContainer14.style.position = "relative";  
+//     gsap.to(
+//         diffNumContainer14, {
+//             y: 0,
+//             duration: 0,
+//         },
+//     );
+//     diffNumContainer13.style.position = "relative";  
+//     gsap.to(
+//         diffNumContainer13, {
+//             y: 0,
+//             duration: 0,
+//         },
+//     );
+//     diffNumContainer12.style.position = "relative";  
+//     gsap.to(
+//         diffNumContainer12, {
+//             y: 0,
+//             duration: 0,
+//         },
+//     );
+//     diffNumContainer11.style.position = "relative";  
+//     gsap.to(
+//         diffNumContainer11, {
+//             y: 0,
+//             duration: 0,
+//         },
+//     );
+// };
