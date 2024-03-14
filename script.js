@@ -122,7 +122,7 @@ document.addEventListener("wheel", function preventScroll(wheelDown){
     wheelDown.preventDefault();
 }, {passive: false});
 
-document.addEventListener("touchstart", function preventScroll(){
+document.addEventListener("click", function preventScroll(){
     const tabBar = document.getElementById("tab-bar");
     gsap.to(
         tabBar, {
