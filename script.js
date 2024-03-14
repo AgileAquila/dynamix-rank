@@ -260,7 +260,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     rankedContainers[rankedContainers.length - i - 1].style.display = "";
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "";
 
-                    appearance();
                     searchFunction();
                 }else{
                     difficultyButtons[i].setAttribute("style", "border: 3px solid rgba(131, 0, 0, 0.5); background-color: rgba(131, 0, 0, 0.35); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.5); color: rgba(210, 0, 0, 0.7); text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);");
@@ -269,7 +268,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     rankedContainers[rankedContainers.length - i - 1].style.display = "none";
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "none";
 
-                    appearance();
                     searchFunction();
                 };
             }else{
@@ -279,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                     rankedContainers[rankedContainers.length - i - 1].style.display = "";
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "";
-                    appearance();
+
                     searchFunction();
                 }else{
                     difficultyButtons[i].setAttribute("style", "border: 3px solid rgba(0, 131, 118, 0.5); background-color: rgba(0, 131, 118, 0.35); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.5); color: rgba(0, 219, 197, 0.5); text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);");
@@ -287,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                     rankedContainers[rankedContainers.length - i - 1].style.display = "none";
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "none";
-                    appearance();
+
                     searchFunction();
                 };
             };
@@ -1008,6 +1006,7 @@ function searchFunction(){
         footer.style.position = "";
         footer.style.bottom = "";
     };
+    appearance();
     
     diffNumContainer15.style.position = "relative";  
     gsap.to(
