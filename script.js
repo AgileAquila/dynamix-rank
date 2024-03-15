@@ -628,6 +628,12 @@ for(let i = 0; i < unrSongs13.length; i++){
                 }else if(title.id == "stardust"){
                     pointer13.remove();
                     createPointer13(2,5);
+                }else if(title.id == "hyper-nova"){
+                    pointer13.remove();
+                    createPointer13(4,7);
+                }else if(title.id == "anokumene"){
+                    pointer13.remove();
+                    createPointer13(3,7);
                 }else{
                     pointer13.remove();
                 };
