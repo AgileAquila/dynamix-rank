@@ -207,10 +207,6 @@ ul, li{
     opacity: 0;
     margin-left: -100px;
 }
-.r-level:hover{
-    backdrop-filter: brightness(1.2);
-    -webkit-backdrop-filter: brightness(1.2);
-}
 
 .r-num-container{
     position: relative;

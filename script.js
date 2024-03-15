@@ -940,6 +940,7 @@ function searchFunction(){
         };
     };
 
+    let rankedJudgement = [false, false, false, false, false, false];
     for(let i = 0; i < searchAllRankedContainer.length; i++){
         if(difficultyButtons[difficultyButtons.length - i - 1].className == "inactive"){
             continue;
@@ -954,9 +955,9 @@ function searchFunction(){
             };
         };
         if(displayCounter == searchRLevels.length){
-            searchAllRankedContainer[i].style.display = "none";
+            rankedJudgement[i] = true;
         }else{
-            searchAllRankedContainer[i].style.display = "";
+            rankedJudgement[i] = false;
         };
     };
 
@@ -971,9 +972,10 @@ function searchFunction(){
 
         for(let i = 0; i < searchAllUnanked.length; i++){
             let searchUnanked = searchAllUnanked[i].getElementsByTagName("li");
+            let searchUnrankedText = searchAllUnanked[i].querySelectorAll(".d-song-bg");
     
             for(let j = 0; j < searchUnanked.length; j++){
-                if(searchUnanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
+                if(searchUnrankedText[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
                     searchUnanked[j].style.display = "";
                 }else{
                     searchUnanked[j].style.display = "none";
@@ -999,6 +1001,12 @@ function searchFunction(){
             searchAllUnankedContainer[i].style.display = "none";
         }else{
             searchAllUnankedContainer[i].style.display = "";
+        };
+
+        if(rankedJudgement[i] == true && searchAllUnankedContainer[i].style.display == "none"){
+            searchAllRankedContainer[i].style.display = "none";
+        }else{
+            searchAllRankedContainer[i].style.display = "";
         };
     };
 
