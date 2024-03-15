@@ -369,7 +369,7 @@ ul, li{
 
 .diff-ranked{
     opacity: 0;
-    margin: 6px 0;
+    margin-top: 6px;
 }
 
 .diff-num-container{
