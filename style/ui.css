@@ -380,6 +380,7 @@ ul, li{
     backdrop-filter: blur(8px) brightness(0.7);
     -webkit-backdrop-filter: blur(8px) brightness(0.7);
     z-index: 9;
+    pointer-events: none;
 }
 
 .pointer{
@@ -391,6 +392,7 @@ ul, li{
     border-right: solid 8px rgba(255, 255, 255, 0.7);
     backdrop-filter: brightness(1.5);
     -webkit-backdrop-filter: brightness(1.5);
+    pointer-events: none;
 }
 
 .diff-num{
