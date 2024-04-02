@@ -163,7 +163,7 @@ ul, li{
     transform: rotate(-45deg);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
 }
 
 .ranked{
