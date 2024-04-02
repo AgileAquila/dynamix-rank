@@ -161,9 +161,6 @@ ul, li{
 
 .difficulty-text{
     transform: rotate(-45deg);
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
 }
 
 .ranked{
