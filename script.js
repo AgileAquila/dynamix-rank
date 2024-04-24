@@ -634,6 +634,9 @@ for(let i = 0; i < unrSongs13.length; i++){
                 }else if(title.id == "anokumene"){
                     pointer13.remove();
                     createPointer13(3,7);
+                }else if(title.id == "the-dystopia-s-tomorrow"){
+                    pointer13.remove();
+                    createPointer13(2,5);
                 }else{
                     pointer13.remove();
                 };
