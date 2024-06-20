@@ -141,6 +141,7 @@ ul, li{
 }
 
 #difficulty button{
+    position: relative;
     width: 42px;
     height: 42px;
     font-family: dynamix;
@@ -160,7 +161,10 @@ ul, li{
 }
 
 .difficulty-text{
-    transform: rotate(-45deg);
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
 }
 
 .ranked{
@@ -210,7 +214,6 @@ ul, li{
 
 .r-num-container{
     position: relative;
-    display: flex;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     background-image: linear-gradient(to right, rgba(81, 116, 203, 0.8) 0%, rgba(132, 233, 182, 0.8) 100%);
@@ -219,8 +222,6 @@ ul, li{
     height: 40px;
     flex-wrap: nowrap;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: right;
     margin-top: 58px;
     margin-left: -16px;
     margin-right: 8px;
@@ -266,7 +267,10 @@ ul, li{
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-family: dynamix;
-    margin-right: 24px;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .r-song-container{
