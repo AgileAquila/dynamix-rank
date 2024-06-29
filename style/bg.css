@@ -1,3 +1,7 @@
+#abyss-breaker{
+	background-image: url(../song-bg/abyss-breaker.webp);
+}
+
 #abyss{
 	background-image: url(../song-bg/abyss.webp);
 }
@@ -132,6 +136,10 @@
 
 #blueberry-cheesecake{
 	background-image: url(../song-bg/blueberry-cheesecake.webp);
+}
+
+#bonus-time{
+	background-image: url(../song-bg/bonus-time.webp);
 }
 
 #bounce-the-tech{

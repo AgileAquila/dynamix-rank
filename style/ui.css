@@ -412,8 +412,7 @@ ul, li{
 .d-song-container{
     margin: 0;
     display: block;
-    backdrop-filter: brightness(0.5);
-    -webkit-backdrop-filter: brightness(0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .d-song-bg{
@@ -587,4 +586,27 @@ footer{
     outline: none;
     border: solid 2px rgb(129, 234, 255);
     box-shadow: 0 0 5px rgba(129, 234, 255, 0.7);
+}
+
+#participants{
+    width: 100%;
+    text-align: center;
+    transition: 0.2s ease-out;
+    opacity: 0;
+    background-color: black;
+    padding: 48px 0 16px 0;
+}
+
+.participants{
+    width: 54%;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: orbitron;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 5px rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+#participants:hover{
+    filter: brightness(1.2);
+    color: rgba(255, 255, 255, 1);
 }

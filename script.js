@@ -64,6 +64,7 @@ const startPage = document.getElementById("start-page");
 const diffRanked = document.querySelectorAll(".diff-ranked");
 const footer = document.getElementById("footer");
 const searchContainer = document.getElementById("search-box");
+const participants = document.getElementById("participants");
 
 document.addEventListener("wheel", function preventScroll(wheelDown){
     if (wheelDown.deltaY > 0){
@@ -115,6 +116,14 @@ document.addEventListener("wheel", function preventScroll(wheelDown){
                     ease: "power1.out",
                 }
             );
+
+            gsap.to(
+                participants, {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power1.out",
+                }
+            );
         };
         setTimeout(tabActivated = 1, 700);
         setTimeout(enter, 700);
@@ -161,6 +170,14 @@ document.addEventListener("click", function preventScroll(){
                 opacity: 1,
                 delay: 0.3,
                 duration: 0.4,
+                ease: "power1.out",
+            }
+        );
+
+        gsap.to(
+            participants, {
+                opacity: 1,
+                duration: 0.5,
                 ease: "power1.out",
             }
         );
@@ -375,13 +392,13 @@ for(let i = 0; i < unrSongs15.length; i++){
 
                 if(title.id == "mega-pop"){
                     pointer15.remove();
-                    createPointer15(5,7);
+                    createPointer15(5,8);
                 }else if(title.id == "euouae"){
                     pointer15.remove();
-                    createPointer15(5,7);
+                    createPointer15(4,8);
                 }else if(title.id == "red-horse-massacre"){
                     pointer15.remove();
-                    createPointer15(4,7);
+                    createPointer15(3,7);
                 }else if(title.id == "hauynite"){
                     pointer15.remove();
                     createPointer15(4,7);
@@ -390,7 +407,7 @@ for(let i = 0; i < unrSongs15.length; i++){
                     createPointer15(3,6);
                 }else if(title.id == "arisu-sikkaku"){
                     pointer15.remove();
-                    createPointer15(2,5);
+                    createPointer15(1,5);
                 }else if(title.id == "lucid-trigger"){
                     pointer15.remove();
                     createPointer15(1,5);
