@@ -889,6 +889,26 @@ function diffScrollRefresh(){
     let diffNumContainer = document.getElementsByClassName("diff-num-container");
     let transparentNumContainer = document.getElementsByClassName("transparent-num-container");
 
+    for (i = 0; i < diffSongContainer.length; i++){
+        let rect = diffSongContainer[i].getBoundingClientRect();
+
+        if(rect.top <= 42 && rect.bottom >= 0 && leave[i] == false){
+            diffNumContainer[i].style.position = "fixed";
+            diffNumContainer[i].style.left = "0";
+            diffNumContainer[i].style.top = "0";
+            diffNumContainer[i].style.width = "calc(100% - 256px)";
+            transparentNumContainer[i].style.display = "block";
+        };
+
+        if(rect.top >= 42 && rect.bottom >= 0 && leave[i] == false){
+            diffNumContainer[i].style.position = "relative";  
+            diffNumContainer[i].style.left = "";  
+            diffNumContainer[i].style.top = "";  
+            diffNumContainer[i].style.width = "";  
+            diffNumContainer[i].style.zIndex = "";
+            transparentNumContainer[i].style.display = "none";
+        };
+
         if(rect.bottom <= 42 && leave[i] == false){
             gsap.to(
                 diffNumContainer[i], {
