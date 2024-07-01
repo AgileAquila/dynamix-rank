@@ -316,11 +316,13 @@ document.addEventListener("DOMContentLoaded", function(){
                 footer.style.bottom = "";
             }
 
-            for (i = 0; i < diffNumContainer.length; i++){
-                diffNumContainer[i].style.position = "relative";
+            let diffNumContainer = document.getElementsByClassName("diff-num-container");
+
+            for (j = 0; j < diffNumContainer.length; j++){
+                diffNumContainer[j].style.position = "relative";
 
                 gsap.to(
-                    diffNumContainer[i], {
+                    diffNumContainer[j], {
                         y: 0,
                         duration: 0,
                     },
