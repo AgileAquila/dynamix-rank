@@ -89,7 +89,7 @@ document.addEventListener("wheel", function preventScroll(wheelDown){
             startPage.remove();
             appearance();
             mainEnter();
-            document.removeEventListener('wheel', preventScroll, {passive: false});
+            document.removeEventListener("wheel", preventScroll, {passive: false});
             
             gsap.to(
                 diffRanked, {
@@ -146,7 +146,7 @@ document.addEventListener("click", function preventScroll(){
         startPage.remove();
         appearance();
         mainEnter();
-        document.removeEventListener('wheel', preventScroll, {passive: false});
+        document.removeEventListener("wheel", preventScroll, {passive: false});
             
         gsap.to(
             diffRanked, {
@@ -316,41 +316,16 @@ document.addEventListener("DOMContentLoaded", function(){
                 footer.style.bottom = "";
             }
 
-            diffNumContainer15.style.position = "relative";  
-            gsap.to(
-                diffNumContainer15, {
-                    y: 0,
-                    duration: 0,
-                },
-            );
-            diffNumContainer14.style.position = "relative";  
-            gsap.to(
-                diffNumContainer14, {
-                    y: 0,
-                    duration: 0,
-                },
-            );
-            diffNumContainer13.style.position = "relative";  
-            gsap.to(
-                diffNumContainer13, {
-                    y: 0,
-                    duration: 0,
-                },
-            );
-            diffNumContainer12.style.position = "relative";  
-            gsap.to(
-                diffNumContainer12, {
-                    y: 0,
-                    duration: 0,
-                },
-            );
-            diffNumContainer11.style.position = "relative";  
-            gsap.to(
-                diffNumContainer11, {
-                    y: 0,
-                    duration: 0,
-                },
-            );
+            for (i = 0; i < diffNumContainer.length; i++){
+                diffNumContainer[i].style.position = "relative";
+
+                gsap.to(
+                    diffNumContainer[i], {
+                        y: 0,
+                        duration: 0,
+                    },
+                );
+            };
         });
     };
 });
@@ -436,46 +411,6 @@ for(let i = 0; i < unrSongs15.length; i++){
     }
 )};
 
-let leave15 = true;
-document.addEventListener("scroll", function diffScrollRefresh15(){  
-
-    let rect15 = diffSongContainer15.getBoundingClientRect();
-
-    if(rect15.top <= 42 && rect15.bottom >= 0 && leave15 == false){
-        diffNumContainer15.style.position = "fixed";
-        diffNumContainer15.style.left = "0";
-        diffNumContainer15.style.top = "0";
-        diffNumContainer15.style.width = "calc(100% - 256px)";
-    };
-    if(rect15.top >= 42 && rect15.bottom >= 0 && leave15 == false){
-        diffNumContainer15.style.position = "relative";  
-        diffNumContainer15.style.left = "";  
-        diffNumContainer15.style.top = "";  
-        diffNumContainer15.style.width = "";  
-        diffNumContainer15.style.zIndex = "";
-    };
-    if(rect15.bottom <= 42 && leave15 == false){
-        gsap.to(
-            diffNumContainer15, {
-                y: -50,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave15 = true;
-    };
-    if(rect15.top <= 42 && rect15.bottom >= 42 && leave15 == true){
-        gsap.to(
-            diffNumContainer15, {
-                y: 0,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave15 = false;
-    };
-});
-
 // 14
 
 let diffSongContainer14 = document.getElementById("d-song-container-14");
@@ -554,46 +489,6 @@ for(let i = 0; i < unrSongs14.length; i++){
     }
 )};
 
-let leave14 = true;
-document.addEventListener("scroll", function diffScrollRefresh14(){  
-
-    let rect14 = diffSongContainer14.getBoundingClientRect();
-
-    if(rect14.top <= 42 && rect14.bottom >= 0 && leave14 == false){
-        diffNumContainer14.style.position = "fixed";
-        diffNumContainer14.style.left = "0";
-        diffNumContainer14.style.top = "0";
-        diffNumContainer14.style.width = "calc(100% - 256px)";
-    };
-    if(rect14.top >= 42 && rect14.bottom >= 0 && leave14 == false){
-        diffNumContainer14.style.position = "relative";  
-        diffNumContainer14.style.left = "";  
-        diffNumContainer14.style.top = "";  
-        diffNumContainer14.style.width = "";  
-        diffNumContainer14.style.zIndex = "";
-    };
-    if(rect14.bottom <= 42 && leave14 == false){
-        gsap.to(
-            diffNumContainer14, {
-                y: -50,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave14 = true;
-    };
-    if(rect14.top <= 42 && rect14.bottom >= 42 && leave14 == true){
-        gsap.to(
-            diffNumContainer14, {
-                y: 0,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave14 = false;
-    };
-});
-
 // 13
 
 let diffSongContainer13 = document.getElementById("d-song-container-13");
@@ -654,9 +549,7 @@ for(let i = 0; i < unrSongs13.length; i++){
                 }else if(title.id == "the-dystopia-s-tomorrow"){
                     pointer13.remove();
                     createPointer13(2,5);
-                }else{
-                    pointer13.remove();
-                };
+                }
 
                 titleString = title.id;
             };
@@ -672,46 +565,6 @@ for(let i = 0; i < unrSongs13.length; i++){
         newPointer.style.display = "none";
     }
 )};
-
-let leave13 = true;
-document.addEventListener("scroll", function diffScrollRefresh13(){  
-
-    let rect13 = diffSongContainer13.getBoundingClientRect();
-
-    if(rect13.top <= 42 && rect13.bottom >= 0 && leave13 == false){
-        diffNumContainer13.style.position = "fixed";
-        diffNumContainer13.style.left = "0";
-        diffNumContainer13.style.top = "0";
-        diffNumContainer13.style.width = "calc(100% - 256px)";
-    };
-    if(rect13.top >= 42 && rect13.bottom >= 0 && leave13 == false){
-        diffNumContainer13.style.position = "relative";  
-        diffNumContainer13.style.left = "";  
-        diffNumContainer13.style.top = "";  
-        diffNumContainer13.style.width = "";  
-        diffNumContainer13.style.zIndex = "";
-    };
-    if(rect13.bottom <= 42 && leave13 == false){
-        gsap.to(
-            diffNumContainer13, {
-                y: -50,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave13 = true;
-    };
-    if(rect13.top <= 42 && rect13.bottom >= 42 && leave13 == true){
-        gsap.to(
-            diffNumContainer13, {
-                y: 0,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave13 = false;
-    };
-});
 
 // 12
 
@@ -777,46 +630,6 @@ for(let i = 0; i < unrSongs12.length; i++){
     }
 )};
 
-let leave12 = true;
-document.addEventListener("scroll", function diffScrollRefresh12(){  
-
-    let rect12 = diffSongContainer12.getBoundingClientRect();
-
-    if(rect12.top <= 42 && rect12.bottom >= 0 && leave12 == false){
-        diffNumContainer12.style.position = "fixed";
-        diffNumContainer12.style.left = "0";
-        diffNumContainer12.style.top = "0";
-        diffNumContainer12.style.width = "calc(100% - 256px)";
-    };
-    if(rect12.top >= 42 && rect12.bottom >= 0 && leave12 == false){
-        diffNumContainer12.style.position = "relative";  
-        diffNumContainer12.style.left = "";  
-        diffNumContainer12.style.top = "";  
-        diffNumContainer12.style.width = "";  
-        diffNumContainer12.style.zIndex = "";
-    };
-    if(rect12.bottom <= 42 && leave12 == false){
-        gsap.to(
-            diffNumContainer12, {
-                y: -50,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave12 = true;
-    };
-    if(rect12.top <= 42 && rect12.bottom >= 42 && leave12 == true){
-        gsap.to(
-            diffNumContainer12, {
-                y: 0,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave12 = false;
-    };
-});
-
 // 11
 
 let diffSongContainer11 = document.getElementById("d-song-container-11");
@@ -875,45 +688,20 @@ for(let i = 0; i < unrSongs11.length; i++){
     }
 )};
 
-let leave11 = true;
-document.addEventListener("scroll", function diffScrollRefresh11(){  
+//Footer
 
-    let rect11 = diffSongContainer11.getBoundingClientRect();
+function footerIsHigherThanPageFix(){
+    let main = document.getElementById("main");
+    let mainBoundary = main.getBoundingClientRect();
 
-    if(rect11.top <= 42 && rect11.bottom >= 0 && leave11 == false){
-        diffNumContainer11.style.position = "fixed";
-        diffNumContainer11.style.left = "0";
-        diffNumContainer11.style.top = "0";
-        diffNumContainer11.style.width = "calc(100% - 256px)";
+    if(mainBoundary.bottom <= window.innerHeight){
+        footer.style.position = "fixed";
+        footer.style.bottom = "0";
+    }else{
+        footer.style.position = "";
+        footer.style.bottom = "";
     };
-    if(rect11.top >= 42 && rect11.bottom >= 0 && leave11 == false){
-        diffNumContainer11.style.position = "relative";  
-        diffNumContainer11.style.left = "";  
-        diffNumContainer11.style.top = "";  
-        diffNumContainer11.style.width = "";  
-        diffNumContainer11.style.zIndex = "";
-    };
-    if(rect11.bottom <= 42 && leave11 == false){
-        gsap.to(
-            diffNumContainer11, {
-                y: -50,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave11 = true;
-    };
-    if(rect11.top <= 42 && rect11.bottom >= 42 && leave11 == true){
-        gsap.to(
-            diffNumContainer11, {
-                y: 0,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        leave11 = false;
-    };
-});
+};
 
 // Search Bar
 
@@ -935,7 +723,6 @@ function searchFunction(){
         };
 
         for(let i = 0; i < searchAllRanked.length; i++){
-
             let searchRanked = searchAllRanked[i].getElementsByTagName("li");
                 
             for(let j = 0; j < searchRanked.length; j++){
@@ -1030,16 +817,6 @@ function searchFunction(){
         };
     };
 
-    let main = document.getElementById("main");
-    let mainBoundary = main.getBoundingClientRect();
-
-    if(mainBoundary.top >= 0 && mainBoundary.bottom <= window.innerHeight){
-        footer.style.position = "fixed";
-        footer.style.bottom = "0";
-    }else{
-        footer.style.position = "";
-        footer.style.bottom = "";
-    };
     appearance();
     
     diffNumContainer15.style.position = "relative";  
@@ -1077,6 +854,65 @@ function searchFunction(){
             duration: 0,
         },
     );
+
+    footerIsHigherThanPageFix();
 };
 
+footerIsHigherThanPageFix();
+
 inputBox.addEventListener("input", searchFunction);
+
+function rSongContainerWidthChanges(){
+    let pageWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    let rankedSongWidth = 128 + 16 + 8;
+    let spaceForRankedSongTransforming = 42;
+
+    let maxRankedSongCountPerLine = Math.floor((pageWidth - spaceForRankedSongTransforming - 178 - 8) / rankedSongWidth);
+    let parentWidth = maxRankedSongCountPerLine * rankedSongWidth + spaceForRankedSongTransforming;
+
+    for (let i = 0; i < searchAllRanked.length; i++){
+        searchAllRanked[i].style.width = parentWidth + "px";
+    };
+
+    console.log(maxRankedSongCountPerLine);
+};
+
+rSongContainerWidthChanges();
+
+window.addEventListener("resize", rSongContainerWidthChanges);
+
+let leave = [true,true,true,true,true];
+
+function diffScrollRefresh(){
+    let diffSongContainer = document.getElementsByClassName("d-song-container");
+    let diffNumContainer = document.getElementsByClassName("diff-num-container");
+    let transparentNumContainer = document.getElementsByClassName("transparent-num-container");
+
+        if(rect.bottom <= 42 && leave[i] == false){
+            gsap.to(
+                diffNumContainer[i], {
+                    y: -50,
+                    duration: 0.4,
+                    ease: "power1.out",
+                },
+            );
+            leave[i] = true;
+        };
+
+        if(rect.top <= 42 && rect.bottom >= 42 && leave[i] == true){
+            gsap.to(
+                diffNumContainer[i], {
+                    y: 0,
+                    duration: 0.4,
+                    ease: "power1.out",
+                },
+            );
+            leave[i] = false;
+        };
+    };
+};
+
+diffScrollRefresh();
+
+document.addEventListener("scroll", diffScrollRefresh);
