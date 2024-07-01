@@ -7,6 +7,7 @@
 
 ### Fixed
 - Fixed jerking images when the mouse pointer is over the last song in each row.
+- Fixed number bars disappearing when refreshing the page.
 - Resolved content overlaps caused by attaching number bars for charts with personal differences to the top of the page.
 - Corrected footer position issue during search box usage.
 
