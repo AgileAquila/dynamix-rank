@@ -7,6 +7,7 @@
 - Fixed number bars display disappearing after clicking difficulty button.
 - Fixed footer positioned wrong for few search results.
 - Refreshing the page now correctly returns to the top of the page.
+- Significantly optimized performance across the website.
 
 ### Changed
 - Reordered Participants alphabetically.
