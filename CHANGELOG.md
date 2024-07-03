@@ -10,6 +10,7 @@
 - Significantly optimized performance across the website.
 
 ### Changed
+- Added animations when navigating to pages via click.
 - Reordered Participants alphabetically.
 - Optimized some code.
 
