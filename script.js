@@ -126,7 +126,7 @@ function enterAnimation() {
         };
         setTimeout(tabActivated = 1, 700);
         setTimeout(enter, 700);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
     };
 };
 
@@ -138,21 +138,19 @@ function enableScroll() {
     document.removeEventListener('wheel', preventScroll);
 }
 
-window.onload = function () {
-    document.addEventListener('wheel', preventScroll, { passive: false });
+document.addEventListener('wheel', preventScroll, { passive: false });
 
-    document.addEventListener('wheel', function (event) {
-        if (event.deltaY > 0) {
-            enterAnimation();
-            setTimeout(enableScroll, 700);
-        }
-    });
-
-    document.addEventListener('click', function () {
+document.addEventListener('wheel', function (event) {
+    if (event.deltaY > 0) {
         enterAnimation();
         setTimeout(enableScroll, 700);
-    });
-};
+    }
+});
+
+document.addEventListener('click', function () {
+    enterAnimation();
+    setTimeout(enableScroll, 700);
+});
 // Song Animation
 
 const rLevels = document.querySelectorAll(".r-level");

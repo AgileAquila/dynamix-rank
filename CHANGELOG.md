@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.0.3] - 2024-07-04
+
+### Fixed
+- Resolved issue where pages could not be accessed before content fully loaded.
+
 ## [1.0.2] - 2024-07-03
 
 ### Fixed
