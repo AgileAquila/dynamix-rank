@@ -558,7 +558,7 @@ footer{
 
 #search-box{
     position: fixed;
-    right: -76px;
+    right: -54px;
     bottom: 80px;
     z-index: 999;
     transform: skewX(-22.5deg);

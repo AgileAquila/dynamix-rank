@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [1.0.2] - 2024-07-03
+
+### Fixed
+- Fixed delayed content loading after clicking welcome page.
+- Fixed number bars display disappearing after clicking difficulty button.
+- Fixed footer positioned wrong for few search results.
+- Refreshing the page now correctly returns to the top of the page.
+
+### Changed
+- Reordered Participants alphabetically.
+- Optimized some code.
+
 ## [1.0.1] - 2024-07-01
 
 ### Added

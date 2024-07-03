@@ -12,29 +12,29 @@ startLetters.forEach(letter => {
     start.appendChild(span);
 });
 
-function getRandomLetter(){
+function getRandomLetter() {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const randomIndex = Math.floor(Math.random() * letters.length);
     return letters[randomIndex];
 };
 
-function loopWithDelay(iterations, delay){
+function loopWithDelay(iterations, delay) {
     let i = 0;
-    let intervalId = setInterval(function(){
-        if(i < iterations){
+    let intervalId = setInterval(function () {
+        if (i < iterations) {
             console.log("Iteration " + i);
             const spans = start.getElementsByTagName("span");
-            for(let i = 0; i < spans.length; i++){
+            for (let i = 0; i < spans.length; i++) {
                 const span = spans[i];
 
-                if(span.textContent.trim() !== ""){
+                if (span.textContent.trim() !== "") {
                     span.textContent = getRandomLetter();
                 };
             };
-        i++;
-        }else{
+            i++;
+        } else {
             const spans = start.getElementsByTagName("span");
-            for(let i = 0; i < spans.length; i++){
+            for (let i = 0; i < spans.length; i++) {
                 const span = spans[i];
                 span.textContent = startLetters[i];
             };
@@ -47,14 +47,14 @@ loopWithDelay(15, 40);
 
 gsap.to(
     start, {
-        css: {  
-            filter: "blur(0px)",
-            transform: "scaleX(100%)",
-            opacity: 1,
-        },
-        duration: 1,
-        ease: "power2.out",
+    css: {
+        filter: "blur(0px)",
+        transform: "scaleX(100%)",
+        opacity: 1,
     },
+    duration: 1,
+    ease: "power2.out",
+},
 );
 
 // Enter Animation
@@ -66,211 +66,175 @@ const footer = document.getElementById("footer");
 const searchContainer = document.getElementById("search-box");
 const participants = document.getElementById("participants");
 
-document.addEventListener("wheel", function preventScroll(wheelDown){
-    if (wheelDown.deltaY > 0){
+function enterAnimation() {
+    if (tabActivated == 0) {
         gsap.to(
             startPage, {
-                clipPath: "inset(0 0 100% 0)",
-                duration: 1,
-                ease: "power1.out",
-            },
+            clipPath: "inset(0 0 100% 0)",
+            duration: 1,
+            ease: "power1.out",
+        },
         );
         const tabBar = document.getElementById("tab-bar");
-        gsap.to(
-            tabBar, {
-                x: -36,
-                opacity: 1,
-                delay: 0.9,
-                duration: 0.4,
-                ease: "power1.out",
-            },
-        );
-        function enter(){
+        function enter() {
             startPage.remove();
             appearance();
             mainEnter();
-            document.removeEventListener("wheel", preventScroll, {passive: false});
-            
+
             gsap.to(
                 diffRanked, {
-                    opacity: 1,
-                    duration: 0.5,
-                    ease: "power1.out",
-                }
+                opacity: 1,
+                duration: 0.5,
+                ease: "power1.out",
+            }
             );
 
             gsap.to(
                 footer, {
-                    opacity: 1,
-                    duration: 0.5,
-                    ease: "power1.out",
-                }
+                opacity: 1,
+                duration: 0.5,
+                ease: "power1.out",
+            }
             );
 
             gsap.to(
                 searchContainer, {
-                    x: -36,
-                    opacity: 1,
-                    delay: 0.3,
-                    duration: 0.4,
-                    ease: "power1.out",
-                }
+                x: -36,
+                opacity: 1,
+                delay: 0.2,
+                duration: 0.4,
+                ease: "power1.out",
+            }
             );
 
             gsap.to(
                 participants, {
-                    opacity: 1,
-                    duration: 0.5,
-                    ease: "power1.out",
-                }
+                opacity: 1,
+                duration: 0.5,
+                ease: "power1.out",
+            }
+            );
+
+            gsap.to(
+                tabBar, {
+                x: -36,
+                opacity: 1,
+                duration: 0.4,
+                ease: "power1.out",
+            },
             );
         };
         setTimeout(tabActivated = 1, 700);
         setTimeout(enter, 700);
+        window.scrollTo(0,0);
     };
-    wheelDown.preventDefault();
-}, {passive: false});
+};
 
-document.addEventListener("click", function preventScroll(){
-    const tabBar = document.getElementById("tab-bar");
-    gsap.to(
-        tabBar, {
-            x: -36,
-            opacity: 1,
-            delay: 0.9,
-            duration: 0.4,
-            ease: "power1.out",
-        },
-    );
-    function enter(){
-        startPage.remove();
-        appearance();
-        mainEnter();
-        document.removeEventListener("wheel", preventScroll, {passive: false});
-            
-        gsap.to(
-            diffRanked, {
-                opacity: 1,
-                duration: 0.5,
-                ease: "power1.out",
-            }
-        );
+function preventScroll(event) {
+    event.preventDefault();
+}
 
-        gsap.to(
-            footer, {
-                opacity: 1,
-                duration: 0.5,
-                ease: "power1.out",
-            }
-        );
+function enableScroll() {
+    document.removeEventListener('wheel', preventScroll);
+}
 
-        gsap.to(
-            searchContainer, {
-                x: -36,
-                opacity: 1,
-                delay: 0.3,
-                duration: 0.4,
-                ease: "power1.out",
-            }
-        );
+window.onload = function () {
+    document.addEventListener('wheel', preventScroll, { passive: false });
 
-        gsap.to(
-            participants, {
-                opacity: 1,
-                duration: 0.5,
-                ease: "power1.out",
-            }
-        );
-    };
-    setTimeout(tabActivated = 1, 700);
-    setTimeout(enter, 700);
-}, {passive: false});
+    document.addEventListener('wheel', function (event) {
+        if (event.deltaY > 0) {
+            enterAnimation();
+            setTimeout(enableScroll, 700);
+        }
+    });
 
+    document.addEventListener('click', function () {
+        enterAnimation();
+        setTimeout(enableScroll, 700);
+    });
+};
 // Song Animation
 
 const rLevels = document.querySelectorAll(".r-level");
 const dLevels = document.querySelectorAll(".d-song-body");
 const rLevelsOverall = document.querySelectorAll(".r-level-overall");
 
-function appearanceAnimation(appearanceElement){
+function appearanceAnimation(appearanceElement) {
     let rect = appearanceElement.getBoundingClientRect();
-    let inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+    let inViewport = rect.bottom > 0 && rect.top < window.innerHeight;
 
-    if(inViewport){
+    if (inViewport) {
         gsap.to(
             appearanceElement, {
-                x: 100,
-                opacity: 1,
-                duration: 0.5,
-                ease: "power1.out",
-            },
+            x: 100,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power1.out",
+        },
         );
-    }else{
+    } else {
         gsap.to(
             appearanceElement, {
-                x: 0,
-                opacity: 0,
-                duration: 0.5,
-                ease: "power1.out",
-            },
+            x: 0,
+            opacity: 0,
+            duration: 0,
+        },
         );
     };
 };
 
-function dAppearanceAnimation(appearanceElement){
+function dAppearanceAnimation(appearanceElement) {
     let rect = appearanceElement.getBoundingClientRect();
-    let inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+    let inViewport = rect.bottom > 0 && rect.top < window.innerHeight;
 
-    if(inViewport){
+    if (inViewport) {
         gsap.to(
             appearanceElement, {
-                x: 0,
-                opacity: 1,
-                duration: 0.5,
-                ease: "power1.out",
-            },
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power1.out",
+        },
         );
-    }else{
+    } else {
         gsap.to(
             appearanceElement, {
-                x: -100,
-                opacity: 0,
-                duration: 0.5,
-                ease: "power1.out",
-            },
+            x: -100,
+            opacity: 0,
+            duration: 0,
+        },
         );
     };
 }
 
-function appearance(){
-    rLevels.forEach(appearanceAnimation);
-    rLevelsOverall.forEach(appearanceAnimation);
-    dLevels.forEach(dAppearanceAnimation);
+function appearance() {
+    if (tabActivated == 1) {
+        rLevels.forEach(appearanceAnimation);
+        rLevelsOverall.forEach(appearanceAnimation);
+        dLevels.forEach(dAppearanceAnimation);
+    };
 };
 
-function mainEnter(){
-    if(tabActivated == 1){
-        document.addEventListener("scroll", appearance);
-        document.addEventListener("resize", appearance);
-    };
+function mainEnter() {
+    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("resize", appearance);
 };
 
 // Buttons
 
 let difficulty = document.getElementById("difficulty");
+let difficultyButtons = difficulty.getElementsByTagName("button");
+let rankedContainers = document.querySelectorAll(".ranked");
+let dRankedContainers = document.querySelectorAll(".diff-ranked");
 
-document.addEventListener("DOMContentLoaded", function(){
-    let difficultyButtons = difficulty.getElementsByTagName("button");
-    let rankedContainers = document.querySelectorAll(".ranked");
-    let dRankedContainers = document.querySelectorAll(".diff-ranked");
-
-    for(let i = 0; i < difficultyButtons.length; i++){
-        difficultyButtons[i].addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function () {
+    for (let i = 0; i < difficultyButtons.length; i++) {
+        difficultyButtons[i].addEventListener("click", function () {
             const specialButton = difficultyButtons[i].getAttribute("id");
             let buttonStatus = difficultyButtons[i].getAttribute("class");
-    
-            if(specialButton == "special"){
-                if(buttonStatus == "inactive"){
+
+            if (specialButton == "special") {
+                if (buttonStatus == "inactive") {
                     difficultyButtons[i].setAttribute("style", "");
                     difficultyButtons[i].className = "active";
 
@@ -278,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "";
 
                     searchFunction();
-                }else{
+                } else {
                     difficultyButtons[i].setAttribute("style", "border: 3px solid rgba(131, 0, 0, 0.5); background-color: rgba(131, 0, 0, 0.35); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.5); color: rgba(210, 0, 0, 0.7); text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);");
                     difficultyButtons[i].className = "inactive";
 
@@ -287,8 +251,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
                     searchFunction();
                 };
-            }else{
-                if(buttonStatus == "inactive"){
+            } else {
+                if (buttonStatus == "inactive") {
                     difficultyButtons[i].setAttribute("style", "");
                     difficultyButtons[i].className = "active";
 
@@ -296,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     dRankedContainers[dRankedContainers.length - i - 1].style.display = "";
 
                     searchFunction();
-                }else{
+                } else {
                     difficultyButtons[i].setAttribute("style", "border: 3px solid rgba(0, 131, 118, 0.5); background-color: rgba(0, 131, 118, 0.35); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.5); color: rgba(0, 219, 197, 0.5); text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);");
                     difficultyButtons[i].className = "inactive";
 
@@ -306,28 +270,22 @@ document.addEventListener("DOMContentLoaded", function(){
                     searchFunction();
                 };
             };
-            let main = document.getElementById("main");
-            let mainBoundary = main.getBoundingClientRect();
-            if(mainBoundary.top >= 0 && mainBoundary.bottom <= window.innerHeight){
-                footer.style.position = "fixed";
-                footer.style.bottom = "0";
-            }else{
-                footer.style.position = "";
-                footer.style.bottom = "";
-            }
 
             let diffNumContainer = document.getElementsByClassName("diff-num-container");
 
-            for (j = 0; j < diffNumContainer.length; j++){
+            for (j = 0; j < diffNumContainer.length; j++) {
                 diffNumContainer[j].style.position = "relative";
 
                 gsap.to(
                     diffNumContainer[j], {
-                        y: 0,
-                        duration: 0,
-                    },
+                    y: 0,
+                    duration: 0,
+                },
                 );
             };
+            diffScrollRefresh();
+            console.log(isAbove);
+            footerIsHigherThanPageFix();
         });
     };
 });
@@ -340,7 +298,7 @@ let diffSongContainer15 = document.getElementById("d-song-container-15");
 let diffNumContainer15 = document.getElementById("d-num-container-15");
 
 
-function createPointer15(begin,end){
+function createPointer15(begin, end) {
     let newPointer = document.createElement("div");
     newPointer.classList.add("pointer");
     newPointer.id = "pointer15";
@@ -350,51 +308,51 @@ function createPointer15(begin,end){
     newPointer.style.width = `calc((100% - 256px) / 11 * (${end} - ${begin} + 1) - 32px)`;
 
     gsap.from(
-    newPointer, {
+        newPointer, {
         clipPath: "inset(0 100% 0 0)",
         duration: 0.4,
-            ease: "power1.out",
-        },
+        ease: "power1.out",
+    },
     );
 };
 
 const unrSongs15 = diffSongContainer15.getElementsByClassName("d-song-body");
-for(let i = 0; i < unrSongs15.length; i++){
+for (let i = 0; i < unrSongs15.length; i++) {
     let titleString = "";
-    unrSongs15[i].addEventListener("mouseover", function(){
+    unrSongs15[i].addEventListener("mouseover", function () {
         const unrTitles = this.querySelectorAll(".d-song");
-        unrTitles.forEach(function(title){
-            if(title.id !== titleString){
+        unrTitles.forEach(function (title) {
+            if (title.id !== titleString) {
                 const pointer15 = document.getElementById("pointer15");
 
-                if(title.id == "mega-pop"){
+                if (title.id == "mega-pop") {
                     pointer15.remove();
-                    createPointer15(5,8);
-                }else if(title.id == "euouae"){
+                    createPointer15(5, 8);
+                } else if (title.id == "euouae") {
                     pointer15.remove();
-                    createPointer15(4,8);
-                }else if(title.id == "red-horse-massacre"){
+                    createPointer15(4, 8);
+                } else if (title.id == "red-horse-massacre") {
                     pointer15.remove();
-                    createPointer15(3,7);
-                }else if(title.id == "hauynite"){
+                    createPointer15(3, 7);
+                } else if (title.id == "hauynite") {
                     pointer15.remove();
-                    createPointer15(4,7);
-                }else if(title.id == "evoltex-poppi-n-mix"){
+                    createPointer15(4, 7);
+                } else if (title.id == "evoltex-poppi-n-mix") {
                     pointer15.remove();
-                    createPointer15(3,6);
-                }else if(title.id == "arisu-sikkaku"){
+                    createPointer15(3, 6);
+                } else if (title.id == "arisu-sikkaku") {
                     pointer15.remove();
-                    createPointer15(1,5);
-                }else if(title.id == "lucid-trigger"){
+                    createPointer15(1, 5);
+                } else if (title.id == "lucid-trigger") {
                     pointer15.remove();
-                    createPointer15(1,5);
-                }else if(title.id == "before-sunrise"){
+                    createPointer15(1, 5);
+                } else if (title.id == "before-sunrise") {
                     pointer15.remove();
-                    createPointer15(0,4);
-                }else if(title.id == "gift"){
+                    createPointer15(0, 4);
+                } else if (title.id == "gift") {
                     pointer15.remove();
-                    createPointer15(3,6);
-                }else{
+                    createPointer15(3, 6);
+                } else {
                     pointer15.remove();
                 };
 
@@ -402,7 +360,7 @@ for(let i = 0; i < unrSongs15.length; i++){
             };
         });
     });
-    unrSongs15[i].addEventListener("mouseleave", function(){
+    unrSongs15[i].addEventListener("mouseleave", function () {
         titleString = "";
         pointer15.remove();
         let newPointer = document.createElement("div");
@@ -411,14 +369,15 @@ for(let i = 0; i < unrSongs15.length; i++){
         pointerContainer15.appendChild(newPointer);
         newPointer.style.display = "none";
     }
-)};
+    )
+};
 
 // 14
 
 let diffSongContainer14 = document.getElementById("d-song-container-14");
 let diffNumContainer14 = document.getElementById("d-num-container-14");
 
-function createPointer14(begin,end){
+function createPointer14(begin, end) {
     let newPointer = document.createElement("div");
     newPointer.classList.add("pointer");
     newPointer.id = "pointer14";
@@ -428,51 +387,51 @@ function createPointer14(begin,end){
     newPointer.style.width = `calc((100% - 256px) / 11 * (${end} - ${begin} + 1) - 32px)`;
 
     gsap.from(
-    newPointer, {
+        newPointer, {
         clipPath: "inset(0 100% 0 0)",
         duration: 0.4,
-            ease: "power1.out",
-        },
+        ease: "power1.out",
+    },
     );
 };
 
 const unrSongs14 = diffSongContainer14.getElementsByClassName("d-song-body");
-for(let i = 0; i < unrSongs14.length; i++){
+for (let i = 0; i < unrSongs14.length; i++) {
     let titleString = "";
-    unrSongs14[i].addEventListener("mouseover", function(){
+    unrSongs14[i].addEventListener("mouseover", function () {
         const unrTitles = this.querySelectorAll(".d-song");
-        unrTitles.forEach(function(title){
-            if(title.id !== titleString){
+        unrTitles.forEach(function (title) {
+            if (title.id !== titleString) {
                 const pointer14 = document.getElementById("pointer14");
 
-                if(title.id == "goemon"){
+                if (title.id == "goemon") {
                     pointer14.remove();
-                    createPointer14(3,9);
-                }else if(title.id == "re-ignite-republic-of-gamers"){
+                    createPointer14(3, 9);
+                } else if (title.id == "re-ignite-republic-of-gamers") {
                     pointer14.remove();
-                    createPointer14(5,8);
-                }else if(title.id == "viatores"){
+                    createPointer14(5, 8);
+                } else if (title.id == "viatores") {
                     pointer14.remove();
-                    createPointer14(3,8);
-                }else if(title.id == "mechanismos-ton-antikythiron"){
+                    createPointer14(3, 8);
+                } else if (title.id == "mechanismos-ton-antikythiron") {
                     pointer14.remove();
-                    createPointer14(3,8);
-                }else if(title.id == "dead-soul"){
+                    createPointer14(3, 8);
+                } else if (title.id == "dead-soul") {
                     pointer14.remove();
-                    createPointer14(4,7);
-                }else if(title.id == "dement-after-legend"){
+                    createPointer14(4, 7);
+                } else if (title.id == "dement-after-legend") {
                     pointer14.remove();
-                    createPointer14(3,7);
-                }else if(title.id == "tianzhao-giga"){
+                    createPointer14(3, 7);
+                } else if (title.id == "tianzhao-giga") {
                     pointer14.remove();
-                    createPointer14(1,6);
-                }else if(title.id == "tianzhao-mega"){
+                    createPointer14(1, 6);
+                } else if (title.id == "tianzhao-mega") {
                     pointer14.remove();
-                    createPointer14(2,5);
-                }else if(title.id == "unsung-hero"){
+                    createPointer14(2, 5);
+                } else if (title.id == "unsung-hero") {
                     pointer14.remove();
-                    createPointer14(1,5);
-                }else{
+                    createPointer14(1, 5);
+                } else {
                     pointer14.remove();
                 };
 
@@ -480,7 +439,7 @@ for(let i = 0; i < unrSongs14.length; i++){
             };
         });
     });
-    unrSongs14[i].addEventListener("mouseleave", function(){
+    unrSongs14[i].addEventListener("mouseleave", function () {
         titleString = "";
         pointer14.remove();
         let newPointer = document.createElement("div");
@@ -489,7 +448,8 @@ for(let i = 0; i < unrSongs14.length; i++){
         pointerContainer14.appendChild(newPointer);
         newPointer.style.display = "none";
     }
-)};
+    )
+};
 
 // 13
 
@@ -497,7 +457,7 @@ let diffSongContainer13 = document.getElementById("d-song-container-13");
 let diffNumContainer13 = document.getElementById("d-num-container-13");
 
 
-function createPointer13(begin,end){
+function createPointer13(begin, end) {
     let newPointer = document.createElement("div");
     newPointer.classList.add("pointer");
     newPointer.id = "pointer13";
@@ -507,57 +467,57 @@ function createPointer13(begin,end){
     newPointer.style.width = `calc((100% - 256px) / 11 * (${end} - ${begin} + 1) - 32px)`;
 
     gsap.from(
-    newPointer, {
+        newPointer, {
         clipPath: "inset(0 100% 0 0)",
         duration: 0.4,
-            ease: "power1.out",
-        },
+        ease: "power1.out",
+    },
     );
 };
 
 const unrSongs13 = diffSongContainer13.getElementsByClassName("d-song-body");
-for(let i = 0; i < unrSongs13.length; i++){
+for (let i = 0; i < unrSongs13.length; i++) {
     let titleString = "";
-    unrSongs13[i].addEventListener("mouseover", function(){
+    unrSongs13[i].addEventListener("mouseover", function () {
         const unrTitles = this.querySelectorAll(".d-song");
-        unrTitles.forEach(function(title){
-            if(title.id !== titleString){
+        unrTitles.forEach(function (title) {
+            if (title.id !== titleString) {
                 const pointer13 = document.getElementById("pointer13");
 
-                if(title.id == "black-horse-famine"){
+                if (title.id == "black-horse-famine") {
                     pointer13.remove();
-                    createPointer13(7,10);
-                }else if(title.id == "raving-in-halloween"){
+                    createPointer13(7, 10);
+                } else if (title.id == "raving-in-halloween") {
                     pointer13.remove();
-                    createPointer13(6,10);
-                }else if(title.id == "metheus"){
+                    createPointer13(6, 10);
+                } else if (title.id == "metheus") {
                     pointer13.remove();
-                    createPointer13(4,8);
-                }else if(title.id == "wonderful-days"){
+                    createPointer13(4, 8);
+                } else if (title.id == "wonderful-days") {
                     pointer13.remove();
-                    createPointer13(3,7);
-                }else if(title.id == "soul-army"){
+                    createPointer13(3, 7);
+                } else if (title.id == "soul-army") {
                     pointer13.remove();
-                    createPointer13(3,7);
-                }else if(title.id == "stardust"){
+                    createPointer13(3, 7);
+                } else if (title.id == "stardust") {
                     pointer13.remove();
-                    createPointer13(2,5);
-                }else if(title.id == "hyper-nova"){
+                    createPointer13(2, 5);
+                } else if (title.id == "hyper-nova") {
                     pointer13.remove();
-                    createPointer13(4,7);
-                }else if(title.id == "anokumene"){
+                    createPointer13(4, 7);
+                } else if (title.id == "anokumene") {
                     pointer13.remove();
-                    createPointer13(3,7);
-                }else if(title.id == "the-dystopia-s-tomorrow"){
+                    createPointer13(3, 7);
+                } else if (title.id == "the-dystopia-s-tomorrow") {
                     pointer13.remove();
-                    createPointer13(2,5);
+                    createPointer13(2, 5);
                 }
 
                 titleString = title.id;
             };
         });
     });
-    unrSongs13[i].addEventListener("mouseleave", function(){
+    unrSongs13[i].addEventListener("mouseleave", function () {
         titleString = "";
         pointer13.remove();
         let newPointer = document.createElement("div");
@@ -566,7 +526,8 @@ for(let i = 0; i < unrSongs13.length; i++){
         pointerContainer13.appendChild(newPointer);
         newPointer.style.display = "none";
     }
-)};
+    )
+};
 
 // 12
 
@@ -574,7 +535,7 @@ let diffSongContainer12 = document.getElementById("d-song-container-12");
 let diffNumContainer12 = document.getElementById("d-num-container-12");
 
 
-function createPointer12(begin,end){
+function createPointer12(begin, end) {
     let newPointer = document.createElement("div");
     newPointer.classList.add("pointer");
     newPointer.id = "pointer12";
@@ -584,36 +545,36 @@ function createPointer12(begin,end){
     newPointer.style.width = `calc((100% - 256px) / 11 * (${end} - ${begin} + 1) - 32px)`;
 
     gsap.from(
-    newPointer, {
+        newPointer, {
         clipPath: "inset(0 100% 0 0)",
         duration: 0.4,
-            ease: "power1.out",
-        },
+        ease: "power1.out",
+    },
     );
 };
 
 const unrSongs12 = diffSongContainer12.getElementsByClassName("d-song-body");
-for(let i = 0; i < unrSongs12.length; i++){
+for (let i = 0; i < unrSongs12.length; i++) {
     let titleString = "";
-    unrSongs12[i].addEventListener("mouseover", function(){
+    unrSongs12[i].addEventListener("mouseover", function () {
         const unrTitles = this.querySelectorAll(".d-song");
-        unrTitles.forEach(function(title){
-            if(title.id !== titleString){
+        unrTitles.forEach(function (title) {
+            if (title.id !== titleString) {
                 const pointer12 = document.getElementById("pointer12");
 
-                if(title.id == "soar-to"){
+                if (title.id == "soar-to") {
                     pointer12.remove();
-                    createPointer12(6,10);
-                }else if(title.id == "black-magnam"){
+                    createPointer12(6, 10);
+                } else if (title.id == "black-magnam") {
                     pointer12.remove();
-                    createPointer12(5,9);
-                }else if(title.id == "necroxus"){
+                    createPointer12(5, 9);
+                } else if (title.id == "necroxus") {
                     pointer12.remove();
-                    createPointer12(5,8);
-                }else if(title.id == "reborn"){
+                    createPointer12(5, 8);
+                } else if (title.id == "reborn") {
                     pointer12.remove();
-                    createPointer12(4,7);
-                }else{
+                    createPointer12(4, 7);
+                } else {
                     pointer12.remove();
                 };
 
@@ -621,7 +582,7 @@ for(let i = 0; i < unrSongs12.length; i++){
             };
         });
     });
-    unrSongs12[i].addEventListener("mouseleave", function(){
+    unrSongs12[i].addEventListener("mouseleave", function () {
         titleString = "";
         pointer12.remove();
         let newPointer = document.createElement("div");
@@ -630,7 +591,8 @@ for(let i = 0; i < unrSongs12.length; i++){
         pointerContainer12.appendChild(newPointer);
         newPointer.style.display = "none";
     }
-)};
+    )
+};
 
 // 11
 
@@ -638,7 +600,7 @@ let diffSongContainer11 = document.getElementById("d-song-container-11");
 let diffNumContainer11 = document.getElementById("d-num-container-11");
 
 
-function createPointer11(begin,end){
+function createPointer11(begin, end) {
     let newPointer = document.createElement("div");
     newPointer.classList.add("pointer");
     newPointer.id = "pointer11";
@@ -648,30 +610,30 @@ function createPointer11(begin,end){
     newPointer.style.width = `calc((100% - 256px) / 11 * (${end} - ${begin} + 1) - 32px)`;
 
     gsap.from(
-    newPointer, {
+        newPointer, {
         clipPath: "inset(0 100% 0 0)",
         duration: 0.4,
-            ease: "power1.out",
-        },
+        ease: "power1.out",
+    },
     );
 };
 
 const unrSongs11 = diffSongContainer11.getElementsByClassName("d-song-body");
-for(let i = 0; i < unrSongs11.length; i++){
+for (let i = 0; i < unrSongs11.length; i++) {
     let titleString = "";
-    unrSongs11[i].addEventListener("mouseover", function(){
+    unrSongs11[i].addEventListener("mouseover", function () {
         const unrTitles = this.querySelectorAll(".d-song");
-        unrTitles.forEach(function(title){
-            if(title.id !== titleString){
+        unrTitles.forEach(function (title) {
+            if (title.id !== titleString) {
                 const pointer11 = document.getElementById("pointer11");
 
-                if(title.id == "fengyu"){
+                if (title.id == "fengyu") {
                     pointer11.remove();
-                    createPointer11(6,9);
-                }else if(title.id == "mechanical-jager"){
+                    createPointer11(6, 9);
+                } else if (title.id == "mechanical-jager") {
                     pointer11.remove();
-                    createPointer11(5,8);
-                }else{
+                    createPointer11(5, 8);
+                } else {
                     pointer11.remove();
                 };
 
@@ -679,7 +641,7 @@ for(let i = 0; i < unrSongs11.length; i++){
             };
         });
     });
-    unrSongs11[i].addEventListener("mouseleave", function(){
+    unrSongs11[i].addEventListener("mouseleave", function () {
         titleString = "";
         pointer11.remove();
         let newPointer = document.createElement("div");
@@ -688,18 +650,19 @@ for(let i = 0; i < unrSongs11.length; i++){
         pointerContainer11.appendChild(newPointer);
         newPointer.style.display = "none";
     }
-)};
+    )
+};
 
 //Footer
 
-function footerIsHigherThanPageFix(){
+function footerIsHigherThanPageFix() {
     let main = document.getElementById("main");
     let mainBoundary = main.getBoundingClientRect();
 
-    if(mainBoundary.bottom <= window.innerHeight){
+    if (window.innerHeight - mainBoundary.bottom > 74 + 24) {
         footer.style.position = "fixed";
         footer.style.bottom = "0";
-    }else{
+    } else {
         footer.style.position = "";
         footer.style.bottom = "";
     };
@@ -713,148 +676,147 @@ let searchAllRankedLevel = document.getElementsByClassName("r-level");
 
 let searchAllUnanked = document.getElementsByClassName("d-song-container");
 
-function searchFunction(){
+function searchFunction() {
     let inputValue = inputBox.value;
     let difficultyButtons = difficulty.getElementsByTagName("button");
     let searchAllRankedContainer = document.getElementsByClassName("ranked");
 
     // Ranked Search
-    for(let k = 0; k < searchAllRankedContainer.length; k++){
-        if(difficultyButtons[difficultyButtons.length - k - 1].className == "inactive"){
+    for (let k = 0; k < searchAllRankedContainer.length; k++) {
+        if (difficultyButtons[difficultyButtons.length - k - 1].className == "inactive") {
             continue;
         };
 
-        for(let i = 0; i < searchAllRanked.length; i++){
+        for (let i = 0; i < searchAllRanked.length; i++) {
             let searchRanked = searchAllRanked[i].getElementsByTagName("li");
-                
-            for(let j = 0; j < searchRanked.length; j++){
-                if(searchRanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
+
+            for (let j = 0; j < searchRanked.length; j++) {
+                if (searchRanked[j].innerText.toLowerCase().includes(inputValue.toLowerCase())) {
                     searchRanked[j].style.display = "";
-                }else{
+                } else {
                     searchRanked[j].style.display = "none";
                 };
             };
-    
+
             let displayCounter = 0;
-            for(let j = 0; j < searchRanked.length; j++){
-                if(searchRanked[j].style.display == "none"){
+            for (let j = 0; j < searchRanked.length; j++) {
+                if (searchRanked[j].style.display == "none") {
                     displayCounter++;
                 };
             };
-            if(displayCounter == searchRanked.length){
+            if (displayCounter == searchRanked.length) {
                 searchAllRankedLevel[i].style.display = "none";
-            }else{
+            } else {
                 searchAllRankedLevel[i].style.display = "";
             };
         };
     };
 
     let rankedJudgement = [false, false, false, false, false, false];
-    for(let i = 0; i < searchAllRankedContainer.length; i++){
-        if(difficultyButtons[difficultyButtons.length - i - 1].className == "inactive"){
+    for (let i = 0; i < searchAllRankedContainer.length; i++) {
+        if (difficultyButtons[difficultyButtons.length - i - 1].className == "inactive") {
             continue;
         };
 
         let displayCounter = 0;
         let searchRLevels = searchAllRankedContainer[i].getElementsByClassName("r-level");
 
-        for(let j = 0; j < searchRLevels.length; j++){
-            if(searchRLevels[j].style.display == "none"){
+        for (let j = 0; j < searchRLevels.length; j++) {
+            if (searchRLevels[j].style.display == "none") {
                 displayCounter++;
             };
         };
-        if(displayCounter == searchRLevels.length){
+        if (displayCounter == searchRLevels.length) {
             rankedJudgement[i] = true;
-        }else{
+        } else {
             rankedJudgement[i] = false;
         };
     };
-
     // Unanked Search
 
     let searchAllUnankedContainer = document.getElementsByClassName("diff-ranked");
 
-    for(let k = 0; k < searchAllRankedContainer.length; k++){
-        if(difficultyButtons[difficultyButtons.length - k - 1].className == "inactive"){
+    for (let k = 0; k < searchAllRankedContainer.length; k++) {
+        if (difficultyButtons[difficultyButtons.length - k - 1].className == "inactive") {
             continue;
         };
 
-        for(let i = 0; i < searchAllUnanked.length; i++){
+        for (let i = 0; i < searchAllUnanked.length; i++) {
             let searchUnanked = searchAllUnanked[i].getElementsByTagName("li");
             let searchUnrankedText = searchAllUnanked[i].querySelectorAll(".d-song-bg");
-    
-            for(let j = 0; j < searchUnanked.length; j++){
-                if(searchUnrankedText[j].innerText.toLowerCase().includes(inputValue.toLowerCase())){  
+
+            for (let j = 0; j < searchUnanked.length; j++) {
+                if (searchUnrankedText[j].innerText.toLowerCase().includes(inputValue.toLowerCase())) {
                     searchUnanked[j].style.display = "";
-                }else{
+                } else {
                     searchUnanked[j].style.display = "none";
                 };
             };
         };
     };
 
-    for(let i = 0; i < searchAllUnankedContainer.length; i++){
-        if(difficultyButtons[difficultyButtons.length - i - 1].className == "inactive"){
+    for (let i = 0; i < searchAllUnankedContainer.length; i++) {
+        if (difficultyButtons[difficultyButtons.length - i - 1].className == "inactive") {
             continue;
         };
 
         let displayCounter = 0;
         let searchDLevels = searchAllUnankedContainer[i].getElementsByTagName("li");
 
-        for(let j = 0; j < searchDLevels.length; j++){
-            if(searchDLevels[j].style.display == "none"){
+        for (let j = 0; j < searchDLevels.length; j++) {
+            if (searchDLevels[j].style.display == "none") {
                 displayCounter++;
             };
         };
-        if(displayCounter == searchDLevels.length){
+        if (displayCounter == searchDLevels.length) {
             searchAllUnankedContainer[i].style.display = "none";
-        }else{
+        } else {
             searchAllUnankedContainer[i].style.display = "";
         };
 
-        if(rankedJudgement[i] == true && searchAllUnankedContainer[i].style.display == "none"){
+        if (rankedJudgement[i] == true && searchAllUnankedContainer[i].style.display == "none") {
             searchAllRankedContainer[i].style.display = "none";
-        }else{
+        } else {
             searchAllRankedContainer[i].style.display = "";
         };
     };
 
     appearance();
-    
-    diffNumContainer15.style.position = "relative";  
+
+    diffNumContainer15.style.position = "relative";
     gsap.to(
         diffNumContainer15, {
-            y: 0,
-            duration: 0,
-        },
+        y: 0,
+        duration: 0,
+    },
     );
-    diffNumContainer14.style.position = "relative";  
+    diffNumContainer14.style.position = "relative";
     gsap.to(
         diffNumContainer14, {
-            y: 0,
-            duration: 0,
-        },
+        y: 0,
+        duration: 0,
+    },
     );
-    diffNumContainer13.style.position = "relative";  
+    diffNumContainer13.style.position = "relative";
     gsap.to(
         diffNumContainer13, {
-            y: 0,
-            duration: 0,
-        },
+        y: 0,
+        duration: 0,
+    },
     );
-    diffNumContainer12.style.position = "relative";  
+    diffNumContainer12.style.position = "relative";
     gsap.to(
         diffNumContainer12, {
-            y: 0,
-            duration: 0,
-        },
+        y: 0,
+        duration: 0,
+    },
     );
-    diffNumContainer11.style.position = "relative";  
+    diffNumContainer11.style.position = "relative";
     gsap.to(
         diffNumContainer11, {
-            y: 0,
-            duration: 0,
-        },
+        y: 0,
+        duration: 0,
+    },
     );
 
     footerIsHigherThanPageFix();
@@ -864,7 +826,7 @@ footerIsHigherThanPageFix();
 
 inputBox.addEventListener("input", searchFunction);
 
-function rSongContainerWidthChanges(){
+function rSongContainerWidthChanges() {
     let pageWidth = window.innerWidth || document.documentElement.clientWidth;
 
     let rankedSongWidth = 128 + 16 + 8;
@@ -873,7 +835,7 @@ function rSongContainerWidthChanges(){
     let maxRankedSongCountPerLine = Math.floor((pageWidth - spaceForRankedSongTransforming - 178 - 8) / rankedSongWidth);
     let parentWidth = maxRankedSongCountPerLine * rankedSongWidth + spaceForRankedSongTransforming;
 
-    for (let i = 0; i < searchAllRanked.length; i++){
+    for (let i = 0; i < searchAllRanked.length; i++) {
         searchAllRanked[i].style.width = parentWidth + "px";
     };
 
@@ -884,53 +846,53 @@ rSongContainerWidthChanges();
 
 window.addEventListener("resize", rSongContainerWidthChanges);
 
-let leave = [true,true,true,true,true];
+let isAbove = [false, false, false, false, false];
 
-function diffScrollRefresh(){
+function diffScrollRefresh() {
     let diffSongContainer = document.getElementsByClassName("d-song-container");
     let diffNumContainer = document.getElementsByClassName("diff-num-container");
     let transparentNumContainer = document.getElementsByClassName("transparent-num-container");
 
-    for (i = 0; i < diffSongContainer.length; i++){
+    for (i = 0; i < diffSongContainer.length; i++) {
         let rect = diffSongContainer[i].getBoundingClientRect();
 
-        if(rect.top <= 42 && rect.bottom >= 0 && leave[i] == false){
-            diffNumContainer[i].style.position = "fixed";
-            diffNumContainer[i].style.left = "0";
-            diffNumContainer[i].style.top = "0";
-            diffNumContainer[i].style.width = "calc(100% - 256px)";
-            transparentNumContainer[i].style.display = "block";
-        };
+        let diffRankedStyle = document.getElementsByClassName("diff-ranked");
 
-        if(rect.top >= 42 && rect.bottom >= 0 && leave[i] == false){
-            diffNumContainer[i].style.position = "relative";  
-            diffNumContainer[i].style.left = "";  
-            diffNumContainer[i].style.top = "";  
-            diffNumContainer[i].style.width = "";  
-            diffNumContainer[i].style.zIndex = "";
-            transparentNumContainer[i].style.display = "none";
-        };
-
-        if(rect.bottom <= 42 && leave[i] == false){
-            gsap.to(
-                diffNumContainer[i], {
+        if (diffRankedStyle[i + 1].style.display == ! "none") {
+            if (rect.top > 42 && rect.bottom > window.innerHeight) {
+                diffNumContainer[i].style.position = "relative";
+                diffNumContainer[i].style.left = "";
+                diffNumContainer[i].style.top = "";
+                diffNumContainer[i].style.width = "";
+                diffNumContainer[i].style.zIndex = "";
+                transparentNumContainer[i].style.display = "none";
+                isAbove[i] = false;
+            } else if (rect.top <= 42 && rect.bottom >= 42) {
+                diffNumContainer[i].style.position = "fixed";
+                diffNumContainer[i].style.left = "0";
+                diffNumContainer[i].style.top = "0";
+                diffNumContainer[i].style.width = "calc(100% - 256px)";
+                transparentNumContainer[i].style.display = "block";
+                if (isAbove[i] == true) {
+                    gsap.to(
+                        diffNumContainer[i], {
+                        y: 0,
+                        duration: 0.4,
+                        ease: "power1.out",
+                    },
+                    );
+                };
+                isAbove[i] = false;
+            } else if (rect.bottom <= 42) {
+                gsap.to(
+                    diffNumContainer[i], {
                     y: -50,
                     duration: 0.4,
                     ease: "power1.out",
                 },
-            );
-            leave[i] = true;
-        };
-
-        if(rect.top <= 42 && rect.bottom >= 42 && leave[i] == true){
-            gsap.to(
-                diffNumContainer[i], {
-                    y: 0,
-                    duration: 0.4,
-                    ease: "power1.out",
-                },
-            );
-            leave[i] = false;
+                );
+                isAbove[i] = true;
+            };
         };
     };
 };
@@ -938,3 +900,27 @@ function diffScrollRefresh(){
 diffScrollRefresh();
 
 document.addEventListener("scroll", diffScrollRefresh);
+document.addEventListener("resize", diffScrollRefresh);
+
+function throttle(func, limit) {
+    let lastFunc;
+    let lastRan;
+    return function () {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+            func.apply(context, args);
+            lastRan = Date.now();
+        } else {
+            clearTimeout(lastFunc);
+            lastFunc = setTimeout(function () {
+                if ((Date.now() - lastRan) >= limit) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                }
+            }, limit - (Date.now() - lastRan));
+        };
+    };
+};
+
+const handleScroll = throttle(appearance, 50);
