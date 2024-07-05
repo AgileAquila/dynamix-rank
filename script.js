@@ -96,10 +96,6 @@ const songsAppearAndHide = () => {
 	}
 };
 
-// Songs Appear and Hide While Scrolling
-
-document.addEventListener("scroll", songsAppearAndHide);
-
 // Enter Main Page Animation & Enable Scroll
 
 let mainPageEntered = false;
@@ -480,6 +476,7 @@ let diffSongRangeDatabase = [
 		[14.5, 14.8], // [G] RE:IGNITE-Republic of Gamers
 		[14.4, 14.7], // [G] Dead Soul
 		[14.3, 14.9], // [G] GOEMON
+		[14.3, 14.8], // [G] Haptime
 		[14.3, 14.8], // [G] Mechanismós ton Antikythíron
 		[14.3, 14.8], // [M] Viatores
 		[14.3, 14.7], // [M] Dement ～After Legend～
@@ -508,6 +505,7 @@ let diffSongRangeDatabase = [
 	],
 	// Lv.11
 	[
+		[11.6, 11.9], // [H] Haptime
 		[11.6, 11.9], // [M] 风屿
 		[11.5, 11.8], // [M] Mechanical Jäger
 	],
@@ -571,3 +569,8 @@ Array.from(diffRanked).forEach((diffRankedElement, i) => {
 		});
 	});
 });
+
+// Rearrange while scrolling and resizing
+
+document.addEventListener("scroll", contentsRearrangement);
+document.addEventListener("resize", contentsRearrangement);

@@ -2,6 +2,18 @@
 
 ## [1.0.4] - 2024-07-05
 
+### List Adjustment
+
+-   [GIGA] haptime 14.5 => 14.3~14.8
+
+-   [MEGA] Love Like We're Dying 13.2 => 13.1
+
+-   [HARD] 終の舞姫 12.2 => 12.3
+-   [MEGA] Tronica and Fugue 12.1 => 12.2
+
+-   [HARD] haptime 11.7 => 11.6~11.9
+-   [MEGA] Phoenixismia 11.5 => 11.5
+
 ### Fixed
 
 -   Significantly optimized performance across the website.
@@ -9,6 +21,7 @@
 ### Changed
 
 -   Performed major code refactorings and improvements.
+-   Made subtle visual enhancements to improve the overall aesthetic and user experience.
 
 ## [1.0.3] - 2024-07-04
 
