@@ -20,6 +20,7 @@
 
 ### Changed
 
+-   Using IME to search for songs will not trigger songs filtering.
 -   Performed major code refactorings and improvements.
 -   Made subtle visual enhancements to improve the overall aesthetic and user experience.
 
