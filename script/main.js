@@ -154,6 +154,7 @@ document.addEventListener(
 			window.scrollTo(0, 0);
 			enteringAnimation();
 			document.removeEventListener("wheel", whellControlsEntering);
+			document.removeEventListener("click", clickControlsEntering);
 		}
 	})
 );
@@ -163,6 +164,7 @@ document.addEventListener(
 		window.scrollTo(0, 0);
 		enteringAnimation();
 		document.removeEventListener("wheel", clickControlsEntering);
+		document.removeEventListener("click", clickControlsEntering);
 	})
 );
 
