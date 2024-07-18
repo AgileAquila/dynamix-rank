@@ -1,18 +1,36 @@
 # CHANGELOG
 
+## [1.1.0] - 2024-07-18
+
+### List Adjustment
+
+-   Regarding the recent significant changes in difficulty levels, the songs for levels 14 and 15 have been rearranged and finalized.
+-   There will be a temporary missing of some songs for levels 13 to 15, and updates will be promptly made after the discussion group has finalized their decisions.
+
+### Added
+
+-   A CHANGELOG page has been added.
+-   Our group chat QR code has been added to footnotes.
+
+### Fixed
+
+-   Significantly optimized performance across the website.
+
+### Changed
+
+-   Optimized UI.
+-   The entire codebase has undergone a complete rewrite.
+
 ## [1.0.4] - 2024-07-05
 
 ### List Adjustment
 
--   [GIGA] haptime 14.5 => 14.3~14.8
-
--   [MEGA] Love Like We're Dying 13.2 => 13.1
-
--   [HARD] 終の舞姫 12.2 => 12.3
--   [MEGA] Tronica and Fugue 12.1 => 12.2
-
--   [HARD] haptime 11.7 => 11.6~11.9
--   [MEGA] Phoenixismia 11.5 => 11.5
+-   [GIGA] haptime 14.5 → 14.3~14.8
+-   [MEGA] Love Like We're Dying 13.2 → 13.1
+-   [HARD] 終の舞姫 12.2 → 12.3
+-   [MEGA] Tronica and Fugue 12.1 → 12.2
+-   [HARD] haptime 11.7 → 11.6~11.9
+-   [MEGA] Phoenixismia 11.5 → 11.5
 
 ### Fixed
 

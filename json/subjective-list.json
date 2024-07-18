@@ -1,0 +1,271 @@
+{
+	"lv15": [
+		{
+			"title": "MEGA　POP",
+			"mode": "mega",
+			"hyphenatedTitle": "mega-pop",
+			"lower": "0.5",
+			"upper": "0.8"
+		},
+		{
+			"title": "Euouae",
+			"mode": "giga",
+			"hyphenatedTitle": "euouae",
+			"lower": "0.4",
+			"upper": "0.8"
+		},
+		{
+			"title": "Hauynite",
+			"mode": "giga",
+			"hyphenatedTitle": "hauynite",
+			"lower": "0.4",
+			"upper": "0.7"
+		},
+		{
+			"title": "Red Horse Massacre",
+			"mode": "giga",
+			"hyphenatedTitle": "red-horse-massacre",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
+			"title": "Evoltex (poppi'n mix)",
+			"mode": "giga",
+			"hyphenatedTitle": "evoltex-poppi-n-mix",
+			"lower": "0.3",
+			"upper": "0.6"
+		},
+		{
+			"title": "GIFT",
+			"mode": "giga",
+			"hyphenatedTitle": "gift",
+			"lower": "0.3",
+			"upper": "0.6"
+		},
+		{
+			"title": "Kyubi",
+			"mode": "giga",
+			"hyphenatedTitle": "kyubi",
+			"lower": "0.2",
+			"upper": "0.6"
+		},
+		{
+			"title": "Lucid Trigger",
+			"mode": "giga",
+			"hyphenatedTitle": "lucid-trigger",
+			"lower": "0.1",
+			"upper": "0.5"
+		},
+		{
+			"title": "アリス失格",
+			"mode": "giga",
+			"hyphenatedTitle": "arisu-sikkaku",
+			"lower": "0.1",
+			"upper": "0.5"
+		},
+		{
+			"title": "Before Sunrise",
+			"mode": "giga",
+			"hyphenatedTitle": "before-sunrise",
+			"lower": "0.0",
+			"upper": "0.4"
+		}
+	],
+	"lv14": [
+		{
+			"title": "Chrysoberyl",
+			"mode": "mega",
+			"hyphenatedTitle": "chrysoberyl",
+			"lower": "0.5",
+			"upper": "0.9"
+		},
+		{
+			"title": "RE:IGNITE-Republic of Gamers",
+			"mode": "giga",
+			"hyphenatedTitle": "re-ignite-republic-of-gamers",
+			"lower": "0.4",
+			"upper": "0.8"
+		},
+		{
+			"title": "GOEMON",
+			"mode": "giga",
+			"hyphenatedTitle": "goemon",
+			"lower": "0.3",
+			"upper": "0.9"
+		},
+		{
+			"title": "Back Out",
+			"mode": "giga",
+			"hyphenatedTitle": "back-out",
+			"lower": "0.3",
+			"upper": "0.8"
+		},
+		{
+			"title": "haptime",
+			"mode": "giga",
+			"hyphenatedTitle": "haptime",
+			"lower": "0.3",
+			"upper": "0.8"
+		},
+		{
+			"title": "Mechanismós ton Antikythíron",
+			"mode": "giga",
+			"hyphenatedTitle": "mechanismos-ton-antikythiron",
+			"lower": "0.3",
+			"upper": "0.8"
+		},
+		{
+			"title": "Viatores",
+			"mode": "mega",
+			"hyphenatedTitle": "viatores",
+			"lower": "0.3",
+			"upper": "0.8"
+		},
+		{
+			"title": "Dead Soul",
+			"mode": "giga",
+			"hyphenatedTitle": "dead-soul",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
+			"title": "Dement ～After Legend～",
+			"mode": "mega",
+			"hyphenatedTitle": "dement-after-legend",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
+			"title": "天照",
+			"mode": "mega",
+			"hyphenatedTitle": "tianzhao",
+			"lower": "0.2",
+			"upper": "0.5"
+		},
+		{
+			"title": "天照",
+			"mode": "giga",
+			"hyphenatedTitle": "tianzhao",
+			"lower": "0.1",
+			"upper": "0.6"
+		},
+		{
+			"title": "Raving in Halloween",
+			"mode": "mega",
+			"hyphenatedTitle": "raving-in-halloween",
+			"lower": "0.0",
+			"upper": "0.7"
+		}
+	],
+	"lv13": [
+		{
+			"title": "Black Horse Famine",
+			"mode": "mega",
+			"hyphenatedTitle": "black-horse-famine",
+			"lower": "0.7",
+			"upper": "1.0"
+		},
+		{
+			"title": "Metheus",
+			"mode": "mega",
+			"hyphenatedTitle": "metheus",
+			"lower": "0.4",
+			"upper": "0.8"
+		},
+		{
+			"title": "HYPER-NOVA",
+			"mode": "mega",
+			"hyphenatedTitle": "hyper-nova",
+			"lower": "0.4",
+			"upper": "0.7"
+		},
+		{
+			"title": "Wonderful Days",
+			"mode": "mega",
+			"hyphenatedTitle": "wonderful-days",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
+			"title": "Soul Army",
+			"mode": "mega",
+			"hyphenatedTitle": "soul-army",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
+			"title": "Anökumene",
+			"mode": "mega",
+			"hyphenatedTitle": "anokumene",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
+			"title": "The Dystopia's Tomorrow",
+			"mode": "giga",
+			"hyphenatedTitle": "the-dystopia-s-tomorrow",
+			"lower": "0.2",
+			"upper": "0.5"
+		},
+		{
+			"title": "Stardust",
+			"mode": "mega",
+			"hyphenatedTitle": "stardust",
+			"lower": "0.2",
+			"upper": "0.5"
+		}
+	],
+	"lv12": [
+		{
+			"title": "soar to Ø",
+			"mode": "mega",
+			"hyphenatedTitle": "soar-to",
+			"lower": "0.6",
+			"upper": "1.0"
+		},
+		{
+			"title": "Black : Magnam",
+			"mode": "mega",
+			"hyphenatedTitle": "black-magnam",
+			"lower": "0.5",
+			"upper": "0.9"
+		},
+		{
+			"title": "Necroxus",
+			"mode": "mega",
+			"hyphenatedTitle": "necroxus",
+			"lower": "0.5",
+			"upper": "0.8"
+		},
+		{
+			"title": "Reborn",
+			"mode": "mega",
+			"hyphenatedTitle": "reborn",
+			"lower": "0.4",
+			"upper": "0.7"
+		}
+	],
+	"lv11": [
+		{
+			"title": "风屿",
+			"mode": "mega",
+			"hyphenatedTitle": "fengyu",
+			"lower": "0.6",
+			"upper": "0.9"
+		},
+		{
+			"title": "haptime",
+			"mode": "hard",
+			"hyphenatedTitle": "haptime",
+			"lower": "0.6",
+			"upper": "0.9"
+		},
+		{
+			"title": "Mechanical Jäger",
+			"mode": "mega",
+			"hyphenatedTitle": "mechanical-jager",
+			"lower": "0.5",
+			"upper": "0.8"
+		}
+	]
+}

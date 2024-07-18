@@ -1,0 +1,96 @@
+{
+	"v1.0": [
+		{
+			"version": "1.1.0",
+			"date": "2024-07-18",
+			"contents": [
+				{
+					"title": "List Adjustment",
+					"item": "Regarding the recent significant changes in difficulty levels, the songs for levels 14 and 15 have been rearranged and finalized. There will be a temporary missing of some songs for levels 13 to 15, and updates will be promptly made after the discussion group has finalized their decisions."
+				},
+				{
+					"title": "Added",
+					"item": "A CHANGELOG page has been added. Our group chat QR code has been added to footnotes."
+				},
+				{
+					"title": "Fixed",
+					"item": "Significantly optimized performance across the website."
+				},
+				{
+					"title": "Changed",
+					"item": "Optimized UI. The entire codebase has undergone a complete rewrite."
+				}
+			]
+		},
+		{
+			"version": "1.0.4",
+			"date": "2024-07-05",
+			"contents": [
+				{
+					"title": "List Adjustment",
+					"item": "[GIGA] haptime 14.5 → 14.3~14.8. [MEGA] Love Like We're Dying 13.2 → 13.1. [HARD] 終の舞姫 12.2 → 12.3. [MEGA] Tronica and Fugue 12.1 → 12.2. [HARD] haptime 11.7 → 11.6~11.9. [MEGA] Phoenixismia 11.5 → 11.5."
+				},
+				{
+					"title": "Fixed",
+					"item": "Significantly optimized performance across the website."
+				},
+				{
+					"title": "Changed",
+					"item": "Using IME to search for songs will not trigger songs filtering. Performed major code refactorings and improvements. Made subtle visual enhancements to improve the overall aesthetic and user experience."
+				}
+			]
+		},
+		{
+			"version": "1.0.3",
+			"date": "2024-07-04",
+			"contents": [
+				{
+					"title": "Fixed",
+					"item": "Resolved issue where pages could not be accessed before content fully loaded."
+				}
+			]
+		},
+		{
+			"version": "1.0.2",
+			"date": "2024-07-03",
+			"contents": [
+				{
+					"title": "Fixed",
+					"item": "Fixed delayed content loading after clicking welcome page. Fixed number bars display disappearing after clicking difficulty button. Fixed footer positioned wrong for few search results. Refreshing the page now correctly returns to the top of the page. Significantly optimized performance across the website."
+				},
+				{
+					"title": "Changed",
+					"item": "Added animations when navigating to pages via click. Reordered Participants alphabetically. Optimized some code."
+				}
+			]
+		},
+		{
+			"version": "1.0.1",
+			"date": "2024-07-01",
+			"contents": [
+				{
+					"title": "Added",
+					"item": "Added `CHANGELOG.md` to track changes in the project."
+				},
+				{
+					"title": "Fixed",
+					"item": "Fixed jerking images when the mouse pointer is over the last song in each row. Fixed number bars disappearing when refreshing the page. Resolved content overlaps caused by attaching number bars for charts with personal differences to the top of the page. Corrected footer position issue during search box usage."
+				},
+				{
+					"title": "Changed",
+					"item": "Optimized some code."
+				}
+			]
+		},
+		{
+			"version": "1.0.0",
+			"date": "2024-06-30",
+			"contents": [
+				{
+					"title": "Added",
+					"item": "Initial release of Dynamix Rank List Beta."
+				}
+			]
+		}
+	]
+}
