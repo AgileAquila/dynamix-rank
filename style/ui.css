@@ -467,21 +467,21 @@ img {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(117, 119, 155) 0%, rgb(179, 183, 210) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(117, 119, 155) 0%, rgb(179, 183, 210) 100%);
-	border-image-slice: 0.5;
+	border-image-slice: 1;
 }
 
 .non-subjective-song[data-mode="mega"] {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(139, 68, 153) 0%, rgb(224, 117, 204) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(139, 68, 153) 0%, rgb(224, 117, 204) 100%);
-	border-image-slice: 0.5;
+	border-image-slice: 1;
 }
 
 .non-subjective-song[data-mode="hard"] {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(147, 15, 15) 0%, rgb(255, 69, 69) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(147, 15, 15) 0%, rgb(255, 69, 69) 100%);
-	border-image-slice: 0.5;
+	border-image-slice: 1;
 }
 
 .non-subjective-song::before {
@@ -675,21 +675,21 @@ footer {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(117, 119, 155) 0%, rgb(179, 183, 210) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(117, 119, 155) 0%, rgb(179, 183, 210) 100%);
-	border-image-slice: 0.5;
+	border-image-slice: 1;
 }
 
 .subjective-song-container[data-mode="mega"] .subjective-song {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(139, 68, 153) 0%, rgb(224, 117, 204) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(139, 68, 153) 0%, rgb(224, 117, 204) 100%);
-	border-image-slice: 0.5;
+	border-image-slice: 1;
 }
 
 .subjective-song-container[data-mode="hard"] .subjective-song {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(147, 15, 15) 0%, rgb(255, 69, 69) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(147, 15, 15) 0%, rgb(255, 69, 69) 100%);
-	border-image-slice: 0.5;
+	border-image-slice: 1;
 }
 
 .subjective-song::before {
