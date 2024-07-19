@@ -157,6 +157,8 @@ fetch("../json/non-subjective-list.json")
 			newSongTitle.textContent = allSongTitles[index];
 			nonSubjectiveSongFramework.appendChild(newSongTitle);
 		});
+
+		setSpecificFonts();
 	});
 
 // Generate all subjective number bar
@@ -332,4 +334,16 @@ fetch("../json/subjective-list.json")
 			newSongTitle.textContent = allTitles[index];
 			song.appendChild(newSongTitle);
 		});
+
+		setSpecificFonts();
 	});
+
+// Set specific fonts for specific songs
+const setSpecificFonts = () => {
+	const allSongTitles = main.querySelectorAll(".song-title");
+	allSongTitles.forEach((element) => {
+		if (element.textContent == "RE:IGNITE-Republic of Gamers") {
+			element.style.fontFamily = "asus";
+		}
+	});
+};
