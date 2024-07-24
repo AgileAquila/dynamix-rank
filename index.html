@@ -14,7 +14,11 @@
 		<div id="menu">
 			<div id="tab-bar">
 				<img src="tab-bar.svg" alt="tab-bar" />
-				<button class="btn" type="button">CHANGELOG</button>
+				<div id="tab-bar-btns">
+					<button class="btn" type="button">CHANGELOG</button>
+					<button class="btn" type="button">SCREENSHOTS</button>
+					<button class="btn" type="button" onclick="window.open('https://github.com/AgileAquila/dynamix-rank/issues', '_blank');" style="border: 3px solid white; background-color: rgba(255, 0, 0, 0.45); box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.35), 0 0 10px rgba(255, 0, 0, 0.7); color: rgba(255, 255, 255, 0.9); text-shadow: 0 0 5px rgba(255, 0, 0, 0.2)">ISSUES REPORT</button>
+				</div>
 			</div>
 			<div id="search-box">
 				<img src="littlec.gif" />
@@ -52,8 +56,52 @@
 			<img src="group-qr.png" alt="group-qr" style="height: 48px; image-rendering: pixelated; margin-right: 32px" />
 			<img src="dynamix.png" alt="logo" style="height: 48px; margin-right: 16px" />
 			Dynamix Rank List
-			<span style="color: transparent; background-image: linear-gradient(to right, hsla(331, 90%, 56%, 1) 0%, hsla(206, 75%, 49%, 1) 100%); background-clip: text; margin-left: 8px">Beta 1.1.0</span>
+			<span style="color: transparent; background-image: linear-gradient(to right, hsla(331, 90%, 56%, 1) 0%, hsla(206, 75%, 49%, 1) 100%); background-clip: text; margin-left: 8px">Beta 1.2.0</span>
 		</footer>
+		<div id="screenshots-container">
+			<div id="screenshots">
+				<div id="screenshots-title">
+					<img src="dynamix.png" alt="logo" class="logo" />
+					<span style="color: rgb(255, 255, 255); font-family: dynamix; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5)">screenshots</span>
+					<img src="close.svg" alt="close" class="close" />
+				</div>
+				<div id="screenshots-body">
+					<label for="scr15-16" data-checked="false" data-read="true">
+						<input type="checkbox" value="scr15-16" disabled />
+						<span class="checkbox-text">Lv.15-16</span>
+						<span class="date">2024-07-18</span>
+					</label>
+					<label for="scr14" data-checked="false" data-read="true">
+						<input type="checkbox" value="scr14" disabled />
+						<span class="checkbox-text">Lv.14</span>
+						<span class="date">2024-07-24</span>
+					</label>
+					<label for="scr13" data-checked="false" data-read="true">
+						<input type="checkbox" value="scr13" disabled />
+						<span class="checkbox-text">Lv.13</span>
+						<span class="date">2024-07-24</span>
+					</label>
+					<label for="scr12" data-checked="false" data-read="true">
+						<input type="checkbox" value="scr12" disabled />
+						<span class="checkbox-text">Lv.12</span>
+						<span class="date">2024-07-05</span>
+					</label>
+					<label for="scr11" data-checked="false" data-read="true">
+						<input type="checkbox" value="scr11" disabled />
+						<span class="checkbox-text">Lv.11</span>
+						<span class="date">2024-07-05</span>
+					</label>
+				</div>
+				<div id="screenshots-footer">
+					<label for="select-all" data-checked="false">
+						<input type="checkbox" value="select-all" disabled />
+						<span class="checkbox-text">select all</span>
+					</label>
+					<button type="button" data-active="false">DOWNLOAD</button>
+				</div>
+				<div id="download-links-container" style="display: none"></div>
+			</div>
+		</div>
 		<script>
 			Array.from(document.getElementsByTagName("img")).forEach((element) => {
 				element.addEventListener("dragstart", (event) => {
@@ -64,8 +112,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 		<script src="script/generate-song-list.js"></script>
 		<script src="script/main.js"></script>
-		<script src="script/local-storage.js"></script>
 		<script src="script/generate-changelog.js"></script>
+		<script src="script/screenshots.js"></script>
+		<script src="script/local-storage.js"></script>
 		<script>
 			var _hmt = _hmt || [];
 			(function () {

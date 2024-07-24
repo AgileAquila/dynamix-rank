@@ -1,5 +1,3 @@
-const button = tabBar.getElementsByTagName("button")[0];
-
 // Generate changelog
 
 // Get changelog.json
@@ -145,9 +143,9 @@ const generateCards = () => {
 				const newContent = document.createElement("div");
 				newContent.className = "content";
 				const newContentP = document.createElement("p");
-				newContentP.textContent = content + ".";
+				newContentP.innerHTML = content + ".";
 				if (index == contentArr.length - 1) {
-					newContentP.textContent = content;
+					newContentP.innerHTML = content;
 				}
 				newContent.appendChild(newContentP);
 				newCardPage.appendChild(newContent);
@@ -212,7 +210,6 @@ const enterChangelog = () => {
 		menu.style.display = "none";
 		footer.style.display = "none";
 	};
-	button.removeEventListener("click", enterChangelog);
 	document.addEventListener("wheel", preventScroll, { passive: false });
 	setTimeout(() => {
 		mainContentsDisappear();
@@ -225,4 +222,13 @@ const enterChangelog = () => {
 	}, 900);
 };
 
-button.addEventListener("click", enterChangelog);
+// Enter changelog
+
+const tabBar = document.getElementById("tab-bar");
+const tabBarButtons = tabBar.getElementsByTagName("button");
+
+Array.from(tabBarButtons).forEach((button) => {
+	if (button.textContent.toLowerCase() == "changelog") {
+		button.addEventListener("click", enterChangelog);
+	}
+});

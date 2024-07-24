@@ -566,6 +566,11 @@
 			"hyphenatedTitle": "shinobi-original-short-mix"
 		},
 		{
+			"title": "Assassin",
+			"mode": "mega",
+			"hyphenatedTitle": "assassin"
+		},
+		{
 			"title": "Termination",
 			"mode": "giga",
 			"hyphenatedTitle": "termination"
@@ -596,11 +601,6 @@
 			"title": "life flashes before weeb eyes",
 			"mode": "mega",
 			"hyphenatedTitle": "life-flashes-before-weeb-eyes"
-		},
-		{
-			"title": "Assassin",
-			"mode": "mega",
-			"hyphenatedTitle": "assassin"
 		},
 		{
 			"title": "White Horse Disease",
@@ -737,6 +737,11 @@
 			"hyphenatedTitle": "funk-time"
 		},
 		{
+			"title": "Acrise",
+			"mode": "giga",
+			"hyphenatedTitle": "acrise"
+		},
+		{
 			"title": "Turning POINT",
 			"mode": "mega",
 			"hyphenatedTitle": "turning-point"
@@ -762,11 +767,6 @@
 			"hyphenatedTitle": "legacy"
 		},
 		{
-			"title": "涅槃を灯すシヤ一デソフロイデ",
-			"mode": "giga",
-			"hyphenatedTitle": "nehanwotomosuschadenfreude"
-		},
-		{
 			"title": "ASTRAEA",
 			"mode": "giga",
 			"hyphenatedTitle": "astraea"
@@ -787,11 +787,6 @@
 			"title": "Decomposition",
 			"mode": "giga",
 			"hyphenatedTitle": "decomposition"
-		},
-		{
-			"title": "Acrise",
-			"mode": "giga",
-			"hyphenatedTitle": "acrise"
 		},
 		{
 			"title": "Unsung Hero",
@@ -817,6 +812,11 @@
 			"title": "The Mysterious Man",
 			"mode": "mega",
 			"hyphenatedTitle": "the-mysterious-man"
+		},
+		{
+			"title": "涅槃を灯すシヤ一デソフロイデ",
+			"mode": "giga",
+			"hyphenatedTitle": "nehanwotomosuschadenfreude"
 		},
 		{
 			"title": "Sleepless",
@@ -893,6 +893,11 @@
 			"hyphenatedTitle": "ice-chandelier"
 		},
 		{
+			"title": "Glacial (Liquart Remix)",
+			"mode": "giga",
+			"hyphenatedTitle": "glacial-liquart-remix"
+		},
+		{
 			"title": "Amphisbaena",
 			"mode": "mega",
 			"hyphenatedTitle": "amphisbaena"
@@ -901,14 +906,24 @@
 			"title": "UCHOUTEN Highway",
 			"mode": "mega",
 			"hyphenatedTitle": "uchouten-highway"
-		},
-		{
-			"title": "Glacial (Liquart Remix)",
-			"mode": "giga",
-			"hyphenatedTitle": "glacial-liquart-remix"
 		}
 	],
 	"13.9+": [
+		{
+			"title": "Time & Space (Dynamix Edit)",
+			"mode": "mega",
+			"hyphenatedTitle": "time-space-dynamix-edit"
+		},
+		{
+			"title": "War in the Mirrorworld",
+			"mode": "hard",
+			"hyphenatedTitle": "war-in-the-mirrorworld"
+		},
+		{
+			"title": "Ennor",
+			"mode": "hard",
+			"hyphenatedTitle": "ennor"
+		},
 		{
 			"title": "Evoltex (poppi'n mix)",
 			"mode": "mega",
@@ -927,26 +942,21 @@
 			"hyphenatedTitle": "creigis"
 		},
 		{
-			"title": "Ragnarøk",
-			"mode": "mega",
-			"hyphenatedTitle": "ragnarok"
-		},
-		{
 			"title": "Totally bounded",
 			"mode": "mega",
 			"hyphenatedTitle": "totally-bounded"
-		}
-	],
-	"13.8": [
+		},
 		{
 			"title": "Bonus Time",
 			"mode": "mega",
 			"hyphenatedTitle": "bonus-time"
-		},
+		}
+	],
+	"13.8": [
 		{
-			"title": "Grenade",
+			"title": "Ragnarøk",
 			"mode": "mega",
-			"hyphenatedTitle": "grenade"
+			"hyphenatedTitle": "ragnarok"
 		},
 		{
 			"title": "Sandwich",
@@ -959,17 +969,20 @@
 			"hyphenatedTitle": "crank-up"
 		},
 		{
-			"title": "Ennor",
-			"mode": "mega",
-			"hyphenatedTitle": "ennor"
-		},
-		{
 			"title": "Ashes",
 			"mode": "mega",
 			"hyphenatedTitle": "ashes"
-		}
-	],
-	"13.7": [
+		},
+		{
+			"title": "Grenade",
+			"mode": "mega",
+			"hyphenatedTitle": "grenade"
+		},
+		{
+			"title": "Dead Master",
+			"mode": "mega",
+			"hyphenatedTitle": "dead-master"
+		},
 		{
 			"title": "Le ciel heureux",
 			"mode": "mega",
@@ -979,17 +992,9 @@
 			"title": "Heart Eyes",
 			"mode": "mega",
 			"hyphenatedTitle": "heart-eyes"
-		},
-		{
-			"title": "Dead Master",
-			"mode": "mega",
-			"hyphenatedTitle": "dead-master"
-		},
-		{
-			"title": "freewheeling",
-			"mode": "mega",
-			"hyphenatedTitle": "freewheeling"
-		},
+		}
+	],
+	"13.7": [
 		{
 			"title": "Final Dash",
 			"mode": "mega",
@@ -1001,9 +1006,54 @@
 			"hyphenatedTitle": "hopeful-warrior"
 		},
 		{
+			"title": "freewheeling",
+			"mode": "mega",
+			"hyphenatedTitle": "freewheeling"
+		},
+		{
+			"title": "Resonance of Soul",
+			"mode": "mega",
+			"hyphenatedTitle": "resonance-of-soul"
+		},
+		{
+			"title": "Ennor",
+			"mode": "mega",
+			"hyphenatedTitle": "ennor"
+		},
+		{
+			"title": "Goldelius",
+			"mode": "giga",
+			"hyphenatedTitle": "goldelius"
+		},
+		{
+			"title": "Hall of Fame",
+			"mode": "mega",
+			"hyphenatedTitle": "hall-of-fame"
+		},
+		{
+			"title": "SECONDED WORLD",
+			"mode": "mega",
+			"hyphenatedTitle": "seconded-world"
+		},
+		{
+			"title": "Flarebirds of Scarlet Prism",
+			"mode": "mega",
+			"hyphenatedTitle": "flarebirds-of-scarlet-prism"
+		},
+		{
+			"title": "NOVA",
+			"mode": "mega",
+			"hyphenatedTitle": "nova"
+		},
+		{
 			"title": "Sin of Souls",
 			"mode": "mega",
 			"hyphenatedTitle": "sin-of-souls"
+		},
+		{
+			"title": "Back Out",
+			"mode": "mega",
+			"hyphenatedTitle": "back-out"
 		},
 		{
 			"title": "Grey Horse Underworld",
@@ -1018,11 +1068,6 @@
 			"hyphenatedTitle": "energy"
 		},
 		{
-			"title": "Goldelius",
-			"mode": "giga",
-			"hyphenatedTitle": "goldelius"
-		},
-		{
 			"title": "Daydream",
 			"mode": "mega",
 			"hyphenatedTitle": "daydream"
@@ -1033,46 +1078,34 @@
 			"hyphenatedTitle": "petal"
 		},
 		{
-			"title": "Defended",
-			"mode": "mega",
-			"hyphenatedTitle": "defended"
-		},
-		{
-			"title": "デュアル天使",
-			"mode": "mega",
-			"hyphenatedTitle": "dhuaru-tensi"
-		},
-		{
-			"title": "Flarebirds of Scarlet Prism",
-			"mode": "mega",
-			"hyphenatedTitle": "flarebirds-of-scarlet-prism"
-		},
-		{
 			"title": "青坊",
 			"mode": "mega",
 			"hyphenatedTitle": "qingfang"
 		},
 		{
-			"title": "Sky Adventure!",
+			"title": "Tech-Nique",
 			"mode": "mega",
-			"hyphenatedTitle": "sky-adventure"
+			"hyphenatedTitle": "tech-nique"
+		},
+		{
+			"title": "香港ノ奇術師",
+			"mode": "mega",
+			"hyphenatedTitle": "honkonnokizyutusi"
+		},
+		{
+			"title": "Defended",
+			"mode": "mega",
+			"hyphenatedTitle": "defended"
 		},
 		{
 			"title": "8-Bit Goa #4",
 			"mode": "mega",
 			"hyphenatedTitle": "n8-bit-goa-4"
-		}
-	],
-	"13.5": [
+		},
 		{
 			"title": "Polaris Australis",
 			"mode": "mega",
 			"hyphenatedTitle": "polaris-australis"
-		},
-		{
-			"title": "Fl0at on Air",
-			"mode": "mega",
-			"hyphenatedTitle": "fl0at-on-air"
 		},
 		{
 			"title": "妄想♡ちゅー!!",
@@ -1080,9 +1113,31 @@
 			"hyphenatedTitle": "mousou-tyu"
 		},
 		{
-			"title": "Libra",
+			"title": "Supernova",
 			"mode": "mega",
-			"hyphenatedTitle": "libra"
+			"hyphenatedTitle": "supernova"
+		},
+		{
+			"title": "Cervelle Connexion",
+			"mode": "mega",
+			"hyphenatedTitle": "cervelle-connexion"
+		},
+		{
+			"title": "Crystal Clear Sky",
+			"mode": "mega",
+			"hyphenatedTitle": "crystal-clear-sky"
+		}
+	],
+	"13.5": [
+		{
+			"title": "Sky Adventure!",
+			"mode": "mega",
+			"hyphenatedTitle": "sky-adventure"
+		},
+		{
+			"title": "Fl0at on Air",
+			"mode": "mega",
+			"hyphenatedTitle": "fl0at-on-air"
 		},
 		{
 			"title": "ELYXiVN ELYXiUM",
@@ -1090,14 +1145,29 @@
 			"hyphenatedTitle": "elyxivn-elyxium"
 		},
 		{
-			"title": "Supernova",
-			"mode": "mega",
-			"hyphenatedTitle": "supernova"
-		},
-		{
 			"title": "Knight of Tripletz (for DNX Edit)",
 			"mode": "mega",
 			"hyphenatedTitle": "knight-of-tripletz-for-dnx-edit"
+		},
+		{
+			"title": "デュアル天使",
+			"mode": "mega",
+			"hyphenatedTitle": "dhuaru-tensi"
+		},
+		{
+			"title": "((unidentified new entry))",
+			"mode": "mega",
+			"hyphenatedTitle": "unidentified-new-entry"
+		},
+		{
+			"title": "City Girl in the Love",
+			"mode": "giga",
+			"hyphenatedTitle": "city-girl-in-the-love"
+		},
+		{
+			"title": "INFiNiTE ENERZY -Overdoze-",
+			"mode": "mega",
+			"hyphenatedTitle": "infinite-enerzy-overdoze"
 		},
 		{
 			"title": "Blood Chivalry",
@@ -1115,31 +1185,56 @@
 			"hyphenatedTitle": "gallium-arsenide"
 		},
 		{
+			"title": "Libra",
+			"mode": "mega",
+			"hyphenatedTitle": "libra"
+		},
+		{
 			"title": "Ace Sniper (DNX edit)",
 			"mode": "mega",
 			"hyphenatedTitle": "ace-sniper"
-		}
-	],
-	"13.4": [
+		},
 		{
 			"title": "Vanilla_Sky",
 			"mode": "mega",
 			"hyphenatedTitle": "vanilla-sky"
-		},
+		}
+	],
+	"13.4": [
 		{
 			"title": "Hyperspace Jump",
 			"mode": "mega",
 			"hyphenatedTitle": "hyperspace-jump"
 		},
 		{
-			"title": "Sunset Toybox feat. 桃雛なの",
+			"title": "Spooky Macaron",
 			"mode": "mega",
-			"hyphenatedTitle": "sunset-toybox-feat-momohinanano"
+			"hyphenatedTitle": "spooky-macaron"
 		},
 		{
 			"title": "Caelus",
 			"mode": "mega",
 			"hyphenatedTitle": "caelus"
+		},
+		{
+			"title": "Welcome, SSSpooky!!!",
+			"mode": "giga",
+			"hyphenatedTitle": "welcome-ssspooky"
+		},
+		{
+			"title": "BIT TECH COMPUTER",
+			"mode": "mega",
+			"hyphenatedTitle": "bit-tech-computer"
+		},
+		{
+			"title": "WHIRLWIND",
+			"mode": "giga",
+			"hyphenatedTitle": "whirlwind"
+		},
+		{
+			"title": "Sunset Toybox feat. 桃雛なの",
+			"mode": "mega",
+			"hyphenatedTitle": "sunset-toybox-feat-momohinanano"
 		},
 		{
 			"title": "Distance",
@@ -1157,9 +1252,9 @@
 			"hyphenatedTitle": "isera-dnx-edit"
 		},
 		{
-			"title": "INFiNiTE ENERZY -Overdoze-",
+			"title": "Re=correct",
 			"mode": "mega",
-			"hyphenatedTitle": "infinite-enerzy-overdoze"
+			"hyphenatedTitle": "re-correct"
 		},
 		{
 			"title": "(XD)",
@@ -1179,9 +1274,19 @@
 			"hyphenatedTitle": "seedy-try"
 		},
 		{
+			"title": "Little Boy",
+			"mode": "giga",
+			"hyphenatedTitle": "little-boy"
+		},
+		{
 			"title": "Enhanced Lights",
 			"mode": "mega",
 			"hyphenatedTitle": "enhanced-lights"
+		},
+		{
+			"title": "Variance",
+			"mode": "giga",
+			"hyphenatedTitle": "variance"
 		},
 		{
 			"title": "SUTTA MONDAY",
@@ -1241,6 +1346,11 @@
 			"hyphenatedTitle": "chromosphere"
 		},
 		{
+			"title": "魑魅戴天",
+			"mode": "mega",
+			"hyphenatedTitle": "chimeidaitian"
+		},
+		{
 			"title": "Far East Frontline",
 			"mode": "mega",
 			"hyphenatedTitle": "far-east-frontline"
@@ -1249,6 +1359,11 @@
 			"title": "雲の国の王子",
 			"mode": "mega",
 			"hyphenatedTitle": "cloudprince"
+		},
+		{
+			"title": "DestroY StresS",
+			"mode": "mega",
+			"hyphenatedTitle": "destroy-stress"
 		},
 		{
 			"title": "Red Liquid",
@@ -1288,6 +1403,11 @@
 			"hyphenatedTitle": "love-like-we-re-dying"
 		},
 		{
+			"title": "Tenebris",
+			"mode": "giga",
+			"hyphenatedTitle": "tenebris"
+		},
+		{
 			"title": "WHIRLWIND",
 			"mode": "mega",
 			"hyphenatedTitle": "whirlwind"
@@ -1308,22 +1428,17 @@
 			"hyphenatedTitle": "eschatology"
 		},
 		{
-			"title": "MassacrE || 3rc4224M",
-			"mode": "hard",
-			"hyphenatedTitle": "massacre-3rc4224m"
-		},
-		{
 			"title": "System Interior",
 			"mode": "mega",
 			"hyphenatedTitle": "system-interior"
-		},
+		}
+	],
+	"13.0": [
 		{
 			"title": "Kokytos",
 			"mode": "mega",
 			"hyphenatedTitle": "kokytos"
-		}
-	],
-	"13.0": [
+		},
 		{
 			"title": "萤火虫の怨",
 			"mode": "giga",
@@ -1338,39 +1453,9 @@
 			"title": "Theme of Rabi-Ribi",
 			"mode": "giga",
 			"hyphenatedTitle": "theme-of-rabi-ribi"
-		},
-		{
-			"title": "Hope!!",
-			"mode": "mega",
-			"hyphenatedTitle": "hope"
-		},
-		{
-			"title": "Sultan Madness",
-			"mode": "mega",
-			"hyphenatedTitle": "sultan-madness"
-		},
-		{
-			"title": "Class memories",
-			"mode": "mega",
-			"hyphenatedTitle": "class-memories"
-		},
-		{
-			"title": "Nightmare Girl",
-			"mode": "mega",
-			"hyphenatedTitle": "nightmare-girl"
 		}
 	],
 	"12.9+": [
-		{
-			"title": "Time & Space (Dynamix Edit)",
-			"mode": "mega",
-			"hyphenatedTitle": "time-space-dynamix-edit"
-		},
-		{
-			"title": "War in the Mirrorworld",
-			"mode": "hard",
-			"hyphenatedTitle": "war-in-the-mirrorworld"
-		},
 		{
 			"title": "Invaded",
 			"mode": "mega",
@@ -1382,11 +1467,6 @@
 			"hyphenatedTitle": "yotta"
 		},
 		{
-			"title": "Ennor",
-			"mode": "hard",
-			"hyphenatedTitle": "ennor"
-		},
-		{
 			"title": "Triumph & Regret",
 			"mode": "mega",
 			"hyphenatedTitle": "triumph-regret"
@@ -1394,39 +1474,9 @@
 	],
 	"12.9": [
 		{
-			"title": "Oriental Landscape",
-			"mode": "mega",
-			"hyphenatedTitle": "oriental-landscape"
-		},
-		{
-			"title": "Hall of Fame",
-			"mode": "mega",
-			"hyphenatedTitle": "hall-of-fame"
-		},
-		{
 			"title": "Wuthering Wind",
 			"mode": "mega",
 			"hyphenatedTitle": "wuthering-wind"
-		},
-		{
-			"title": "Tech-Nique",
-			"mode": "mega",
-			"hyphenatedTitle": "tech-nique"
-		},
-		{
-			"title": "SECONDED WORLD",
-			"mode": "mega",
-			"hyphenatedTitle": "seconded-world"
-		},
-		{
-			"title": "NOVA",
-			"mode": "mega",
-			"hyphenatedTitle": "nova"
-		},
-		{
-			"title": "Back Out",
-			"mode": "mega",
-			"hyphenatedTitle": "back-out"
 		}
 	],
 	"12.8": [
@@ -1439,26 +1489,6 @@
 			"title": "αterlβus",
 			"mode": "mega",
 			"hyphenatedTitle": "aterlbus"
-		},
-		{
-			"title": "((unidentified new entry))",
-			"mode": "mega",
-			"hyphenatedTitle": "unidentified-new-entry"
-		},
-		{
-			"title": "香港ノ奇術師",
-			"mode": "mega",
-			"hyphenatedTitle": "honkonnokizyutusi"
-		},
-		{
-			"title": "Cervelle Connexion",
-			"mode": "mega",
-			"hyphenatedTitle": "cervelle-connexion"
-		},
-		{
-			"title": "Crystal Clear Sky",
-			"mode": "mega",
-			"hyphenatedTitle": "crystal-clear-sky"
 		},
 		{
 			"title": "モシモシビット (Moshi Moshi Bit)",
@@ -1624,14 +1654,9 @@
 			"hyphenatedTitle": "crocus"
 		},
 		{
-			"title": "Own The Night",
-			"mode": "mega",
-			"hyphenatedTitle": "you-psy"
-		},
-		{
 			"title": "You Psy",
 			"mode": "mega",
-			"hyphenatedTitle": "paved-garden"
+			"hyphenatedTitle": "you-psy"
 		},
 		{
 			"title": "シュガ一ハイ",
@@ -1823,11 +1848,6 @@
 		}
 	],
 	"11.9+": [
-		{
-			"title": "Youth",
-			"mode": "mega",
-			"hyphenatedTitle": "youth"
-		},
 		{
 			"title": "Marsh Winds",
 			"mode": "hard",

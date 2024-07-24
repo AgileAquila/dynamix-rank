@@ -1,7 +1,6 @@
-const tabBar = document.getElementById("tab-bar");
 const tabBarBtns = tabBar.getElementsByTagName("button");
 
-// CHANGELOG
+// Changelog
 
 const getChangelogCountUpdate = () => {
 	const getStoredChangelogCardCount = () => {
@@ -13,7 +12,7 @@ const getChangelogCountUpdate = () => {
 	if (storedChangelogCardCount !== cardCount) {
 		localStorage.setItem("storedChangelogCardCount", cardCount.toString());
 		localStorage.setItem("changelogChecked", "false");
-		console.log("HAS NEW CHANGELOG");
+		console.log("Output: has new changelogs");
 	}
 };
 
@@ -31,12 +30,49 @@ fetch("../json/changelog.json")
 		});
 		getChangelogCountUpdate();
 		buttonStoringFunctionAfterClick();
-		checkAllBtnDatasetRead();
+		toggleAllBtnDatasetRead();
 	});
+
+// Download
+
+const screenshotsDates = [];
+const fileDates = screenshotsBody.querySelectorAll(".date");
+fileDates.forEach((element) => {
+	screenshotsDates.push(element.textContent);
+});
+const stringifiedDates = screenshotsDates.join();
+
+const storedDates = localStorage.getItem("storedScreenshotsFileDates").split(",") || Array(labels.length).fill(0);
+screenshotsDates.forEach((date, index) => {
+	if (storedDates[index] !== date) {
+		labels[index].dataset.read = "false";
+	}
+});
+
+const clearScreenshotLabelsLocalStorage = () => {
+	Array.from(labels).forEach((element) => {
+		element.dataset.read = "true";
+	});
+};
+
+const getScreenshotsUpdate = () => {
+	const getStoredScreenshotsFileDates = () => {
+		return localStorage.getItem("storedScreenshotsFileDates") || Array(labels.length).fill(0).join();
+	};
+
+	let storedScreenshotsFileDates = getStoredScreenshotsFileDates();
+
+	if (storedScreenshotsFileDates !== stringifiedDates) {
+		localStorage.setItem("storedScreenshotsFileDates", stringifiedDates);
+		localStorage.setItem("screenshotsChecked", "false");
+		console.log("Output: has new screenshots");
+	}
+};
+getScreenshotsUpdate();
 
 // Btn functions
 
-// Update localStorage and btn style after click
+// Update localStorage and btn style before and after click
 const initializeBtnStyle = (localStorageName, btn) => {
 	if (localStorage.getItem(localStorageName) == "false") {
 		btn.dataset.read = "false";
@@ -48,7 +84,7 @@ const updateLocalStorageAfterClick = (localStorageName, btn) => {
 	btn.dataset.read = "true";
 };
 
-const checkAllBtnDatasetRead = () => {
+const toggleAllBtnDatasetRead = () => {
 	tabBar.dataset.read = "true";
 	Array.from(tabBarBtns).forEach((btn) => {
 		if (btn.dataset.read == "false") {
@@ -64,7 +100,13 @@ const buttonStoringFunctionAfterClick = () => {
 			initializeBtnStyle("changelogChecked", btn);
 			btn.addEventListener("click", () => {
 				updateLocalStorageAfterClick("changelogChecked", btn);
-				checkAllBtnDatasetRead();
+				toggleAllBtnDatasetRead();
+			});
+		} else if (btn.textContent.toLowerCase() == "screenshots") {
+			initializeBtnStyle("screenshotsChecked", btn);
+			btn.addEventListener("click", () => {
+				updateLocalStorageAfterClick("screenshotsChecked", btn);
+				toggleAllBtnDatasetRead();
 			});
 		}
 	});

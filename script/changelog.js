@@ -510,10 +510,6 @@ function changelogFunction() {
 				main.style.opacity = "";
 				footer.style.opacity = "";
 			}, 500);
-
-			setTimeout(() => {
-				button.addEventListener("click", enterChangelog);
-			}, 900);
 		})
 	);
 }
