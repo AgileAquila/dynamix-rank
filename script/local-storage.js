@@ -42,7 +42,11 @@ fileDates.forEach((element) => {
 });
 const stringifiedDates = screenshotsDates.join();
 
-const storedDates = localStorage.getItem("storedScreenshotsFileDates").split(",") || Array(labels.length).fill(0);
+let storedDates = Array(labels.length).fill(0);
+if (localStorage.getItem("storedScreenshotsFileDates") !== null) {
+	storedDates = localStorage.getItem("storedScreenshotsFileDates").split(",");
+}
+
 screenshotsDates.forEach((date, index) => {
 	if (storedDates[index] !== date) {
 		labels[index].dataset.read = "false";
