@@ -8,9 +8,9 @@
 -   There will be a temporary missing of some songs for level 11, and updates will be promptly made after the discussion group has finalized their decisions.
 -   [GIGA] Perspicuus_Aestus 15.5 → 15.4.
 -   [MEGA] Danse de Romani 14.1 → 14.1.
--   [GIGA] haptime 14.3~14.8 → 14.2~14.8.
+-   [GIGA] haptime 14.3\~14.8 → 14.2\~14.8.
 -   [MEGA] Hopeful Warrior 13.7 → 13.8.
--   [MEGA] 8-Bit Goa #4 13.6 → 13.6.
+-   [MEGA] 8-Bit Goa \#4 13.6 → 13.6.
 -   [MEGA] Defended 13.6 → 13.6.
 
 ### Fixed
