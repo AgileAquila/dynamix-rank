@@ -74,7 +74,7 @@
 -   [MEGA] Love Like We're Dying 13.2 → 13.1.
 -   [HARD] 終の舞姫 12.2 → 12.3.
 -   [MEGA] Tronica and Fugue 12.1 → 12.2.
--   [HARD] haptime 11.7 → 11.6~11.9.
+-   [HARD] haptime 11.7 → 11.6\~11.9.
 -   [MEGA] Phoenixismia 11.5 → 11.5.
 
 ### Fixed
