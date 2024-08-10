@@ -472,9 +472,6 @@ function changelogFunction() {
 			const menu = document.getElementById("menu");
 			const main = document.getElementById("main");
 			const footer = document.getElementById("footer");
-			main.style.display = "";
-			menu.style.display = "block";
-			footer.style.display = "";
 			window.scrollTo(0, 1);
 			window.scrollTo(0, 0);
 
@@ -501,6 +498,7 @@ function changelogFunction() {
 			changelogBody.removeEventListener("touchmove", throttledTouchToMoveCardContainer);
 
 			setTimeout(() => {
+				document.documentElement.dataset.scroll = "true";
 				document.body.removeChild(changelogPage);
 				const changelogJs = document.getElementById("changelog-javascript");
 				document.head.removeChild(changelogJs);

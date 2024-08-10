@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## [1.2.1] - 2024-08-10
+
+### List Adjustment
+
+-   Regarding the recent significant changes in difficulty levels, the songs for level 12 have been rearranged and finalized.
+-   There will be a temporary missing of some songs for level 11, and updates will be promptly made after the discussion group has finalized their decisions.
+-   [GIGA] Perspicuus_Aestus 15.5 → 15.4.
+-   [MEGA] Danse de Romani 14.1 → 14.1.
+-   [GIGA] haptime 14.3~14.8 → 14.2~14.8.
+-   [MEGA] Hopeful Warrior 13.7 → 13.8.
+-   [MEGA] 8-Bit Goa #4 13.6 → 13.6.
+-   [MEGA] Defended 13.6 → 13.6.
+
+### Fixed
+
+-   When exiting the screenshots interface now, the page correctly returns to the top.
+-   Fixed an issue where all songs on the page would disappear when exiting the changelog interface if there was text in the search box.
+-   Fixed an issue where text in the Participants section would flicker when switching pages.
+
+### Changed
+
+-   Optimized UI.
+
 ## [1.2.0] - 2024-07-24
 
 ### List Adjustment

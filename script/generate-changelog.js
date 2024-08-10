@@ -38,14 +38,14 @@ const generateCards = () => {
 	const newBackBtn = document.createElement("button");
 	newBackBtn.className = "back-btn";
 	const backBtnImg = document.createElement("img");
-	backBtnImg.src = "back.svg";
+	backBtnImg.src = "images/back.svg";
 	backBtnImg.alt = "back";
 	newBackBtn.appendChild(backBtnImg);
 	newChangelogHeader.appendChild(newBackBtn);
 
 	// Generate dynamix logo
 	const newDynamixLogo = document.createElement("img");
-	newDynamixLogo.src = "dynamix.png";
+	newDynamixLogo.src = "images/dynamix.png";
 	newDynamixLogo.alt = "logo";
 	newChangelogHeader.appendChild(newDynamixLogo);
 
@@ -64,7 +64,7 @@ const generateCards = () => {
 	const newScrollBar = document.createElement("span");
 	newScrollBar.id = "scroll-bar";
 	const newScrollBarMixer = document.createElement("img");
-	newScrollBarMixer.src = "mixer.svg";
+	newScrollBarMixer.src = "images/mixer.svg";
 	newScrollBarMixer.alt = "mixer";
 	newScrollBarMixer.dataset.grabbing = "false";
 	newScrollBarMixer.style.left = "0px";
@@ -112,7 +112,7 @@ const generateCards = () => {
 				newBtn.className = "right-arrow";
 			}
 			const newBtnArrow = document.createElement("img");
-			newBtnArrow.src = "arrow.svg";
+			newBtnArrow.src = "images/arrow.svg";
 			newBtnArrow.alt = "arrow";
 			newBtn.appendChild(newBtnArrow);
 			newBtns.appendChild(newBtn);
@@ -205,14 +205,9 @@ const enterChangelog = () => {
 	main.style.marginLeft = "-64px";
 	main.style.opacity = "0";
 	footer.style.opacity = "0";
-	const mainContentsDisappear = () => {
-		main.style.display = "none";
-		menu.style.display = "none";
-		footer.style.display = "none";
-	};
 	document.addEventListener("wheel", preventScroll, { passive: false });
 	setTimeout(() => {
-		mainContentsDisappear();
+		document.documentElement.dataset.scroll = "false";
 		generateCards();
 		changelogAnimation();
 	}, 400);

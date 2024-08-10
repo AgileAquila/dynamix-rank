@@ -117,7 +117,7 @@ const trackFileNamesChecked = () => {
 
 const downloadFile = (filenameReady) => {
 	const link = document.createElement("a");
-	link.href = "images/" + filenameReady + ".png";
+	link.href = "screenshots/" + filenameReady + ".png";
 	link.download = filenameReady + ".png";
 
 	downloadLinksContainer.appendChild(link);
@@ -160,6 +160,7 @@ closeBtn.addEventListener("click", () => {
 		main.style.opacity = "";
 		footer.style.opacity = "";
 		document.removeEventListener("wheel", preventScroll);
+		window.scrollTo(0, 0);
 	}, 100);
 	clearScreenshotLabelsLocalStorage();
 });

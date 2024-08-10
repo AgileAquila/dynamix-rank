@@ -150,6 +150,7 @@ fetch("../json/non-subjective-list.json")
 			newSongBg.src = "../song-bg/" + allSongHyphenatedTitles[index] + ".webp";
 			newSongBg.alt = allSongHyphenatedTitles[index];
 			nonSubjectiveSongFramework.appendChild(newSongBg);
+			getImagesNotLoaded(newSongBg);
 
 			// Generate all non-subjective song titles
 			const newSongTitle = document.createElement("span");
@@ -327,6 +328,7 @@ fetch("../json/subjective-list.json")
 			newSongBg.src = "../song-bg/" + allHyphenatedTitles[index] + ".webp";
 			newSongBg.alt = allHyphenatedTitles[index];
 			song.appendChild(newSongBg);
+			getImagesNotLoaded(newSongBg);
 
 			// Generate all subjective song titles
 			const newSongTitle = document.createElement("span");
@@ -346,4 +348,11 @@ const setSpecificFonts = () => {
 			element.style.fontFamily = "asus";
 		}
 	});
+};
+
+// Get images not loaded
+const getImagesNotLoaded = (songImg) => {
+	songImg.onerror = function () {
+		console.log("Load image failed: " + songImg.alt);
+	};
 };

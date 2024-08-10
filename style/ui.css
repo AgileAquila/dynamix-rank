@@ -35,12 +35,16 @@ html {
 	background-color: black;
 	overflow-x: hidden;
 	user-select: none;
-	background-image: url(../background.webp);
+	background-image: url(../images/background.webp);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: auto 200%;
 	background-attachment: fixed;
 	cursor: default;
+}
+
+html[data-scroll="false"] {
+	overflow-y: hidden;
 }
 
 ul,
@@ -330,7 +334,7 @@ a {
 }
 
 #participants {
-	width: 46%;
+	width: 46vw;
 	text-align: center;
 	transition: 0.2s ease-out;
 	background-color: black;
@@ -493,6 +497,13 @@ a {
 	border: solid 8px;
 	border-image: linear-gradient(to top, rgb(147, 15, 15) 0%, rgb(255, 69, 69) 100%);
 	-webkit-border-image: linear-gradient(to top, rgb(147, 15, 15) 0%, rgb(255, 69, 69) 100%);
+	border-image-slice: 1;
+}
+
+.non-subjective-song[data-mode="null"] {
+	border: solid 8px;
+	border-image: linear-gradient(to top, rgb(43, 43, 43) 0%, rgb(68, 68, 68) 100%);
+	-webkit-border-image: linear-gradient(to top, rgb(43, 43, 43) 0%, rgb(68, 68, 68) 100%);
 	border-image-slice: 1;
 }
 
@@ -1116,7 +1127,6 @@ footer {
 
 #screenshots-container {
 	position: fixed;
-	/* display: flex; */
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1217,7 +1227,6 @@ footer {
 	border-image-slice: 1;
 	color: rgba(0, 219, 197, 0.75);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-	transition: all 0.1s ease-out;
 	cursor: pointer;
 }
 
@@ -1234,7 +1243,6 @@ footer {
 #screenshots-body label:hover input,
 #screenshots-body label:hover .checkbox-text {
 	filter: brightness(1.4);
-	transition: all 0.1s ease-out;
 }
 
 #screenshots-body label .date {
@@ -1322,13 +1330,11 @@ footer {
 	gap: 12px;
 	color: rgba(0, 219, 197, 0.75);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-	transition: all 0.1s ease-out;
 	cursor: pointer;
 }
 
 #screenshots-footer label:hover {
 	filter: brightness(1.4);
-	transition: all 0.1s ease-out;
 }
 
 #screenshots-footer button {
@@ -1337,7 +1343,6 @@ footer {
 	height: 28px;
 	margin-left: auto;
 	padding: 0 12px;
-	transition: all 0.1s ease-out;
 }
 
 #screenshots-footer button[data-active="false"] {
