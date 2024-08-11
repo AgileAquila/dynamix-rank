@@ -500,11 +500,12 @@ a {
 	border-image-slice: 1;
 }
 
-.non-subjective-song[data-mode="null"] {
-	border: solid 8px;
-	border-image: linear-gradient(to top, rgb(43, 43, 43) 0%, rgb(68, 68, 68) 100%);
-	-webkit-border-image: linear-gradient(to top, rgb(43, 43, 43) 0%, rgb(68, 68, 68) 100%);
-	border-image-slice: 1;
+.non-subjective-song[data-mode=""] {
+	border: solid 8px white;
+}
+
+.non-subjective-level-container:has(.non-subjective-song[data-mode=""]) {
+	display: none !important;
 }
 
 .non-subjective-song::before {

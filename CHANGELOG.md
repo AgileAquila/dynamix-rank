@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [1.2.2] - 2024-08-11
+
+### Fixed
+
+-   Fixed an issue where the difficulty rating label would incorrectly display without any associated songs listed under it.
+
+### Changed
+
+-   Updated Participants list.
+
 ## [1.2.1] - 2024-08-10
 
 ### List Adjustment

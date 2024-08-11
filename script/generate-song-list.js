@@ -352,7 +352,9 @@ const setSpecificFonts = () => {
 
 // Get images not loaded
 const getImagesNotLoaded = (songImg) => {
-	songImg.onerror = function () {
-		console.log("Load image failed: " + songImg.alt);
-	};
+	if (songImg.alt !== "") {
+		songImg.onerror = function () {
+			console.log("Load image failed: " + songImg.alt);
+		};
+	}
 };

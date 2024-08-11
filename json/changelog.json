@@ -1,6 +1,20 @@
 {
 	"v1.2": [
 		{
+			"version": "1.2.2",
+			"date": "2024-08-10",
+			"contents": [
+				{
+					"title": "Fixed",
+					"item": "Fixed an issue where the difficulty rating label would incorrectly display without any associated songs listed under it."
+				},
+				{
+					"title": "Changed",
+					"item": "Updated Participants list."
+				}
+			]
+		},
+		{
 			"version": "1.2.1",
 			"date": "2024-08-10",
 			"contents": [
