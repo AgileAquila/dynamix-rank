@@ -12,11 +12,10 @@
 -   Improvements made to ensure website descriptions are accurately displayed in all search engines.
 -   Fixed and improved search engine indexing to ensure that the site is more accurately searched.
 -   The CHANGELOG pages now display contents more fully.
--   Corrected typos in the changelog.
 
 ### Changed
 
--   Updated Participants member list.
+-   Updated Participants list.
 
 ## [1.2.2] - 2024-08-11
 
@@ -26,7 +25,7 @@
 
 ### Changed
 
--   Updated Participants member list.
+-   Updated Participants list.
 
 ## [1.2.1] - 2024-08-10
 
