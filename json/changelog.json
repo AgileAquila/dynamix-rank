@@ -1,6 +1,24 @@
 {
 	"v1.2": [
 		{
+			"version": "1.2.3",
+			"date": "2024-08-13",
+			"contents": [
+				{
+					"title": "Added",
+					"item": "A Discord server for Dynamix Rank List has been established, and a redirect link to the server has been added to the website."
+				},
+				{
+					"title": "Fixed",
+					"item": "Fixed an issue where the search box was not fully hidden in the CHANGELOG interface. Improvements made to ensure website descriptions are accurately displayed in all search engines. Fixed and improved search engine indexing to ensure that the site is more accurately searched. The CHANGELOG pages now display contents more fully. Corrected typos in the changelog."
+				},
+				{
+					"title": "Changed",
+					"item": "Updated Participants member list."
+				}
+			]
+		},
+		{
 			"version": "1.2.2",
 			"date": "2024-08-11",
 			"contents": [

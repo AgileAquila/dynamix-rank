@@ -502,8 +502,11 @@ function changelogFunction() {
 				document.body.removeChild(changelogPage);
 				const changelogJs = document.getElementById("changelog-javascript");
 				document.head.removeChild(changelogJs);
-				menu.style.right = "";
-				menu.style.opacity = "1";
+				menu.style.display = "block";
+				setTimeout(() => {
+					menu.style.right = "";
+					menu.style.opacity = "1";
+				}, 0);
 				main.style.marginLeft = "";
 				main.style.opacity = "";
 				footer.style.opacity = "";

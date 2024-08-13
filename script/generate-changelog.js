@@ -208,6 +208,7 @@ const enterChangelog = () => {
 	document.addEventListener("wheel", preventScroll, { passive: false });
 	setTimeout(() => {
 		document.documentElement.dataset.scroll = "false";
+		menu.style.display = "none";
 		generateCards();
 		changelogAnimation();
 	}, 400);

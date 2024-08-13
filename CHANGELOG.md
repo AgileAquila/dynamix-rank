@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.2.3] - 2024-08-13
+
+### Added
+
+-   A Discord server for Dynamix Rank List has been established, and a redirect link to the server has been added to the website.
+
+### Fixed
+
+-   Fixed an issue where the search box was not fully hidden in the CHANGELOG interface.
+-   Improvements made to ensure website descriptions are accurately displayed in all search engines.
+-   Fixed and improved search engine indexing to ensure that the site is more accurately searched.
+-   The CHANGELOG pages now display contents more fully.
+
+### Changed
+
+-   Updated Participants list.
+
 ## [1.2.2] - 2024-08-11
 
 ### Fixed
