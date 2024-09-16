@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## [1.3.0] - 2024-09-16
+
+### List Adjustment
+
+-   Regarding the recent significant changes in difficulty levels, all the songs have been rearranged and finalized.
+-   [GIGA] Volcano 15.2 → 15.2.
+-   [GIGA] Evoltex (poppi'n mix) 15.3\~15.6 → 15.2\~15.6.
+-   [GIGA] アリス失格 15.1\~15.5 → 15.0\~15.5.
+-   [GIGA] White Horse Disease 14.5 → 14.6.
+-   [GIGA] OCCHOCO-REST-LESS 14.4 → 14.5.
+-   [MEGA] HOPE ↔ [GIGA] ∀I∃Y§§ 14.5.
+-   [MEGA] Helios 14.3 → 14.4.
+-   [MEGA] Alter Ego ↔ [MEGA] CruX 14.4.
+-   [GIGA] lehigh ↔ [GIGA] Alone 14.4.
+-   [MEGA] You Were With A Boy 14.3 → 14.3.
+-   [MEGA] UCHOUTEN Highway ↔ [MEGA] Amphisbaena 14.0.
+-   [MEGA] Dement ～ After Legend ～ 14.3\~14.7 → 14.2\~14.7.
+
+### Added
+
+-   All the songs have been updated as of August 2024.
+
 ## [1.2.3] - 2024-08-13
 
 ### Added

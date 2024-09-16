@@ -29,13 +29,6 @@
 			"upper": "0.7"
 		},
 		{
-			"title": "Evoltex (poppi'n mix)",
-			"mode": "giga",
-			"hyphenatedTitle": "evoltex-poppi-n-mix",
-			"lower": "0.3",
-			"upper": "0.6"
-		},
-		{
 			"title": "GIFT",
 			"mode": "giga",
 			"hyphenatedTitle": "gift",
@@ -50,6 +43,13 @@
 			"upper": "0.6"
 		},
 		{
+			"title": "Evoltex (poppi'n mix)",
+			"mode": "giga",
+			"hyphenatedTitle": "evoltex-poppi-n-mix",
+			"lower": "0.1",
+			"upper": "0.6"
+		},
+		{
 			"title": "Lucid Trigger",
 			"mode": "giga",
 			"hyphenatedTitle": "lucid-trigger",
@@ -60,7 +60,7 @@
 			"title": "アリス失格",
 			"mode": "giga",
 			"hyphenatedTitle": "arisu-sikkaku",
-			"lower": "0.1",
+			"lower": "0.0",
 			"upper": "0.5"
 		},
 		{
@@ -115,13 +115,6 @@
 			"upper": "0.7"
 		},
 		{
-			"title": "Dement ～After Legend～",
-			"mode": "mega",
-			"hyphenatedTitle": "dement-after-legend",
-			"lower": "0.3",
-			"upper": "0.7"
-		},
-		{
 			"title": "GOEMON",
 			"mode": "giga",
 			"hyphenatedTitle": "goemon",
@@ -134,6 +127,13 @@
 			"hyphenatedTitle": "haptime",
 			"lower": "0.2",
 			"upper": "0.8"
+		},
+		{
+			"title": "Dement ～After Legend～",
+			"mode": "mega",
+			"hyphenatedTitle": "dement-after-legend",
+			"lower": "0.2",
+			"upper": "0.7"
 		},
 		{
 			"title": "天照",
@@ -294,6 +294,20 @@
 			"hyphenatedTitle": "mechanical-jager",
 			"lower": "0.5",
 			"upper": "0.8"
+		},
+		{
+			"title": "AKI-ZAKURA",
+			"mode": "hard",
+			"hyphenatedTitle": "aki-zakura",
+			"lower": "0.3",
+			"upper": "1.0"
+		},
+		{
+			"title": "活著",
+			"mode": "mega",
+			"hyphenatedTitle": "huozhe",
+			"lower": "0.3",
+			"upper": "0.6"
 		}
 	]
 }
