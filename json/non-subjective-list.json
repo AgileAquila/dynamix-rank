@@ -179,6 +179,11 @@
 			"hyphenatedTitle": "innocension"
 		},
 		{
+			"title": "Ennor",
+			"mode": "giga",
+			"hyphenatedTitle": "ennor"
+		},
+		{
 			"title": "Xetta",
 			"mode": "giga",
 			"hyphenatedTitle": "xetta"
@@ -216,14 +221,14 @@
 			"hyphenatedTitle": "beyond-the-rainbow"
 		},
 		{
-			"title": "Ennor",
-			"mode": "giga",
-			"hyphenatedTitle": "ennor"
-		},
-		{
 			"title": "HeracleS",
 			"mode": "giga",
 			"hyphenatedTitle": "heracles"
+		},
+		{
+			"title": "Necroxus",
+			"mode": "giga",
+			"hyphenatedTitle": "necroxus"
 		},
 		{
 			"title": "Curtainfall!",
@@ -239,11 +244,6 @@
 			"title": "Virtual Nature",
 			"mode": "giga",
 			"hyphenatedTitle": "virtual-nature"
-		},
-		{
-			"title": "Necroxus",
-			"mode": "giga",
-			"hyphenatedTitle": "necroxus"
 		},
 		{
 			"title": "Persephone",
@@ -283,11 +283,6 @@
 			"hyphenatedTitle": "prime"
 		},
 		{
-			"title": "Black : Magnam",
-			"mode": "giga",
-			"hyphenatedTitle": "black-magnam"
-		},
-		{
 			"title": "UCHOUTEN Highway",
 			"mode": "giga",
 			"hyphenatedTitle": "uchouten-highway"
@@ -296,6 +291,11 @@
 			"title": "画竜天晴",
 			"mode": "giga",
 			"hyphenatedTitle": "gariou-tensei"
+		},
+		{
+			"title": "Black : Magnam",
+			"mode": "giga",
+			"hyphenatedTitle": "black-magnam"
 		},
 		{
 			"title": "White : Revolve",
@@ -345,14 +345,14 @@
 			"hyphenatedTitle": "fl0at-on-air"
 		},
 		{
-			"title": "CHAKA",
-			"mode": "giga",
-			"hyphenatedTitle": "chaka"
-		},
-		{
 			"title": "Reason of Fallen",
 			"mode": "giga",
 			"hyphenatedTitle": "reason-of-fallen"
+		},
+		{
+			"title": "CHAKA",
+			"mode": "giga",
+			"hyphenatedTitle": "chaka"
 		},
 		{
 			"title": "INFiNiTE ENERZY -Overdoze-",
@@ -724,7 +724,7 @@
 		},
 		{
 			"title": "Cosmic Pulse",
-			"mode": "giga",
+			"mode": "mega",
 			"hyphenatedTitle": "cosmic-pulse"
 		},
 		{
@@ -1692,7 +1692,7 @@
 		},
 		{
 			"title": "Far Eastern Flavor",
-			"mode": "hard",
+			"mode": "mega",
 			"hyphenatedTitle": "far-eastern-flavor"
 		},
 		{
