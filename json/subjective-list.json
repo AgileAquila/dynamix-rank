@@ -50,13 +50,6 @@
 			"upper": "0.6"
 		},
 		{
-			"title": "Lucid Trigger",
-			"mode": "giga",
-			"hyphenatedTitle": "lucid-trigger",
-			"lower": "0.1",
-			"upper": "0.5"
-		},
-		{
 			"title": "アリス失格",
 			"mode": "giga",
 			"hyphenatedTitle": "arisu-sikkaku",
@@ -122,11 +115,18 @@
 			"upper": "0.9"
 		},
 		{
+			"title": "Shinobi (Original Short Mix)",
+			"mode": "mega",
+			"hyphenatedTitle": "shinobi-original-short-mix",
+			"lower": "0.2",
+			"upper": "0.8"
+		},
+		{
 			"title": "haptime",
 			"mode": "giga",
 			"hyphenatedTitle": "haptime",
 			"lower": "0.2",
-			"upper": "0.8"
+			"upper": "0.7"
 		},
 		{
 			"title": "Dement ～After Legend～",
@@ -134,13 +134,6 @@
 			"hyphenatedTitle": "dement-after-legend",
 			"lower": "0.2",
 			"upper": "0.7"
-		},
-		{
-			"title": "天照",
-			"mode": "mega",
-			"hyphenatedTitle": "tianzhao",
-			"lower": "0.2",
-			"upper": "0.5"
 		},
 		{
 			"title": "天照",
@@ -159,13 +152,6 @@
 	],
 	"lv13": [
 		{
-			"title": "Black Horse Famine",
-			"mode": "mega",
-			"hyphenatedTitle": "black-horse-famine",
-			"lower": "0.7",
-			"upper": "1.0"
-		},
-		{
 			"title": "Youth",
 			"mode": "mega",
 			"hyphenatedTitle": "youth",
@@ -180,11 +166,11 @@
 			"upper": "1.0"
 		},
 		{
-			"title": "Oriental Landscape",
+			"title": "Grey Horse Underworld",
 			"mode": "mega",
-			"hyphenatedTitle": "oriental-landscape",
+			"hyphenatedTitle": "grey-horse-underworld",
 			"lower": "0.4",
-			"upper": "0.9"
+			"upper": "0.8"
 		},
 		{
 			"title": "Mind Blast (Dynamix Edit)",
@@ -266,9 +252,23 @@
 			"upper": "0.8"
 		},
 		{
+			"title": "Lunar Arrow",
+			"mode": "mega",
+			"hyphenatedTitle": "lunar-arrow",
+			"lower": "0.3",
+			"upper": "0.7"
+		},
+		{
 			"title": "风屿",
 			"mode": "mega",
 			"hyphenatedTitle": "fengyu",
+			"lower": "0.2",
+			"upper": "0.6"
+		},
+		{
+			"title": "Hatsukoi Memories",
+			"mode": "mega",
+			"hyphenatedTitle": "hatsukoi-memories",
 			"lower": "0.2",
 			"upper": "0.6"
 		},

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [1.4.0] - 2025-04-06
+
+### List Adjustment
+
+-   Regarding the recent significant changes in difficulty levels, all the songs have been rearranged and finalized. There have been numerous updates, we'll omit the details here.
+-   We sincerely apologize for the long hiatus over the past several months. Regular updates have now resumed, and we're deeply grateful for your patience, support, and understanding. Starting today, updates will continue as they used to. Thank you for staying with us.
+
+### Added
+
+-   All the songs have been updated as of March 2025.
+
 ## [1.3.0] - 2024-09-16
 
 ### List Adjustment
